@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/smanta/School21/clion_lemin/lem_in.h
+stdio.h
+-
+unistd.h
+-
+libft/libft.h
+/home/smanta/School21/clion_lemin/libft/libft.h
+limits.h
+-
+
+/home/smanta/School21/clion_lemin/libft/libft.h
+stdlib.h
+-
+unistd.h
+-
+
+/home/smanta/School21/clion_lemin/parse_input.c
+lem_in.h
+/home/smanta/School21/clion_lemin/lem_in.h
+

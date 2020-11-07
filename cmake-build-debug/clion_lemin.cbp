@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="clion_lemin"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/smanta/School21/clion_lemin/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/smanta/School21/clion_lemin/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/smanta/School21/clion_lemin/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lemin">
+				<Option output="/home/smanta/School21/clion_lemin/cmake-build-debug/lemin" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/smanta/School21/clion_lemin/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 lemin"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lemin/fast">
+				<Option output="/home/smanta/School21/clion_lemin/cmake-build-debug/lemin" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/smanta/School21/clion_lemin/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 lemin/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/clion_lemin/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/smanta/School21/clion_lemin/bellman_ford.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/bfs.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/calc_speed.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/copy_graphs.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/debug_functions.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/dijkstra.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/ft_atoi_validate_pos.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/gnl.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/hash.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/lem_in.h">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/libft/ft_isdigit.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/libft/ft_putchar.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/libft/ft_putnbr.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/libft/ft_putstr.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/libft/ft_strcat.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/libft/ft_strcmp.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/libft/ft_strdup.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/libft/ft_strequ.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/libft/ft_strjoin.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/libft/ft_strlen.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/main.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/my_cool_algo.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/parse_functions.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/parse_input.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/pathfinder.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/utils_nick.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/utils_nick_2.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/home/smanta/School21/clion_lemin/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
