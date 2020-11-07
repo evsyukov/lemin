@@ -77,6 +77,7 @@ void	print_hash_table_child(t_hash **h_table)
 				child = child->next;
 			}
 			node = node->next;
+
 			while (node)
 			{
 				printf("\n======>[%zu]= \"%s\" =>",i, node->node_name);

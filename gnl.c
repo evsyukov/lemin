@@ -16,7 +16,7 @@ char	*gnl(char *text)
 {
 	static int i; // Static переменная для сохранения индекса между запусками функции
 	int b;
-	
+
 	b = 0; 
 	if ((i == 0 && (!text[0])) || (i < 0))
 		return NULL;
