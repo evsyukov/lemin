@@ -41,9 +41,6 @@
 //
 //static t_paths	*get_set_paths(t_graphs *graphs_all)
 //{
-//	t_graph	*graph = graphs_all->graph;
-//	t_graph	*curr_graph = graphs_all->curr_graph;
-//	t_graph	*next_graph = graphs_all->next_graph;
 //	t_path	*new_path;
 //
 //	new_path = get_bellman_ford_path(graph);
@@ -54,7 +51,7 @@
 //
 //}
 //
-//static void		print_solution(t_graphs *graphs_all, t_paths *paths)
+//static void		print_solution(t_graph *graph, t_paths *paths)
 //{
 //	t_graph	*curr_graph;
 //
@@ -62,10 +59,10 @@
 //
 //}
 //
-//void			my_cool_func(t_graphs *graphs_all)
+//void			my_cool_func(t_graph *graph)
 //{
 //	t_paths	*paths;
 //
-//	paths = get_set_paths(graphs_all);
-//	print_solution(graphs_all, paths);
+//	paths = get_set_paths(graph);
+//	print_solution(graph, paths);
 //}

@@ -132,22 +132,22 @@ void	parse_connections(t_graph *graph, char *line)
 	if (!line[i])
 		err_exit();
 	line[i] = 0;
-//	parent = hash_query(graph->h_table, line);
-//	child = hash_query(graph->h_table, &line[i + 1]);
+	parent = hash_query(graph->h_table, line);
+	child = hash_query(graph->h_table, &line[i + 1]);
 	// NICK
-	handle_double_node(graph, line, &line[i + 1]);
+//	handle_double_node(graph, line, &line[i + 1]);
 
 	line[i] = '-';
-//	if ((parent && child) && (parent != child))
-//	{
-//		check_if_already_linked(parent, child);
-//		check_if_already_linked(child, parent);
-//		add_link(parent, child);
-//		add_link(child, parent);
-//		edges_num += 2;
-//	}
-//	else
-//		err_exit();
+	if ((parent && child) && (parent != child))
+	{
+		check_if_already_linked(parent, child);
+		check_if_already_linked(child, parent);
+		add_link(parent, child);
+		add_link(child, parent);
+		edges_num += 2;
+	}
+	else
+		err_exit();
 }
 
 void	parse_links(t_graph *graph, char *line)
@@ -266,7 +266,7 @@ t_hash	*parse_node_name(char *line, t_hash **h_table)
 		if (!hash_query(h_table, line))
 			// NICK
 			// !!!!
-//			node = insert_node_to_h_table(line, h_table, sp_ind);
+			node = insert_node_to_h_table(line, h_table, sp_ind);
 		else
 			err_exit();
 		nodes_num++;

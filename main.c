@@ -33,10 +33,9 @@ void	free_graph(t_graph *graph)
 
 int	main(void)
 {
-	t_graphs graphs_all;
 	t_graph *graph;
-//	t_graph *curr_graph;
-//	t_graph *next_graph;
+	t_path	*new_path;
+
 	graph = parse_input();
 	 // write(1, graph->map_buf, ft_strlen(graph->map_buf));
 	
@@ -51,35 +50,13 @@ int	main(void)
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 	*/
 	graph->arr_nodes = make_arr_nodes(graph);
-
 	// DEBUG
-//	print_graph_arr(graph->arr_nodes);
+	 print_graph_arr(graph->arr_nodes);
 
-//	nodes_num = 0;
-//	edges_num = 0;
-//	reset_gnl = 1;
-//	curr_graph = get_copy_graph(graph);
-//	curr_graph->arr_nodes = make_arr_nodes(curr_graph);
+	new_path = get_bellman_ford_path(graph);
+	add_path(graph, new_path);
 
-	// DEBUG
-//	print_graph_arr(curr_graph->arr_nodes);
-
-//	nodes_num = 0;
-//	edges_num = 0;
-//	reset_gnl = 1;
-//	next_graph = get_copy_graph(graph);
-//	next_graph->arr_nodes = make_arr_nodes(next_graph);
-
-	// DEBUG
-//	print_graph_arr(next_graph->arr_nodes);
-
-	graphs_all.graph = graph;
-//	graphs_all.curr_graph = curr_graph;
-//	graphs_all.next_graph = next_graph;
-//	my_cool_func(&graphs_all);
-
+	print_paths(graph);
 	free_graph(graph);
-//	free_graph(curr_graph);
-//	free_graph(next_graph);
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 }

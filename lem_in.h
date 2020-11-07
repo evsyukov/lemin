@@ -56,20 +56,17 @@ typedef struct	s_path
 	struct s_path	*prev;
 } 				t_path;
 
+typedef struct s_print
+{
+	char	*name_room;
+	int 	num_l;
+}				t_print;
+
 typedef struct	s_vis
 {
 	struct s_hash	*node;
 	struct s_vis	*next;
 }				t_vis;
-
-typedef struct	s_double_node
-{
-	struct s_hash	*hi_level_node;
-	char		*node_name_in;
-	size_t		num_node_in;
-	char		*node_name_out;
-	size_t		num_node_out;
-}				t_double_node;
 
 typedef	struct				s_hash
 {
@@ -84,8 +81,6 @@ typedef	struct				s_hash
 	struct s_hash 	*prev;
 	// NICK EDITION
 	size_t		num_node; // номер ноды (индекс в arr_nodes)
-	size_t		status; // 0 - обычная вершина, 1 - двойная
-	t_double_node	*dnode;
 }					t_hash;
 
 typedef struct		s_graph
@@ -97,7 +92,6 @@ typedef struct		s_graph
 	char			*map_buf;
 	t_path			*paths_list; // NICK - не использовал его
 	// NICK EDITION
-	char 			*initial_map_buf;
 	t_hash			**arr_nodes; // массив указателей на указатели на "комнаты"
 	size_t			num_start_node; // номер (индекс) стартовой комнаты
 	size_t			num_end_node; // // номер (индекс) конечной комнаты
