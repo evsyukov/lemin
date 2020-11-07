@@ -283,11 +283,6 @@ t_graph	*parse_input(void)
 	graph = NULL;
 	graph = graph_init(); // Инициализиуем хэш таблицу и указатели на начальную и конечную ноду
 	graph->map_buf = read_to_str(0);  // Читаем в буфер входной поток (0)
-	// NICK
-	// !!! Сохраняем на всякий нашу изначальную строку для копий графа
-	// не знаю будет ли она менятся потом где то
-	MFAIL((graph->initial_map_buf = ft_strdup(graph->map_buf)));
-//	graph->initial_map_buf = ft_strdup(graph->map_buf);
 	parse_ants_number(graph);
 	parse_rooms(graph);
 	if (!graph->start->child || !graph->end->child)
@@ -296,20 +291,20 @@ t_graph	*parse_input(void)
 }
 
 // NICK
-t_graph	*get_copy_graph(t_graph *graph)
-{
-	t_graph	*new_graph;
-
-	new_graph = NULL;
-	new_graph = graph_init(); // Инициализиуем хэш таблицу и указатели на начальную и конечную ноду
-	// коприуем внаглую нашу изначальную строку
-	// !!!ПОДУМАТЬ есть мысль вообще скопировать указатель только
-	MFAIL((new_graph->map_buf = ft_strdup(graph->initial_map_buf)));
-	MFAIL((new_graph->initial_map_buf = ft_strdup(graph->initial_map_buf)));
-//	new_graph->map_buf = ft_strdup(graph->initial_map_buf);
-	parse_ants_number(new_graph);
-	parse_rooms(new_graph);
-	if (!new_graph->start->child || !new_graph->end->child)
-		err_exit();
-	return (new_graph);
-}
+//t_graph	*get_copy_graph(t_graph *graph)
+//{
+//	t_graph	*new_graph;
+//
+//	new_graph = NULL;
+//	new_graph = graph_init(); // Инициализиуем хэш таблицу и указатели на начальную и конечную ноду
+//	// коприуем внаглую нашу изначальную строку
+//	// !!!ПОДУМАТЬ есть мысль вообще скопировать указатель только
+//	MFAIL((new_graph->map_buf = ft_strdup(graph->initial_map_buf)));
+//	MFAIL((new_graph->initial_map_buf = ft_strdup(graph->initial_map_buf)));
+////	new_graph->map_buf = ft_strdup(graph->initial_map_buf);
+//	parse_ants_number(new_graph);
+//	parse_rooms(new_graph);
+//	if (!new_graph->start->child || !new_graph->end->child)
+//		err_exit();
+//	return (new_graph);
+//}

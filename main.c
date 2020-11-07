@@ -24,7 +24,6 @@ void	free_graph(t_graph *graph)
 	free_hash_table(graph->h_table);
 	FCNT(free(graph->map_buf));
 	// NICK
-	FCNT(free(graph->initial_map_buf));
 	FCNT(free(graph->arr_nodes));
 	free_paths(graph->begin_path);
 

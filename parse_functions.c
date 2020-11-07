@@ -21,7 +21,6 @@ t_graph	*graph_init(void)
 	graph->end = NULL;
 	graph->h_table = hash_table_init();
 	// NICK
-	graph->initial_map_buf = NULL;
 	graph->arr_nodes = NULL;
 	graph->num_paths = 0;
 	graph->begin_path = NULL;
