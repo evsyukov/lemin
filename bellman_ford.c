@@ -25,8 +25,6 @@ static t_path   *add_path_node(t_path **root, t_hash *node)
 
     path = *root;
     MFAIL((new = (t_path *)malloc(sizeof(t_path))));
-//    if ((new = (t_path *)malloc(sizeof(t_path))) == NULL )
-//        return NULL;
     if (path == NULL)
         init_node_path(new, node, NULL, NULL);
     else
@@ -84,7 +82,11 @@ t_path          *get_bellman_ford_path(t_graph *graph)
          ++k;
     }
     if (d[graph->num_end_node] == 2000000000)
-        write(1, "There is NO WAY between Start and End rooms\n", 44);
+	{
+    	// Выход НЕТ пути вообще
+		write(1, "There is NO WAY between Start and End rooms\n", 44);
+		err_exit();
+	}
     else
     {
         t = graph->num_end_node;

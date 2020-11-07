@@ -16,8 +16,6 @@ unsigned long ml = 0;
 unsigned long fr = 0;
 unsigned long nodes_num = 0;
 unsigned long edges_num = 0;
-// NICK
-unsigned long reset_gnl = 0;
 
 void	free_graph(t_graph *graph)
 {
@@ -36,8 +34,7 @@ int	main(void)
 	t_path	*new_path;
 
 	graph = parse_input();
-	 // write(1, graph->map_buf, ft_strlen(graph->map_buf));
-	
+	// write(1, graph->map_buf, ft_strlen(graph->map_buf));
 	/*
 	get_paths(graph);
 	//bfs(graph);
@@ -49,8 +46,9 @@ int	main(void)
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 	*/
 	graph->arr_nodes = make_arr_nodes(graph);
+
 	// DEBUG
-	 print_graph_arr(graph->arr_nodes);
+	print_graph_arr(graph->arr_nodes);
 
 	new_path = get_bellman_ford_path(graph);
 	add_path(graph, new_path);

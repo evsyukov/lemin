@@ -10,8 +10,6 @@ t_hash		**make_arr_nodes(t_graph *graph)
     char    *str;
 
 	MFAIL((arr = (t_hash **)malloc(sizeof(t_hash *) * nodes_num)));
-//	if ((arr = (t_hash **)malloc(sizeof(t_hash *) * nodes_num)) == NULL)
-//		return NULL;
 	table = graph->h_table;
 	index_table = 0;
     index_arr = 0;
@@ -28,14 +26,13 @@ t_hash		**make_arr_nodes(t_graph *graph)
                     graph->num_start_node = index_arr;
                 if (node == graph->end)
                     graph->num_end_node = index_arr;
-
-//                ft_putstr("index arr = ");
-//                ft_putnbr(index_arr);
-//                ft_putstr(", node_name = ");
-//                str = arr[index_arr]->node_name;
-//                ft_putstr(str);
-//                ft_putstr("\n");
-
+				// DEBUG
+				// ft_putstr("index arr = ");
+				// ft_putnbr(index_arr);
+				// ft_putstr(", node_name = ");
+				// str = arr[index_arr]->node_name;
+				// ft_putstr(str);
+				// ft_putstr("\n");
 				node = node->next;
                 ++index_arr;
 			}

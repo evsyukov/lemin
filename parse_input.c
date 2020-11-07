@@ -289,22 +289,3 @@ t_graph	*parse_input(void)
 		err_exit();
 	return (graph);
 }
-
-// NICK
-//t_graph	*get_copy_graph(t_graph *graph)
-//{
-//	t_graph	*new_graph;
-//
-//	new_graph = NULL;
-//	new_graph = graph_init(); // Инициализиуем хэш таблицу и указатели на начальную и конечную ноду
-//	// коприуем внаглую нашу изначальную строку
-//	// !!!ПОДУМАТЬ есть мысль вообще скопировать указатель только
-//	MFAIL((new_graph->map_buf = ft_strdup(graph->initial_map_buf)));
-//	MFAIL((new_graph->initial_map_buf = ft_strdup(graph->initial_map_buf)));
-////	new_graph->map_buf = ft_strdup(graph->initial_map_buf);
-//	parse_ants_number(new_graph);
-//	parse_rooms(new_graph);
-//	if (!new_graph->start->child || !new_graph->end->child)
-//		err_exit();
-//	return (new_graph);
-//}

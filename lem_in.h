@@ -100,14 +100,6 @@ typedef struct		s_graph
 	t_paths			*end_path; // указатель на последний путь в списке путей
 }					t_graph;
 
-// NICK
-// просто объект для доступа к нашим трем графам
-typedef struct	s_graphs {
-  t_graph	*graph;
-  t_graph	*curr_graph;
-  t_graph	*next_graph;
-}				t_graphs;
-
 typedef struct	s_q
 {
 		struct s_hash	*q_node;
@@ -177,8 +169,6 @@ t_path				*get_bellman_ford_path(t_graph *graph);
 /*
 ** -------------------------- Utils_nick.c -----------------------------------
 */
-t_graph				*get_copy_graph(t_graph *graph); // parse_input.c
-
 t_hash				**make_arr_nodes(t_graph *graph);
 void				print_graph_arr(t_hash **arr);
 void				print_path(t_path *path);
@@ -187,7 +177,7 @@ void				add_path(t_graph *graph, t_path *new_path);
 
 void				free_paths(t_paths *paths);
 
-void				my_cool_func(t_graphs *graphs_all);
+void				my_cool_func(t_graph *graph);
 
 void				add_link_zero(t_hash *parent, t_hash *child, int weight);
 

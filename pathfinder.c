@@ -38,7 +38,6 @@ t_child		*get_edge(t_child *haystack, t_hash *needle)
 	return NULL;
 }
 
-
 void	get_paths(t_graph *graph)
 {
 	int i = 1;
