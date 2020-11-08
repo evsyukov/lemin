@@ -6,3 +6,4 @@ lem-in
 .DS_Store
 *.d
 .idea
+.cmake-build-debug

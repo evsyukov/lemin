@@ -70,10 +70,10 @@ t_path          *get_bellman_ford_path(t_graph *graph)
             child_ptr = node->child;
             while (child_ptr != NULL) {
                 value = child_ptr->c_node->num_node;
-                if (child_ptr->flow == 1 && d[i] > d[value] + child_ptr->weight)
+                if (child_ptr->flow == 1 && d[value] > d[i] + child_ptr->weight)
                 {
-                    d[i] = d[value] + child_ptr->weight;
-                    p[i] = value;
+                    d[value] = d[i] + child_ptr->weight;
+                    p[value] = i;
                 }
                 child_ptr = child_ptr->next;
             }
