@@ -54,8 +54,11 @@ int	main(void)
 
 	new_path = get_bellman_ford_path(graph);
 	add_path(graph, new_path);
-
 	print_paths(graph);
+
+	reverse_edges(graph, new_path);
+	print_hash_table_child(graph->h_table);
+
 	free_graph(graph);
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 }

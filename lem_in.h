@@ -130,6 +130,7 @@ int					parse_start_node(char *line, t_graph *graph);
 int					parse_end_node(char *line, t_graph *graph);
 t_graph				*parse_input();
 int					ft_atoi_validate_pos(const char *str);
+int					check_nodenames_is_family(char *str, char *str1);
 t_hash				*parse_node_name(char *line, t_hash **h_table, int flag);
 char				*read_to_str(int fd);
 char				*gnl(char *text);
@@ -184,5 +185,6 @@ void				my_cool_func(t_graph *graph);
 void				add_link_zero(t_hash *parent, t_hash *child, int weight);
 
 int					is_already_linked(t_hash *haystack, t_hash *needle);
+void				reverse_edges(t_graph *graph, t_path *path);
 
 #endif
