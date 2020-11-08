@@ -83,6 +83,21 @@ void	check_if_already_linked(t_hash *haystack, t_hash *needle)
 	}
 }
 
+// NICK
+int		is_already_linked(t_hash *haystack, t_hash *needle)
+{
+	t_child	*c_node_hay;
+
+	c_node_hay = haystack->child;
+	while (c_node_hay)
+	{
+		if (c_node_hay->c_node == needle)
+			return (1);
+		c_node_hay = c_node_hay->next;
+	}
+	return (0);
+}
+
 void	add_link(t_hash *parent, t_hash *child)
 {
 	t_child *new;

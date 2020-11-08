@@ -91,18 +91,25 @@ static void	handle_double_node(t_graph *graph,
 	{
 		check_if_already_linked(first_node_out, second_node_in);
 		check_if_already_linked(second_node_out, first_node_in);
-		check_if_already_linked(first_node_in, first_node_out);
-		check_if_already_linked(second_node_in, second_node_out);
+//		check_if_already_linked(first_node_in, first_node_out);
+//		check_if_already_linked(second_node_in, second_node_out);
 
 		add_link(first_node_out, second_node_in);
 		add_link(second_node_out, first_node_in);
 
-		add_link_zero(first_node_out, first_node_in, 0);
-		add_link_zero(first_node_in, first_node_out, 0);
+		if (!is_already_linked(first_node_in, first_node_out))
+		{
+			add_link_zero(first_node_out, first_node_in, 0);
+			add_link_zero(first_node_in, first_node_out, 0);
+			edges_num += 2;
+		}
 
-		add_link_zero(second_node_out, second_node_in, 0);
-		add_link_zero(second_node_in, second_node_out, 0);
-		edges_num += 6;
+		if (!is_already_linked(second_node_in, second_node_out))
+		{
+			add_link_zero(second_node_out, second_node_in, 0);
+			add_link_zero(second_node_in, second_node_out, 0);
+			edges_num += 2;
+		}
 	}
 	else
 		err_exit();
@@ -160,7 +167,7 @@ void	parse_links(t_graph *graph, char *line)
 void	parse_rooms(t_graph *graph)
 {
 	char	*str_ret;
-//	t_hash	*node_ret;
+	t_hash	*node_ret;
 
 	while ((str_ret = gnl(graph->map_buf)) != NULL) // Читаем line by line пока читаются валидные комнаты с координатами как (nodename 25 25)
 	{
@@ -170,7 +177,7 @@ void	parse_rooms(t_graph *graph)
 			continue ;
 		}
 		// NICK
-		if (parse_node_name(str_ret, graph->h_table)) // Парсим имена комнат и добавляем их в хэш таблицу
+		if ((node_ret = parse_node_name(str_ret, graph->h_table))) // Парсим имена комнат и добавляем их в хэш таблицу
 //		if ((node_ret = parse_node_name(str_ret, graph->h_table))) // Парсим имена комнат и добавляем их в хэш таблицу
 			continue ;
 		else

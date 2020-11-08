@@ -181,4 +181,6 @@ void				my_cool_func(t_graph *graph);
 
 void				add_link_zero(t_hash *parent, t_hash *child, int weight);
 
+int					is_already_linked(t_hash *haystack, t_hash *needle);
+
 #endif

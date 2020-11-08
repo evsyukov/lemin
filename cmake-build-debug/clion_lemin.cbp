@@ -8,158 +8,158 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug"/>
+				<Option working_dir="/home/smanta/School21/GIT_LEMIN/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug"/>
+				<Option working_dir="/home/smanta/School21/GIT_LEMIN/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug"/>
+				<Option working_dir="/home/smanta/School21/GIT_LEMIN/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lemin">
-				<Option output="/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/lemin" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug"/>
+				<Option output="/home/smanta/School21/GIT_LEMIN/cmake-build-debug/lemin" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/smanta/School21/GIT_LEMIN/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 lemin"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 lemin"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lemin/fast">
-				<Option output="/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/lemin" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug"/>
+				<Option output="/home/smanta/School21/GIT_LEMIN/cmake-build-debug/lemin" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/smanta/School21/GIT_LEMIN/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 lemin/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/smanta/LEM_IN/MY_GIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 lemin/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/smanta/School21/GIT_LEMIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/bellman_ford.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/bellman_ford.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/bfs.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/bfs.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/calc_speed.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/calc_speed.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/copy_graphs.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/copy_graphs.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/debug_functions.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/debug_functions.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/dijkstra.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/dijkstra.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/ft_atoi_validate_pos.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/ft_atoi_validate_pos.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/gnl.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/gnl.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/hash.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/hash.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/lem_in.h">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/lem_in.h">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/libft/ft_isdigit.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/libft/ft_isdigit.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/libft/ft_putchar.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/libft/ft_putchar.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/libft/ft_putnbr.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/libft/ft_putnbr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/libft/ft_putstr.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/libft/ft_putstr.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/libft/ft_strcat.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/libft/ft_strcat.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/libft/ft_strcmp.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/libft/ft_strcmp.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/libft/ft_strdup.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/libft/ft_strdup.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/libft/ft_strequ.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/libft/ft_strequ.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/libft/ft_strjoin.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/libft/ft_strjoin.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/libft/ft_strlen.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/libft/ft_strlen.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/main.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/main.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/my_cool_algo.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/my_cool_algo.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/parse_functions.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/parse_functions.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/parse_input.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/parse_input.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/pathfinder.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/pathfinder.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/utils_nick.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/utils_nick.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/utils_nick_2.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/utils_nick_2.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT/CMakeLists.txt">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
