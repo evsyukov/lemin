@@ -27,10 +27,12 @@ extern unsigned long ml;
 extern unsigned long fr;
 extern unsigned long nodes_num;
 extern unsigned long edges_num;
-extern unsigned long reset_gnl;
 
 # define FCNT(x) x; fr++
 # define MFAIL(x) if (!x) err_exit(); else ml++;
+
+# define PARSE_START 1
+# define PARSE_END 0
 
 typedef	struct		s_child
 {
@@ -128,7 +130,7 @@ int					parse_start_node(char *line, t_graph *graph);
 int					parse_end_node(char *line, t_graph *graph);
 t_graph				*parse_input();
 int					ft_atoi_validate_pos(const char *str);
-t_hash				*parse_node_name(char *line, t_hash **h_table);
+t_hash				*parse_node_name(char *line, t_hash **h_table, int flag);
 char				*read_to_str(int fd);
 char				*gnl(char *text);
 void				err_exit();

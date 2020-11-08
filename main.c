@@ -47,15 +47,15 @@ int	main(void)
 	*/
 //	print_hash_table(graph->h_table);
 	print_hash_table_child(graph->h_table);
-	//	graph->arr_nodes = make_arr_nodes(graph);
+	graph->arr_nodes = make_arr_nodes(graph);
 
 	// DEBUG
-//	print_graph_arr(graph->arr_nodes);
+	print_graph_arr(graph->arr_nodes);
 
-//	new_path = get_bellman_ford_path(graph);
-//	add_path(graph, new_path);
-//
-//	print_paths(graph);
+	new_path = get_bellman_ford_path(graph);
+	add_path(graph, new_path);
+
+	print_paths(graph);
 	free_graph(graph);
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 }

@@ -1,0 +1,8 @@
+*.o
+*.dSYM
+lem-in
+*.a
+*.out
+.DS_Store
+*.d
+.idea

@@ -38,7 +38,7 @@ int	parse_start_node(char *line, t_graph *graph)
 		if (graph->start)
 			err_exit();
 		if (((str_ret = gnl(graph->map_buf)) != NULL)
-		&& (node = parse_node_name(str_ret, graph->h_table)))
+		&& (node = parse_node_name(str_ret, graph->h_table, PARSE_START)))
 		{
 			graph->start = node;
 			return (1);
@@ -59,7 +59,7 @@ int	parse_end_node(char *line, t_graph *graph)
 		if (graph->end)
 			err_exit();
 		if (((str_ret = gnl(graph->map_buf)) != NULL)
-		&& (node = parse_node_name(str_ret, graph->h_table)))
+		&& (node = parse_node_name(str_ret, graph->h_table, PARSE_END)))
 		{
 			graph->end = node;
 			return (1);

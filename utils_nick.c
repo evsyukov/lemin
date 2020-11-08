@@ -82,6 +82,7 @@ void	print_paths(t_graph *graph)
 	while (paths != NULL)
 	{
 		print_path(paths->path);
+		ft_putstr("\n");
 		paths = paths->next;
 	}
 }
@@ -98,15 +99,15 @@ t_paths	*create_paths(t_path *path)
 
 void 	add_path(t_graph *graph, t_path *new_path)
 {
-	t_paths	*end_path;
+	t_paths	*path;
 
 	if (graph == NULL)
 		return;
-	end_path = graph->end_path;
-	if (end_path != NULL)
+	path = graph->end_path;
+	if (path != NULL)
 	{
-		end_path->next = create_paths(new_path);
-		graph->end_path = end_path->next;
+		path->next = create_paths(new_path);
+		graph->end_path = path->next;
 	}
 	else
 	{

@@ -83,7 +83,7 @@ t_path          *get_bellman_ford_path(t_graph *graph)
     }
     if (d[graph->num_end_node] == 2000000000)
 	{
-    	// Выход НЕТ пути вообще
+    	// НЕТ пути вообще -> Выход
 		write(1, "There is NO WAY between Start and End rooms\n", 44);
 		err_exit();
 	}
