@@ -120,7 +120,8 @@ int		is_already_linked(t_hash *haystack, t_hash *needle)
 //}
 
 // NICK
-void	add_link(t_hash *parent, t_hash *child, int weight, int is_reverse)
+void				add_link(t_hash *parent, t_hash *child,
+							 int weight, int is_part_of_path)
 {
 	t_child *new;
 	t_child *c_list;
@@ -130,7 +131,8 @@ void	add_link(t_hash *parent, t_hash *child, int weight, int is_reverse)
 	new->c_node = child;
 	new->flow = 1;
 	new->weight = weight;
-	new->is_reverse = is_reverse;
+	new->is_reverse = weight == -1 ? 1 : 0;
+	new->is_part_of_path = is_part_of_path;
 	if (parent->child == NULL)
 		parent->child = new;
 	else

@@ -31,8 +31,6 @@ void	free_graph(t_graph *graph)
 int	main(void)
 {
 	t_graph *graph;
-	t_path	*new_path;
-	t_path	*new_path_2;
 
 	graph = parse_input();
 	// write(1, graph->map_buf, ft_strlen(graph->map_buf));
@@ -46,26 +44,8 @@ int	main(void)
 	free_graph(graph);
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 	*/
-//	print_hash_table(graph->h_table);
-	print_hash_table_child(graph->h_table);
-	graph->arr_nodes = make_arr_nodes(graph);
 
-	// DEBUG
-	print_graph_arr(graph->arr_nodes);
-
-	new_path = get_bellman_ford_path(graph);
-	add_path(graph, new_path);
-//	print_paths(graph);
-
-	reverse_edges(graph, new_path);
-	print_hash_table_child(graph->h_table);
-
-	new_path_2 = get_bellman_ford_path(graph);
-	add_path(graph, new_path_2);
-//	print_path(new_path_2);
-
-	print_paths(graph);
-
+	my_cool_func(graph);
 	free_graph(graph);
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 }

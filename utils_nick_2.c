@@ -39,7 +39,8 @@ static int	disable_edge(t_hash	*curr_hash, t_hash *next_hash)
 //		if (ft_strequ(curr_hash->child->c_node->node_name, next_hash->node_name))
 		if (ft_strequ(str_1, str_2))
 		{
-			child->flow = 2;
+			child->flow = 0;
+			child->is_part_of_path = 1;
 			return (1);
 		}
 		child = child->next;
@@ -67,7 +68,21 @@ void reverse_edges(t_graph *graph, t_path *path)
 		if (check_nodenames_is_family(curr_hash->node_name, next_hash->node_name))
 			add_link(next_hash, curr_hash, 0, 0);
 		else
-			add_link(next_hash, curr_hash, -1, 1);
+			add_link(next_hash, curr_hash, -1, 0);
 		path = next;
 	}
+}
+
+static void	resolve_conflicts(t_graph *graph)
+{
+
+}
+
+void		get_result_paths(t_graph *graph)
+{
+	t_paths	*paths;
+	t_hash	*node;
+
+	resolve_conflicts(graph);
+
 }

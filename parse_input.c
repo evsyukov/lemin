@@ -238,6 +238,7 @@ t_hash	*parse_node_name(char *line, t_hash **h_table, int flag)
 	t_hash	*node_in;
 	t_hash	*node_out;
 	size_t	sp_ind[2];
+	char 	*str;
 
 	i = 0;
 	node_in = NULL;
@@ -246,8 +247,10 @@ t_hash	*parse_node_name(char *line, t_hash **h_table, int flag)
 		err_exit();
 	if (split_line(line, sp_ind))
 	{
-		if (!hash_query(h_table, line))
+		MFAIL((str = ft_strjoin(line, "in")));
+		if (!hash_query(h_table, str))
 		{
+			FCNT(free(str));
 			// NICK
 			// !!!!
 //			node = insert_node_to_h_table(line, h_table, sp_ind);

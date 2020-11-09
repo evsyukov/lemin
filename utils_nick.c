@@ -65,39 +65,42 @@ void		print_path(t_path *path)
 {
     while (path != NULL)
     {
-        ft_putstr("node_name = ");
+        ft_putstr(" node_name = ");
         ft_putstr(path->node->node_name);
         ft_putstr(" -> ");
         path = path->next;
     }
 }
 
-void	print_paths(t_graph *graph)
+void	print_paths(t_paths	*paths)
 {
-	t_paths	*paths;
+//	t_paths	*paths;
 
-	paths = graph->begin_path;
+//	paths = graph->begin_path;
 	if (paths == NULL)
 		return;
 	while (paths != NULL)
 	{
+		ft_putstr("LEN = ");
+		ft_putnbr(paths->num_nodes);
 		print_path(paths->path);
 		ft_putstr("\n");
 		paths = paths->next;
 	}
 }
 
-t_paths	*create_paths(t_path *path)
+t_paths	*create_paths(t_path *path, size_t len_path)
 {
 	t_paths *new_paths;
 
 	MFAIL((new_paths = (t_paths *)malloc(sizeof(t_paths))));
 	new_paths->path = path;
 	new_paths->next = NULL;
+	new_paths->num_nodes = len_path;
 	return (new_paths);
 }
 
-void 	add_path(t_graph *graph, t_path *new_path)
+void 	add_path(t_graph *graph, t_path *new_path, size_t len_path)
 {
 	t_paths	*path;
 
@@ -106,12 +109,12 @@ void 	add_path(t_graph *graph, t_path *new_path)
 	path = graph->end_path;
 	if (path != NULL)
 	{
-		path->next = create_paths(new_path);
+		path->next = create_paths(new_path, len_path);
 		graph->end_path = path->next;
 	}
 	else
 	{
-		graph->begin_path = create_paths(new_path);
+		graph->begin_path = create_paths(new_path, len_path);
 		graph->end_path = graph->begin_path;
 	}
 	graph->num_paths += 1;

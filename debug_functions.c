@@ -75,7 +75,7 @@ void	print_hash_table_child(t_hash **h_table)
 				else
 					printf(f_ch_end, child->c_node->node_name);
 				// NICK
-				printf("(%d, %d, %d) ", child->flow, child->weight, child->is_reverse);
+				printf("(%d, %d, %d) ", child->flow, child->weight, child->is_part_of_path);
 				child = child->next;
 			}
 			node = node->next;
@@ -91,7 +91,7 @@ void	print_hash_table_child(t_hash **h_table)
 					else
 						printf(f_ch_end, child->c_node->node_name);
 					// NICK
-					printf("(%d, %d, %d) ", child->flow, child->weight, child->is_reverse);
+					printf("(%d, %d, %d) ", child->flow, child->weight, child->is_part_of_path);
 					child = child->next;
 				}
 				node = node->next;

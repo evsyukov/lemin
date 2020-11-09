@@ -33,7 +33,7 @@ static t_path   *add_path_node(t_path **root, t_hash *node)
     return (new);
 }
 
-t_path          *get_bellman_ford_path(t_graph *graph)
+t_path          *get_bellman_ford_path(t_graph *graph, size_t *len_path)
 {
     /*
     INF = 10 ** 9
@@ -81,6 +81,7 @@ t_path          *get_bellman_ford_path(t_graph *graph)
         }
          ++k;
     }
+    *len_path = 0;
     if (d[graph->num_end_node] == 2000000000)
 	{
     	// НЕТ пути вообще -> Выход
@@ -95,7 +96,10 @@ t_path          *get_bellman_ford_path(t_graph *graph)
             if (add_path_node(&path, (graph->arr_nodes)[t]) == NULL)
                 err_exit();
             t = p[t];
+            *len_path += 1;
         }
     }
+    *len_path /= 2;
+//    *len_path = d[graph->num_end_node];
     return (path);
 }
