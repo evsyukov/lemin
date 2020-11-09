@@ -59,6 +59,8 @@ int	main(void)
 	reverse_edges(graph, new_path);
 	print_hash_table_child(graph->h_table);
 
+	
+
 	free_graph(graph);
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 }

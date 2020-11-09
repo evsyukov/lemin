@@ -40,6 +40,9 @@ typedef	struct		s_child
 	int				flow; // флаг что ребро в эту сторону есть --->
 	int				weight; // вес ребра [1, 0, -1]
 	struct s_child	*next; // Указатель списка на следующую вершину
+	// NICK
+	int 			is_reverse;
+	int 			is_part_of_path; //
 }					t_child;
 
 // NICK EDITION
@@ -118,7 +121,7 @@ t_hash				**hash_table_init();
 t_hash				*assign_to_table(t_hash **table, char *node_name);
 void				free_hash_table(t_hash **h_table);
 t_graph				*graph_init();
-void				add_link(t_hash *parent, t_hash *child);
+//void				add_link(t_hash *parent, t_hash *child);
 void				check_if_already_linked(t_hash *haystack, t_hash *needle);
 
 /*
@@ -182,7 +185,8 @@ void				free_paths(t_paths *paths);
 
 void				my_cool_func(t_graph *graph);
 
-void				add_link_zero(t_hash *parent, t_hash *child, int weight);
+void				add_link(t_hash *parent, t_hash *child,
+					  int weight, int is_reverse);
 
 int					is_already_linked(t_hash *haystack, t_hash *needle);
 void				reverse_edges(t_graph *graph, t_path *path);

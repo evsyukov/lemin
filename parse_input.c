@@ -75,20 +75,20 @@ static void	handle_double_node(t_graph *graph,
 //		check_if_already_linked(first_node_in, first_node_out);
 //		check_if_already_linked(second_node_in, second_node_out);
 
-		add_link(first_node_out, second_node_in);
-		add_link(second_node_out, first_node_in);
+		add_link(first_node_out, second_node_in, 1, 0);
+		add_link(second_node_out, first_node_in, 1, 0);
 
 		if (!is_already_linked(first_node_in, first_node_out))
 		{
 //			add_link_zero(first_node_out, first_node_in, 0);
-			add_link_zero(first_node_in, first_node_out, 0);
+			add_link(first_node_in, first_node_out, 0, 0);
 			++edges_num;
 		}
 
 		if (!is_already_linked(second_node_in, second_node_out))
 		{
 //			add_link_zero(second_node_out, second_node_in, 0);
-			add_link_zero(second_node_in, second_node_out, 0);
+			add_link(second_node_in, second_node_out, 0, 0);
 			++edges_num;
 		}
 	}

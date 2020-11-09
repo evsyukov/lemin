@@ -98,29 +98,29 @@ int		is_already_linked(t_hash *haystack, t_hash *needle)
 	return (0);
 }
 
-void	add_link(t_hash *parent, t_hash *child)
-{
-	t_child *new;
-	t_child *c_list;
-
-	MFAIL((new = malloc(sizeof(t_child))));
-	new->next = NULL;
-	new->c_node = child;
-	new->flow = 1;
-	new->weight = 1;
-	if (parent->child == NULL)
-		parent->child = new;
-	else
-	{
-		c_list = parent->child;
-		while (c_list->next)
-			c_list = c_list->next;
-		c_list->next = new;
-	}
-}
+//void	add_link(t_hash *parent, t_hash *child)
+//{
+//	t_child *new;
+//	t_child *c_list;
+//
+//	MFAIL((new = malloc(sizeof(t_child))));
+//	new->next = NULL;
+//	new->c_node = child;
+//	new->flow = 1;
+//	new->weight = 1;
+//	if (parent->child == NULL)
+//		parent->child = new;
+//	else
+//	{
+//		c_list = parent->child;
+//		while (c_list->next)
+//			c_list = c_list->next;
+//		c_list->next = new;
+//	}
+//}
 
 // NICK
-void	add_link_zero(t_hash *parent, t_hash *child, int weight)
+void	add_link(t_hash *parent, t_hash *child, int weight, int is_reverse)
 {
 	t_child *new;
 	t_child *c_list;
@@ -130,6 +130,7 @@ void	add_link_zero(t_hash *parent, t_hash *child, int weight)
 	new->c_node = child;
 	new->flow = 1;
 	new->weight = weight;
+	new->is_reverse = is_reverse;
 	if (parent->child == NULL)
 		parent->child = new;
 	else
