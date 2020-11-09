@@ -32,6 +32,7 @@ int	main(void)
 {
 	t_graph *graph;
 	t_path	*new_path;
+	t_path	*new_path_2;
 
 	graph = parse_input();
 	// write(1, graph->map_buf, ft_strlen(graph->map_buf));
@@ -59,7 +60,8 @@ int	main(void)
 	reverse_edges(graph, new_path);
 	print_hash_table_child(graph->h_table);
 
-	
+	new_path_2 = get_bellman_ford_path(graph);
+	print_path(new_path_2);
 
 	free_graph(graph);
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);

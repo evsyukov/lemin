@@ -32,10 +32,10 @@ static int	disable_edge(t_hash	*curr_hash, t_hash *next_hash)
 	char	*str_2;
 
 	child = curr_hash->child;
+	str_2 = next_hash->node_name;
 	while (child != NULL)
 	{
-		str_1 = curr_hash->child->c_node->node_name;
-		str_2 = next_hash->node_name;
+		str_1 = child->c_node->node_name;
 //		if (ft_strequ(curr_hash->child->c_node->node_name, next_hash->node_name))
 		if (ft_strequ(str_1, str_2))
 		{
@@ -61,7 +61,7 @@ void reverse_edges(t_graph *graph, t_path *path)
 		if (!disable_edge(curr_hash, next_hash))
 		{
 			// DEBUG
-			ft_putstr("Удаление ребра из прямого пути БФ. Что то пошлно не так оО\n");
+			ft_putstr("Удаление ребра из прямого пути БФ. Что то пошло не так оО\n");
 			err_exit();
 		}
 		if (check_nodenames_is_family(curr_hash->node_name, next_hash->node_name))
