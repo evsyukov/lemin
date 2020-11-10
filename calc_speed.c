@@ -1,27 +1,50 @@
 #include "lem_in.h"
 
-static void		case_minus()
+static size_t	calc_supp(int num, size_t base)
 {
+	size_t	result;
 
+	result = num / base;
+	if (num % base == 0)
+		--result;
+	return (result);
 }
 
-static size_t	do_calc_speed(int num, const size_t *arr, size_t len)
+size_t			do_calc_speed(int num, const size_t *arr, size_t len)
 {
 	size_t	result;
 	size_t	index;
 	size_t	area;
+//	size_t	prev, curr;
 
 	result = 0;
 	index = 0;
-	while (num > 0)
+	while (num > 0 && index < len - 1)
 	{
-		while (index < len - 1 && arr[index] == arr[index + 1])
+		++index;
+//		prev = arr[index - 1];
+//		curr = arr[index];
+//		while (index < len && prev == curr)
+//		{
+//			++index;
+//			prev = arr[index - 1];
+//			curr = arr[index];
+//		}
+//		area = index * (curr - prev);
+		while (index < len && arr[index - 1] == arr[index])
 			++index;
-		area = (index + 1);
+		if (index == len)
+		{
+			--index;
+			break;
+		}
+		area = index * (arr[index] - arr[index - 1]);
 		num -= area;
 	}
-	if (num < 0)
-		case_minus();
+	if (num > 0)
+		result = arr[index] + calc_supp(num, index + 1);
+	if (num <= 0)
+		result = arr[index - 1] + calc_supp(area + num, index);
 	return (result);
 }
 
@@ -34,7 +57,7 @@ static void		li_swap(size_t *a, size_t *b)
 	*b = temp;
 }
 
-static void		li_sort(size_t *arr, size_t len)
+void			li_sort(size_t *arr, size_t len)
 {
 	size_t	count;
 	size_t	index;

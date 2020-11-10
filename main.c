@@ -45,7 +45,8 @@ int	main(void)
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 	*/
 
-	my_cool_func(graph);
+	test_speed_calc();
+//	my_cool_func(graph);
 	free_graph(graph);
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 }

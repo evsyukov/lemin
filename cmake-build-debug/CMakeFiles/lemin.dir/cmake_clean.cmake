@@ -23,6 +23,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lemin.dir/parse_functions.c.o"
   "CMakeFiles/lemin.dir/parse_input.c.o"
   "CMakeFiles/lemin.dir/pathfinder.c.o"
+  "CMakeFiles/lemin.dir/test_speed_calc.c.o"
   "CMakeFiles/lemin.dir/utils_nick.c.o"
   "CMakeFiles/lemin.dir/utils_nick_2.c.o"
   "lemin"

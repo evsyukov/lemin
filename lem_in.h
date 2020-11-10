@@ -195,4 +195,10 @@ void				get_result_paths(t_graph *graph);
 
 size_t				calc_speed(t_graph *graph);
 
+size_t				do_calc_speed(int num, const size_t *arr, size_t len);
+
+// DEBUG
+void				li_sort(size_t *arr, size_t len);
+void				test_speed_calc();
+
 #endif
