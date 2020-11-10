@@ -8,7 +8,7 @@ void	test_speed_calc()
 	size_t	arr[] = {2, 7, 4, 9, 7};
 
 	li_sort(arr, 5);
-	result = do_calc_speed(1, arr, 5);
+	result = do_calc_speed(32, arr, 5);
 	ft_putstr("Number steps = ");
 	ft_putnbr(result);
 	ft_putstr("\n");

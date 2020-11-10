@@ -39,32 +39,41 @@ void			my_cool_func(t_graph *graph)
 	size_t	len_path;
 	size_t	speed;
 
-	print_hash_table_child(graph->h_table);
+
 	graph->arr_nodes = make_arr_nodes(graph);
 
-	// DEBUG
-	print_graph_arr(graph->arr_nodes);
+	// DEBUG ПЕЧАТЬ ИЗНАЧАЛЬНОГО ГРАФА
+	print_hash_table_child(graph->h_table);
+//	print_graph_arr(graph->arr_nodes);
 
 	// STEP 1
 	new_path = get_bellman_ford_path(graph, &len_path);
 	add_path(graph, new_path, len_path);
 //	print_paths(graph);
 
-	get_result_paths(graph);
-	speed = calc_speed(graph);
+//	get_result_paths(graph);
+//	speed = calc_speed(graph);
 	print_paths(graph->begin_path);
 
-	// STEP 2
+	// DEBUG Делаем Reverse по первому пути
 	reverse_edges(graph, new_path);
-	// DEBUG
+
+	// STEP 2
+
+	// DEBUG ПЕЧАТЬ ГРАФА после первого реверса
 	print_hash_table_child(graph->h_table);
 
 	new_path_2 = get_bellman_ford_path(graph, &len_path);
 	add_path(graph, new_path_2, len_path);
 //	print_path(new_path_2);
 
-
 	print_paths(graph->begin_path);
+
+	// DEBUG Делаем Reverse по второму пути
+	reverse_edges(graph, new_path_2);
+
+	// DEBUG ПЕЧАТЬ ГРАФА после второго реверса
+	print_hash_table_child(graph->h_table);
 
 //	paths = get_set_paths(graph);
 	print_solution(graph);

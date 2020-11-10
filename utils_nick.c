@@ -87,6 +87,7 @@ void	print_paths(t_paths	*paths)
 		ft_putstr("\n");
 		paths = paths->next;
 	}
+	ft_putstr("\n");
 }
 
 t_paths	*create_paths(t_path *path, size_t len_path)
