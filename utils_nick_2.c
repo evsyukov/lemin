@@ -75,13 +75,16 @@ void reverse_edges(t_graph *graph, t_path *path)
 
 static void	resolve_conflicts(t_graph *graph)
 {
-
+		(void)(graph);
 }
 
 void		get_result_paths(t_graph *graph)
 {
 	t_paths	*paths;
 	t_hash	*node;
+
+	(void)(paths);
+	(void)(node);
 
 	resolve_conflicts(graph);
 

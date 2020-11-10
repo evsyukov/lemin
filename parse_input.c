@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parse_input.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmustach <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 22:14:48 by nmustach          #+#    #+#             */
-/*   Updated: 2020/09/14 01:51:01 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/10 21:26:28 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,8 +98,6 @@ static void	handle_double_node(t_graph *graph,
 
 void	parse_connections(t_graph *graph, char *line)
 {
-	t_hash	*parent;
-	t_hash	*child;
 	int		i;
 
 	i = 0;

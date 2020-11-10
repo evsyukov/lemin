@@ -29,7 +29,7 @@
 
 void	print_solution(t_graph *graph)
 {
-
+	(void)(graph);
 }
 
 void			my_cool_func(t_graph *graph)
@@ -39,11 +39,11 @@ void			my_cool_func(t_graph *graph)
 	size_t	len_path;
 	size_t	speed;
 
-	print_hash_table_child(graph->h_table);
+	//print_hash_table_child(graph->h_table);
 	graph->arr_nodes = make_arr_nodes(graph);
 
 	// DEBUG
-	print_graph_arr(graph->arr_nodes);
+	//print_graph_arr(graph->arr_nodes);
 
 	// STEP 1
 	new_path = get_bellman_ford_path(graph, &len_path);
@@ -57,7 +57,7 @@ void			my_cool_func(t_graph *graph)
 	// STEP 2
 	reverse_edges(graph, new_path);
 	// DEBUG
-	print_hash_table_child(graph->h_table);
+	//print_hash_table_child(graph->h_table);
 
 	new_path_2 = get_bellman_ford_path(graph, &len_path);
 	add_path(graph, new_path_2, len_path);
