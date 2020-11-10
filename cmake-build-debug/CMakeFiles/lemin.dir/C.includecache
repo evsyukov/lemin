@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/smanta/LEM_IN/MY_GIT_3/calc_speed.c
+/home/smanta/School21/GIT_LEMIN_3/calc_speed.c
 lem_in.h
-/Users/smanta/LEM_IN/MY_GIT_3/lem_in.h
+/home/smanta/School21/GIT_LEMIN_3/lem_in.h
 
-/Users/smanta/LEM_IN/MY_GIT_3/lem_in.h
+/home/smanta/School21/GIT_LEMIN_3/lem_in.h
 stdio.h
 -
 unistd.h
 -
 libft/libft.h
-/Users/smanta/LEM_IN/MY_GIT_3/libft/libft.h
+/home/smanta/School21/GIT_LEMIN_3/libft/libft.h
 limits.h
 -
 
-/Users/smanta/LEM_IN/MY_GIT_3/libft/libft.h
+/home/smanta/School21/GIT_LEMIN_3/libft/libft.h
 stdlib.h
 -
 unistd.h
