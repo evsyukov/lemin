@@ -89,7 +89,7 @@ size_t			calc_speed(t_graph *graph)
 	index = 0;
 	num_paths = graph->num_paths_second_res;
 	paths_to_calc = graph->begin_path_second_res;
-	MFAIL((path_lens = (size_t *)malloc(sizeof(size_t) * num_paths)));
+	MFAIL((path_lens = (size_t *)malloc(sizeof(size_t) * num_paths)))
 	while (index < num_paths && paths_to_calc != NULL)
 	{
 		path_lens[index] = paths_to_calc->num_nodes;
