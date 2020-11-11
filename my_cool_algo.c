@@ -29,7 +29,7 @@
 
 void	print_solution(t_graph *graph)
 {
-
+	(void)(graph);
 }
 
 void			my_cool_func(t_graph *graph)

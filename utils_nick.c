@@ -7,7 +7,6 @@ t_hash		**make_arr_nodes(t_graph *graph)
 	t_hash	*node;
     t_hash  **table;
     t_hash  **arr;
-    char    *str;
 
 	MFAIL((arr = (t_hash **)malloc(sizeof(t_hash *) * nodes_num)));
 	table = graph->h_table;
@@ -45,7 +44,7 @@ t_hash		**make_arr_nodes(t_graph *graph)
 void		print_graph_arr(t_hash **arr)
 {
   t_hash	*node;
-  int		i;
+  unsigned long		i;
   char		*str;
 
   i = 0;

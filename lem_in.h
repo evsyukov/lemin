@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   lem_in.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmustach <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 22:28:00 by nmustach          #+#    #+#             */
-/*   Updated: 2020/09/14 02:03:18 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/10 23:39:58 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,6 +111,15 @@ typedef struct	s_q
 		struct s_q		*next;
 }				t_q;
 
+
+typedef struct s_list
+{
+    int val;
+	size_t index;
+    struct s_list *prev;
+    struct s_list *next;
+}           t_list;
+
 /*
 ** -------------------------- Hash table functions ----------------------------
 */
@@ -200,5 +209,12 @@ size_t				do_calc_speed(int num, const size_t *arr, size_t len);
 // DEBUG
 void				li_sort(size_t *arr, size_t len);
 void				test_speed_calc();
+
+/*
+** -------------------------- Move ants funcs ----------------------------
+*/
+
+
+void    delete_double_nodes(t_graph *graph);
 
 #endif
