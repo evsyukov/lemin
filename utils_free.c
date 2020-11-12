@@ -25,6 +25,19 @@ void		free_paths(t_paths *paths)
 	}
 }
 
+void	free_graph(t_graph *graph)
+{
+	free_hash_table(graph->h_table);
+	FCNT(free(graph->map_buf));
+	// NICK
+	FCNT(free(graph->arr_nodes));
+	free_paths(graph->begin_path);
+	free_paths(graph->begin_path_first_res);
+	free_paths(graph->begin_path_second_res);
+
+	FCNT(free(graph));
+}
+
 static int	disable_edge(t_hash *curr_hash, t_hash *next_hash, int *flag)
 {
 	t_child	*child;

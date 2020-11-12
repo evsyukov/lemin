@@ -164,7 +164,6 @@ void				*get_shortest_path(t_hash *end_node);
 t_path				*path_init(t_hash *start);
 t_path				*clone_path(t_path *path);
 void				append_to_path(t_path **path, t_hash *node);
-void				free_path(t_path *path);
 void				free_queue(t_q *queue);
 
 /*
@@ -174,52 +173,66 @@ void				print_hash_table_child(t_hash **h_table);
 void				print_hash_table(t_hash **h_table);
 void				print_queue(t_q *queue);
 
-int dijkstra(t_graph *graph);
-void dijkstra_shortest_reverse(t_graph *graph);
-t_child		*get_edge(t_child *haystack, t_hash *needle);
-void	get_paths(t_graph *graph);
+int					dijkstra(t_graph *graph);
+void				dijkstra_shortest_reverse(t_graph *graph);
+t_child				*get_edge(t_child *haystack, t_hash *needle);
+void				get_paths(t_graph *graph);
 
 
 // NICK EDITION
 /*
 ** -------------------------- Bellman_ford.c ---------------------------------
 */
-
 t_path				*get_bellman_ford_path(t_graph *graph, size_t *len_path);
 
 /*
 ** -------------------------- Utils_nick.c -----------------------------------
 */
-
 t_hash				**make_arr_nodes(t_graph *graph);
-void				print_graph_arr(t_hash **arr);
-void				print_path(t_path *path);
-void				print_paths(t_paths	*paths);
 t_paths				*create_paths(t_path *path, size_t len_path);
 void				add_path(t_graph *graph, t_path *new_path, size_t len_path);
-void				add_path_first(t_graph *graph, t_path *new_path, size_t len_path);
 void				add_path_second(t_graph *graph, t_path *new_path, size_t len_path);
 
-void				free_paths(t_paths *paths);
-void				real_func(t_graph *graph);
-void				my_cool_func(t_graph *graph);
 void				add_link(t_hash *parent, t_hash *child,
 					  int weight, int is_part_of_path);
-
 int					is_already_linked(t_hash *haystack, t_hash *needle);
 void				reverse_edges(t_graph *graph, t_path *path);
 
-size_t				calc_speed(t_graph *graph);
-size_t				do_calc_speed(int num, const size_t *arr, size_t len);
-size_t				get_set_paths(t_graph *graph);
 
 /*
-** -------------------------- Utils_nick_3.c -----------------------------------
+** -------------------------- calc_speed.c -----------------------------------
+*/
+void				li_sort(size_t *arr, size_t len);
+size_t				do_calc_speed(int num, const size_t *arr, size_t len);
+size_t				calc_speed(t_graph *graph);
+
+/*
+** -------------------------- debug_func_nick.c -----------------------------------
+*/
+void				print_graph_arr(t_hash **arr);
+void				print_path(t_path *path);
+void				print_paths(t_paths *paths);
+
+/*
+** -------------------------- my_cool_algo.c -----------------------------------
+*/
+void				real_func(t_graph *graph);
+void				my_cool_func(t_graph *graph);
+
+/*
+** -------------------------- utils_free.c -----------------------------------
+*/
+void				free_path(t_path *path);
+void				free_paths(t_paths *paths);
+void				free_graph(t_graph *graph);
+
+/*
+** -------------------------- utils_nick_3.c -----------------------------------
 */
 t_path				*add_path_node(t_path **root, t_hash *node);
+size_t				get_set_paths(t_graph *graph);
 
 // DEBUG
-void				li_sort(size_t *arr, size_t len);
 void				test_speed_calc();
 
 /*

@@ -13,6 +13,10 @@ CMakeFiles/lemin.dir/calc_speed.c.o: ../calc_speed.c
 CMakeFiles/lemin.dir/calc_speed.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/calc_speed.c.o: ../libft/libft.h
 
+CMakeFiles/lemin.dir/debug_func_nick.c.o: ../debug_func_nick.c
+CMakeFiles/lemin.dir/debug_func_nick.c.o: ../lem_in.h
+CMakeFiles/lemin.dir/debug_func_nick.c.o: ../libft/libft.h
+
 CMakeFiles/lemin.dir/debug_functions.c.o: ../debug_functions.c
 CMakeFiles/lemin.dir/debug_functions.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/debug_functions.c.o: ../libft/libft.h
@@ -85,13 +89,13 @@ CMakeFiles/lemin.dir/test_speed_calc.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/test_speed_calc.c.o: ../libft/libft.h
 CMakeFiles/lemin.dir/test_speed_calc.c.o: ../test_speed_calc.c
 
+CMakeFiles/lemin.dir/utils_free.c.o: ../lem_in.h
+CMakeFiles/lemin.dir/utils_free.c.o: ../libft/libft.h
+CMakeFiles/lemin.dir/utils_free.c.o: ../utils_free.c
+
 CMakeFiles/lemin.dir/utils_nick.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/utils_nick.c.o: ../libft/libft.h
 CMakeFiles/lemin.dir/utils_nick.c.o: ../utils_nick.c
-
-CMakeFiles/lemin.dir/utils_nick_2.c.o: ../lem_in.h
-CMakeFiles/lemin.dir/utils_nick_2.c.o: ../libft/libft.h
-CMakeFiles/lemin.dir/utils_nick_2.c.o: ../utils_nick_2.c
 
 CMakeFiles/lemin.dir/utils_nick_3.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/utils_nick_3.c.o: ../libft/libft.h

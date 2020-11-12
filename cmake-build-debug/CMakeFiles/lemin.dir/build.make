@@ -376,18 +376,18 @@ CMakeFiles/lemin.dir/libft/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/libft/ft_strjoin.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/smanta/School21/GIT_LEMIN_4/libft/ft_strjoin.c -o CMakeFiles/lemin.dir/libft/ft_strjoin.c.s
 
-CMakeFiles/lemin.dir/utils_nick_2.c.o: CMakeFiles/lemin.dir/flags.make
-CMakeFiles/lemin.dir/utils_nick_2.c.o: ../utils_nick_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/lemin.dir/utils_nick_2.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/utils_nick_2.c.o   -c /home/smanta/School21/GIT_LEMIN_4/utils_nick_2.c
+CMakeFiles/lemin.dir/utils_free.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/utils_free.c.o: ../utils_free.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/lemin.dir/utils_free.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/utils_free.c.o   -c /home/smanta/School21/GIT_LEMIN_4/utils_free.c
 
-CMakeFiles/lemin.dir/utils_nick_2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/utils_nick_2.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/smanta/School21/GIT_LEMIN_4/utils_nick_2.c > CMakeFiles/lemin.dir/utils_nick_2.c.i
+CMakeFiles/lemin.dir/utils_free.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/utils_free.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/smanta/School21/GIT_LEMIN_4/utils_free.c > CMakeFiles/lemin.dir/utils_free.c.i
 
-CMakeFiles/lemin.dir/utils_nick_2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/utils_nick_2.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/smanta/School21/GIT_LEMIN_4/utils_nick_2.c -o CMakeFiles/lemin.dir/utils_nick_2.c.s
+CMakeFiles/lemin.dir/utils_free.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/utils_free.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/smanta/School21/GIT_LEMIN_4/utils_free.c -o CMakeFiles/lemin.dir/utils_free.c.s
 
 CMakeFiles/lemin.dir/my_cool_algo.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/my_cool_algo.c.o: ../my_cool_algo.c
@@ -428,6 +428,19 @@ CMakeFiles/lemin.dir/utils_nick_3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/utils_nick_3.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/smanta/School21/GIT_LEMIN_4/utils_nick_3.c -o CMakeFiles/lemin.dir/utils_nick_3.c.s
 
+CMakeFiles/lemin.dir/debug_func_nick.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/debug_func_nick.c.o: ../debug_func_nick.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/lemin.dir/debug_func_nick.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/debug_func_nick.c.o   -c /home/smanta/School21/GIT_LEMIN_4/debug_func_nick.c
+
+CMakeFiles/lemin.dir/debug_func_nick.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/debug_func_nick.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/smanta/School21/GIT_LEMIN_4/debug_func_nick.c > CMakeFiles/lemin.dir/debug_func_nick.c.i
+
+CMakeFiles/lemin.dir/debug_func_nick.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/debug_func_nick.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/smanta/School21/GIT_LEMIN_4/debug_func_nick.c -o CMakeFiles/lemin.dir/debug_func_nick.c.s
+
 # Object files for target lemin
 lemin_OBJECTS = \
 "CMakeFiles/lemin.dir/bellman_ford.c.o" \
@@ -453,10 +466,11 @@ lemin_OBJECTS = \
 "CMakeFiles/lemin.dir/libft/ft_strcmp.c.o" \
 "CMakeFiles/lemin.dir/libft/ft_strlen.c.o" \
 "CMakeFiles/lemin.dir/libft/ft_strjoin.c.o" \
-"CMakeFiles/lemin.dir/utils_nick_2.c.o" \
+"CMakeFiles/lemin.dir/utils_free.c.o" \
 "CMakeFiles/lemin.dir/my_cool_algo.c.o" \
 "CMakeFiles/lemin.dir/test_speed_calc.c.o" \
-"CMakeFiles/lemin.dir/utils_nick_3.c.o"
+"CMakeFiles/lemin.dir/utils_nick_3.c.o" \
+"CMakeFiles/lemin.dir/debug_func_nick.c.o"
 
 # External object files for target lemin
 lemin_EXTERNAL_OBJECTS =
@@ -484,13 +498,14 @@ lemin: CMakeFiles/lemin.dir/libft/ft_putchar.c.o
 lemin: CMakeFiles/lemin.dir/libft/ft_strcmp.c.o
 lemin: CMakeFiles/lemin.dir/libft/ft_strlen.c.o
 lemin: CMakeFiles/lemin.dir/libft/ft_strjoin.c.o
-lemin: CMakeFiles/lemin.dir/utils_nick_2.c.o
+lemin: CMakeFiles/lemin.dir/utils_free.c.o
 lemin: CMakeFiles/lemin.dir/my_cool_algo.c.o
 lemin: CMakeFiles/lemin.dir/test_speed_calc.c.o
 lemin: CMakeFiles/lemin.dir/utils_nick_3.c.o
+lemin: CMakeFiles/lemin.dir/debug_func_nick.c.o
 lemin: CMakeFiles/lemin.dir/build.make
 lemin: CMakeFiles/lemin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking C executable lemin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking C executable lemin"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lemin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

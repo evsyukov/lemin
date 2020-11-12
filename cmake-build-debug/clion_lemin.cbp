@@ -87,6 +87,9 @@
 		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/calc_speed.c">
 			<Option target="lemin"/>
 		</Unit>
+		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/debug_func_nick.c">
+			<Option target="lemin"/>
+		</Unit>
 		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/debug_functions.c">
 			<Option target="lemin"/>
 		</Unit>
@@ -153,10 +156,10 @@
 		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/test_speed_calc.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/utils_nick.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/utils_free.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/utils_nick_2.c">
+		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/utils_nick.c">
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/utils_nick_3.c">

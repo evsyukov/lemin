@@ -224,6 +224,33 @@ calc_speed.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/calc_speed.c.s
 .PHONY : calc_speed.c.s
 
+debug_func_nick.o: debug_func_nick.c.o
+
+.PHONY : debug_func_nick.o
+
+# target to build an object file
+debug_func_nick.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_func_nick.c.o
+.PHONY : debug_func_nick.c.o
+
+debug_func_nick.i: debug_func_nick.c.i
+
+.PHONY : debug_func_nick.i
+
+# target to preprocess a source file
+debug_func_nick.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_func_nick.c.i
+.PHONY : debug_func_nick.c.i
+
+debug_func_nick.s: debug_func_nick.c.s
+
+.PHONY : debug_func_nick.s
+
+# target to generate assembly for a file
+debug_func_nick.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_func_nick.c.s
+.PHONY : debug_func_nick.c.s
+
 debug_functions.o: debug_functions.c.o
 
 .PHONY : debug_functions.o
@@ -791,6 +818,33 @@ test_speed_calc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/test_speed_calc.c.s
 .PHONY : test_speed_calc.c.s
 
+utils_free.o: utils_free.c.o
+
+.PHONY : utils_free.o
+
+# target to build an object file
+utils_free.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_free.c.o
+.PHONY : utils_free.c.o
+
+utils_free.i: utils_free.c.i
+
+.PHONY : utils_free.i
+
+# target to preprocess a source file
+utils_free.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_free.c.i
+.PHONY : utils_free.c.i
+
+utils_free.s: utils_free.c.s
+
+.PHONY : utils_free.s
+
+# target to generate assembly for a file
+utils_free.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_free.c.s
+.PHONY : utils_free.c.s
+
 utils_nick.o: utils_nick.c.o
 
 .PHONY : utils_nick.o
@@ -817,33 +871,6 @@ utils_nick.s: utils_nick.c.s
 utils_nick.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_nick.c.s
 .PHONY : utils_nick.c.s
-
-utils_nick_2.o: utils_nick_2.c.o
-
-.PHONY : utils_nick_2.o
-
-# target to build an object file
-utils_nick_2.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_nick_2.c.o
-.PHONY : utils_nick_2.c.o
-
-utils_nick_2.i: utils_nick_2.c.i
-
-.PHONY : utils_nick_2.i
-
-# target to preprocess a source file
-utils_nick_2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_nick_2.c.i
-.PHONY : utils_nick_2.c.i
-
-utils_nick_2.s: utils_nick_2.c.s
-
-.PHONY : utils_nick_2.s
-
-# target to generate assembly for a file
-utils_nick_2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_nick_2.c.s
-.PHONY : utils_nick_2.c.s
 
 utils_nick_3.o: utils_nick_3.c.o
 
@@ -890,6 +917,9 @@ help:
 	@echo "... calc_speed.o"
 	@echo "... calc_speed.i"
 	@echo "... calc_speed.s"
+	@echo "... debug_func_nick.o"
+	@echo "... debug_func_nick.i"
+	@echo "... debug_func_nick.s"
 	@echo "... debug_functions.o"
 	@echo "... debug_functions.i"
 	@echo "... debug_functions.s"
@@ -953,12 +983,12 @@ help:
 	@echo "... test_speed_calc.o"
 	@echo "... test_speed_calc.i"
 	@echo "... test_speed_calc.s"
+	@echo "... utils_free.o"
+	@echo "... utils_free.i"
+	@echo "... utils_free.s"
 	@echo "... utils_nick.o"
 	@echo "... utils_nick.i"
 	@echo "... utils_nick.s"
-	@echo "... utils_nick_2.o"
-	@echo "... utils_nick_2.i"
-	@echo "... utils_nick_2.s"
 	@echo "... utils_nick_3.o"
 	@echo "... utils_nick_3.i"
 	@echo "... utils_nick_3.s"

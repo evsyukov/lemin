@@ -13,6 +13,10 @@ CMakeFiles/lemin.dir/calc_speed.c.o
  /home/smanta/School21/GIT_LEMIN_4/calc_speed.c
  /home/smanta/School21/GIT_LEMIN_4/lem_in.h
  /home/smanta/School21/GIT_LEMIN_4/libft/libft.h
+CMakeFiles/lemin.dir/debug_func_nick.c.o
+ /home/smanta/School21/GIT_LEMIN_4/debug_func_nick.c
+ /home/smanta/School21/GIT_LEMIN_4/lem_in.h
+ /home/smanta/School21/GIT_LEMIN_4/libft/libft.h
 CMakeFiles/lemin.dir/debug_functions.c.o
  /home/smanta/School21/GIT_LEMIN_4/debug_functions.c
  /home/smanta/School21/GIT_LEMIN_4/lem_in.h
@@ -85,14 +89,14 @@ CMakeFiles/lemin.dir/test_speed_calc.c.o
  /home/smanta/School21/GIT_LEMIN_4/lem_in.h
  /home/smanta/School21/GIT_LEMIN_4/libft/libft.h
  /home/smanta/School21/GIT_LEMIN_4/test_speed_calc.c
+CMakeFiles/lemin.dir/utils_free.c.o
+ /home/smanta/School21/GIT_LEMIN_4/lem_in.h
+ /home/smanta/School21/GIT_LEMIN_4/libft/libft.h
+ /home/smanta/School21/GIT_LEMIN_4/utils_free.c
 CMakeFiles/lemin.dir/utils_nick.c.o
  /home/smanta/School21/GIT_LEMIN_4/lem_in.h
  /home/smanta/School21/GIT_LEMIN_4/libft/libft.h
  /home/smanta/School21/GIT_LEMIN_4/utils_nick.c
-CMakeFiles/lemin.dir/utils_nick_2.c.o
- /home/smanta/School21/GIT_LEMIN_4/lem_in.h
- /home/smanta/School21/GIT_LEMIN_4/libft/libft.h
- /home/smanta/School21/GIT_LEMIN_4/utils_nick_2.c
 CMakeFiles/lemin.dir/utils_nick_3.c.o
  /home/smanta/School21/GIT_LEMIN_4/lem_in.h
  /home/smanta/School21/GIT_LEMIN_4/libft/libft.h

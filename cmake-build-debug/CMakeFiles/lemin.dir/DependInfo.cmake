@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/smanta/School21/GIT_LEMIN_4/bellman_ford.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/bellman_ford.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/bfs.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/bfs.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/calc_speed.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/calc_speed.c.o"
+  "/home/smanta/School21/GIT_LEMIN_4/debug_func_nick.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/debug_func_nick.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/debug_functions.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/debug_functions.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/dijkstra.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/dijkstra.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/ft_atoi_validate_pos.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.o"
@@ -28,8 +29,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/smanta/School21/GIT_LEMIN_4/parse_input.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/parse_input.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/pathfinder.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/pathfinder.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/test_speed_calc.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/test_speed_calc.c.o"
+  "/home/smanta/School21/GIT_LEMIN_4/utils_free.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/utils_free.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/utils_nick.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/utils_nick.c.o"
-  "/home/smanta/School21/GIT_LEMIN_4/utils_nick_2.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/utils_nick_2.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/utils_nick_3.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/utils_nick_3.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

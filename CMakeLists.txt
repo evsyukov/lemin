@@ -9,4 +9,4 @@ add_executable(lemin bellman_ford.c bfs.c calc_speed.c debug_functions.c
         libft/ft_putstr.c libft/ft_putnbr.c libft/ft_isdigit.c
         libft/ft_strcat.c libft/ft_strequ.c libft/ft_strdup.c
         libft/ft_putchar.c libft/ft_strcmp.c libft/ft_strlen.c
-        libft/ft_strjoin.c utils_nick_2.c my_cool_algo.c test_speed_calc.c utils_nick_3.c)
+        libft/ft_strjoin.c utils_free.c my_cool_algo.c test_speed_calc.c utils_nick_3.c debug_func_nick.c)

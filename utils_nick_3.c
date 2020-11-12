@@ -1,6 +1,6 @@
 #include "lem_in.h"
 
-t_path		*add_path_node(t_path **root, t_hash *node)
+t_path			*add_path_node(t_path **root, t_hash *node)
 {
 	t_path	*path;
 	t_path	*new_path;
@@ -16,7 +16,7 @@ t_path		*add_path_node(t_path **root, t_hash *node)
 	return (new_path);
 }
 
-t_path		*get_result_path(t_graph *graph, t_hash *node, size_t *len_path)
+static t_path	*get_result_path(t_graph *graph, t_hash *node, size_t *len_path)
 {
 	t_path	*path;
 	t_child	*child;
@@ -40,7 +40,8 @@ t_path		*get_result_path(t_graph *graph, t_hash *node, size_t *len_path)
 		{
 			// DEBUG
 			ft_putstr("Восстановление одного из конечных путей не получилось");
-			err_exit();
+			free_path(path);
+			return (NULL);
 		}
 		add_path_node(&path, child->c_node);
 		node = child->c_node;
@@ -49,7 +50,7 @@ t_path		*get_result_path(t_graph *graph, t_hash *node, size_t *len_path)
 	return (path);
 }
 
-static void	reverse_path(t_path **apath)
+static void		reverse_path(t_path **apath)
 {
 	t_path	*new_rev;
 	t_path	*begin_current;
@@ -69,7 +70,7 @@ static void	reverse_path(t_path **apath)
 	*apath = new_rev;
 }
 
-static void	do_main_get_set_paths(t_graph *graph)
+static void		do_main_get_set_paths(t_graph *graph)
 {
 	t_child *child;
 	t_path	*path;
@@ -82,6 +83,8 @@ static void	do_main_get_set_paths(t_graph *graph)
 		if (child->is_part_of_path == 1)
 		{
 			path = get_result_path(graph, child->c_node, &len_path);
+			if (path == NULL)
+				continue ;
 			reverse_path(&path);
 			add_path_second(graph, path, len_path);
 		}
@@ -89,7 +92,7 @@ static void	do_main_get_set_paths(t_graph *graph)
 	}
 }
 
-size_t		get_set_paths(t_graph *graph)
+size_t			get_set_paths(t_graph *graph)
 {
 	t_path	*new_path;
 	size_t	len_path;
