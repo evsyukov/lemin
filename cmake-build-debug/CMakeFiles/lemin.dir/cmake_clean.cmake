@@ -26,6 +26,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lemin.dir/test_speed_calc.c.o"
   "CMakeFiles/lemin.dir/utils_nick.c.o"
   "CMakeFiles/lemin.dir/utils_nick_2.c.o"
+  "CMakeFiles/lemin.dir/utils_nick_3.c.o"
   "lemin"
   "lemin.pdb"
 )

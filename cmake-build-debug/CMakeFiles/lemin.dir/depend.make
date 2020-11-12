@@ -97,3 +97,7 @@ CMakeFiles/lemin.dir/utils_nick_2.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/utils_nick_2.c.o: ../libft/libft.h
 CMakeFiles/lemin.dir/utils_nick_2.c.o: ../utils_nick_2.c
 
+CMakeFiles/lemin.dir/utils_nick_3.c.o: ../lem_in.h
+CMakeFiles/lemin.dir/utils_nick_3.c.o: ../libft/libft.h
+CMakeFiles/lemin.dir/utils_nick_3.c.o: ../utils_nick_3.c
+

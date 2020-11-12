@@ -8,31 +8,6 @@ static void     init_d_by_value(int *d, int value)
         d[i++] = value;
 }
 
-static void     init_node_path(t_path *new_path, t_hash *node,
-    t_path *next, t_path *prev)
-{
-    new_path->node = node;
-	new_path->next = next;
-	new_path->prev = prev;
-	if (next != NULL)
-		next->prev = new_path;
-}
-
-static t_path   *add_path_node(t_path **root, t_hash *node)
-{
-    t_path  *path;
-    t_path  *new;
-
-    path = *root;
-    MFAIL((new = (t_path *)malloc(sizeof(t_path))));
-    if (path == NULL)
-        init_node_path(new, node, NULL, NULL);
-    else
-        init_node_path(new, node, path, NULL);
-    *root = new;
-    return (new);
-}
-
 t_path          *get_bellman_ford_path(t_graph *graph, size_t *len_path)
 {
     /*
@@ -86,7 +61,8 @@ t_path          *get_bellman_ford_path(t_graph *graph, size_t *len_path)
 	{
     	// НЕТ пути вообще -> Выход
 		write(1, "There is NO WAY between Start and End rooms\n", 44);
-		err_exit();
+		return (NULL);
+//		err_exit();
 	}
     else
     {

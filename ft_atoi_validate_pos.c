@@ -29,16 +29,17 @@ int	ft_atoi_validate_pos(const char *str)
 	return (num);
 }
 
-int check_nodenames_is_family(char *str, char *str1)
+int	check_nodenames_is_family(char *str, char *str1)
 {
-	size_t  str_l;
-	size_t  str1_l;
-	int     result;
+	size_t	str_l;
+	size_t	str1_l;
+	int		result;
+
 	result = 0;
 	str_l = ft_strlen(str);
 	str1_l = ft_strlen(str1);
 	if (!((str[str_l - 1] == 't' && str1[str1_l - 1] == 'n')
-		  || (str[str_l - 1] == 'n' && str1[str1_l - 1] == 't')))
+		|| (str[str_l - 1] == 'n' && str1[str1_l - 1] == 't')))
 		return (0);
 	if (str[str_l - 1] == 't')
 		str_l -= 4;

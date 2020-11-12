@@ -94,12 +94,17 @@ typedef struct		s_graph
 	t_hash			**arr_nodes; // массив указателей на указатели на "комнаты"
 	size_t			num_start_node; // номер (индекс) стартовой комнаты
 	size_t			num_end_node; // // номер (индекс) конечной комнаты
+
+	int32_t			speed; // кол-во ходов прохода муравьями по путям
+
 	size_t			num_paths; // кол-во путей в списке путей (BF)
 	t_paths			*begin_path; // указатель на первый путь в списке путей (BF)
 	t_paths			*end_path; // указатель на последний путь в списке путей (BF)
+
 	size_t			num_paths_first_res; // кол-во путей в списке путей (конечный набор)
 	t_paths			*begin_path_first_res; // указатель на первый путь в списке путей (конечный набор)
 	t_paths			*end_path_first_res; // указатель на последний путь в списке путей (конечный набор)
+
 	size_t			num_paths_second_res; // кол-во путей в списке путей (конечный набор)
 	t_paths			*begin_path_second_res; // указатель на первый путь в списке путей (конечный набор)
 	t_paths			*end_path_second_res; // указатель на последний путь в списке путей (конечный набор)
@@ -179,32 +184,39 @@ void	get_paths(t_graph *graph);
 /*
 ** -------------------------- Bellman_ford.c ---------------------------------
 */
+
 t_path				*get_bellman_ford_path(t_graph *graph, size_t *len_path);
 
 /*
 ** -------------------------- Utils_nick.c -----------------------------------
 */
+
 t_hash				**make_arr_nodes(t_graph *graph);
 void				print_graph_arr(t_hash **arr);
 void				print_path(t_path *path);
 void				print_paths(t_paths	*paths);
+t_paths				*create_paths(t_path *path, size_t len_path);
 void				add_path(t_graph *graph, t_path *new_path, size_t len_path);
+void				add_path_first(t_graph *graph, t_path *new_path, size_t len_path);
+void				add_path_second(t_graph *graph, t_path *new_path, size_t len_path);
 
 void				free_paths(t_paths *paths);
-
+void				real_func(t_graph *graph);
 void				my_cool_func(t_graph *graph);
-
 void				add_link(t_hash *parent, t_hash *child,
 					  int weight, int is_part_of_path);
 
 int					is_already_linked(t_hash *haystack, t_hash *needle);
 void				reverse_edges(t_graph *graph, t_path *path);
 
-void				get_result_paths(t_graph *graph);
-
 size_t				calc_speed(t_graph *graph);
-
 size_t				do_calc_speed(int num, const size_t *arr, size_t len);
+size_t				get_set_paths(t_graph *graph);
+
+/*
+** -------------------------- Utils_nick_3.c -----------------------------------
+*/
+t_path				*add_path_node(t_path **root, t_hash *node);
 
 // DEBUG
 void				li_sort(size_t *arr, size_t len);

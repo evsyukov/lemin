@@ -24,6 +24,8 @@ void	free_graph(t_graph *graph)
 	// NICK
 	FCNT(free(graph->arr_nodes));
 	free_paths(graph->begin_path);
+	free_paths(graph->begin_path_first_res);
+	free_paths(graph->begin_path_second_res);
 
 	FCNT(free(graph));
 }
@@ -44,10 +46,21 @@ int	main(void)
 	free_graph(graph);
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 	*/
+	graph->arr_nodes = make_arr_nodes(graph);
+	real_func(graph);
+
+	// DEBUG распечатать скорость прохода
+	ft_putstr("Ants num = ");
+	ft_putnbr(graph->ants_num);
+	ft_putstr(" \nНабор путей : Speed = ");
+	ft_putnbr(graph->speed);
+	ft_putstr("\n");
+	print_paths(graph->begin_path_first_res);
+
 
 //	test_speed_calc();
-	my_cool_func(graph);
-	delete_double_nodes(graph);
+//	my_cool_func(graph);
+//	delete_double_nodes(graph);
 	free_graph(graph);
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);
 }

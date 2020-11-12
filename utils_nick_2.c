@@ -69,6 +69,7 @@ static int	disable_just_edge(t_hash *first, t_hash *second)
 		if (ft_strequ(str_1, str_2))
 		{
 			child->flow = 0;
+			child->is_part_of_path = 0;
 			return (1);
 		}
 		child = child->next;
@@ -114,21 +115,4 @@ void reverse_edges(t_graph *graph, t_path *path)
 		}
 		path = next;
 	}
-}
-
-static void	resolve_conflicts(t_graph *graph)
-{
-		(void)(graph);
-}
-
-void		get_result_paths(t_graph *graph)
-{
-	t_paths	*paths;
-	t_hash	*node;
-
-	(void)(paths);
-	(void)(node);
-
-	resolve_conflicts(graph);
-
 }
