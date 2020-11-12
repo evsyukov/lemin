@@ -14,6 +14,54 @@
 //	return (NULL);
 //}
 
+static size_t	get_len_child(t_child *child)
+{
+	size_t	len;
+
+	len = 0;
+	while (child != NULL)
+	{
+		++len;
+		child = child->next;
+	}
+	return (len);
+}
+
+static size_t	get_num_childs_start(t_graph *graph)
+{
+	return (get_len_child(graph->start->child));
+}
+
+static size_t	get_num_childs_end(t_graph *graph)
+{
+	size_t	len;
+	char	*str_in;
+	char	*str_out;
+	t_hash	*hash;
+
+	str_in = ft_strdup(graph->end->node_name);
+	str_in[ft_strlen(str_in) - 3] = '\0';
+	str_out = ft_strjoin(str_in, "_out");
+	hash = hash_query(graph->h_table, str_out);
+	len = get_len_child(hash->child);
+	str_in[ft_strlen(str_in) - 3] = '_';
+	free(str_in);
+	free(str_out);
+	return (len);
+}
+
+static size_t	get_limits(t_graph *graph)
+{
+	size_t	result;
+
+	graph->num_childs_start = get_num_childs_start(graph);
+	graph->num_childs_end = get_num_childs_end(graph);
+	result = graph->num_childs_start <= graph->num_childs_end ?
+			 graph->num_childs_start : graph->num_childs_end;
+	result = result < graph->ants_num ? result : graph->ants_num;
+	return (result);
+}
+
 void	print_solution(t_graph *graph)
 {
 	(void)(graph);
@@ -23,10 +71,12 @@ void	real_func(t_graph *graph)
 {
 	size_t	speed_current;
 	size_t	speed_next;
+	size_t	limits;
 
+	limits = get_limits(graph);
 	speed_next = (size_t)INT_MAX;
 	speed_current = speed_next;
-	while (speed_next > 0 && speed_next <= speed_current)
+	while (speed_next > 0 && speed_next <= speed_current && limits-- > 0)
 	{
 		speed_current = speed_next;
 		graph->num_paths_first_res = 0; // очистка первого набора путей
@@ -42,6 +92,8 @@ void	real_func(t_graph *graph)
 		graph->end_path_second_res = NULL; // очистка второго набора путей
 
 		speed_next = get_set_paths(graph);
+		print_paths(graph->begin_path_second_res);
+		ft_putstr("\n");
 	}
 	graph->speed = speed_current;
 }

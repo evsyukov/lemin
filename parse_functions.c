@@ -22,6 +22,8 @@ t_graph	*graph_init(void)
 	graph->h_table = hash_table_init();
 	// NICK
 	graph->arr_nodes = NULL;
+	graph->num_childs_start = 0;
+	graph->num_childs_end = 0;
 	graph->speed = INT_MAX;
 	graph->num_paths = 0;
 	graph->begin_path = NULL;

@@ -93,7 +93,9 @@ typedef struct		s_graph
 	// NICK EDITION
 	t_hash			**arr_nodes; // массив указателей на указатели на "комнаты"
 	size_t			num_start_node; // номер (индекс) стартовой комнаты
-	size_t			num_end_node; // // номер (индекс) конечной комнаты
+	size_t 			num_childs_start; // кол-во соседей из старта
+	size_t			num_end_node; // номер (индекс) конечной комнаты
+	size_t 			num_childs_end; // кол-во соседей из конца
 
 	int32_t			speed; // кол-во ходов прохода муравьями по путям
 

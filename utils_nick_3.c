@@ -92,6 +92,60 @@ static void		do_main_get_set_paths(t_graph *graph)
 	}
 }
 
+void	mod_name(t_path	*path)
+{
+	char	*str;
+	size_t	len;
+
+	str = path->node->node_name;
+	len = ft_strlen(str);
+	if (str[len - 1] == 't')
+		str[len - 4] = '\0';
+	else
+		str[len - 3] = '\0';
+}
+
+void	get_normal_path(t_path **apath)
+{
+	t_path	*path;
+	t_path	*path_next;
+
+	if (apath == NULL || *apath == NULL)
+		return ;
+	path = *apath;
+	mod_name(path);
+	while (path->next != NULL)
+	{
+		path_next = path->next;
+		mod_name(path_next);
+		if (check_nodenames_is_family(path->node->node_name,
+							path_next->node->node_name))
+		{
+			path->next = path_next->next;
+			if (path_next->next != NULL)
+				path_next->next->prev = path;
+			FCNT((free(path_next)));
+			mod_name(path->next);
+		}
+		path = path->next;
+	}
+}
+
+void	get_normal_paths(t_graph *graph)
+{
+	t_paths	*paths;
+	t_path	*path;
+
+	paths = graph->begin_path_second_res;
+	while (paths != NULL)
+	{
+		path = paths->path;
+		get_normal_path(&path);
+		paths->num_nodes = (paths->num_nodes + 1) / 2;
+		paths = paths->next;
+	}
+}
+
 size_t			get_set_paths(t_graph *graph)
 {
 	t_path	*new_path;
@@ -104,6 +158,7 @@ size_t			get_set_paths(t_graph *graph)
 	reverse_edges(graph, new_path);
 	free_path(new_path); // очистка пути БФ
 	do_main_get_set_paths(graph);
+	get_normal_paths(graph);
 	speed = calc_speed(graph);
 	return (speed);
 }
