@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/smanta/School21/GIT_LEMIN_4/gnl.c
-lem_in.h
-/home/smanta/School21/GIT_LEMIN_4/lem_in.h
-
 /home/smanta/School21/GIT_LEMIN_4/lem_in.h
 stdio.h
 -
@@ -25,4 +21,12 @@ stdlib.h
 -
 unistd.h
 -
+
+/home/smanta/School21/GIT_LEMIN_4/main.c
+lem_in.h
+/home/smanta/School21/GIT_LEMIN_4/lem_in.h
+
+/home/smanta/School21/GIT_LEMIN_4/parse_input.c
+lem_in.h
+/home/smanta/School21/GIT_LEMIN_4/lem_in.h
 

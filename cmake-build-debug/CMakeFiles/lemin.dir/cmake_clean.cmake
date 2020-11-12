@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/lemin.dir/bellman_ford.c.o"
   "CMakeFiles/lemin.dir/bfs.c.o"
   "CMakeFiles/lemin.dir/calc_speed.c.o"
-  "CMakeFiles/lemin.dir/copy_graphs.c.o"
   "CMakeFiles/lemin.dir/debug_functions.c.o"
   "CMakeFiles/lemin.dir/dijkstra.c.o"
   "CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.o"

@@ -12,22 +12,22 @@
 
 #include "lem_in.h"
 
-void dijkstra_shortest(t_graph *graph)
- {
- 	t_hash *node;
+void	dijkstra_shortest(t_graph *graph)
+{
+	t_hash *node;
 
- 	node = graph->end->prev;
- 	printf("%s=>", graph->end->node_name);
- 	while (node != graph->start)
- 	{
- 		printf("%s=>", node->node_name);
- 		node->visit = 1;
+	node = graph->end->prev;
+	printf("%s=>", graph->end->node_name);
+	while (node != graph->start)
+	{
+		printf("%s=>", node->node_name);
+		node->visit = 1;
 		node = node->prev;
- 	}
- 	printf("%s", node->node_name);
- }
+	}
+	printf("%s", node->node_name);
+}
 
-t_child		*get_edge(t_child *haystack, t_hash *needle)
+t_child	*get_edge(t_child *haystack, t_hash *needle)
 {
 	while (haystack)
 	{
@@ -35,14 +35,15 @@ t_child		*get_edge(t_child *haystack, t_hash *needle)
 			return (haystack);
 		haystack = haystack->next;
 	}
-	return NULL;
+	return (NULL);
 }
 
 void	get_paths(t_graph *graph)
 {
-	int i = 1;
-	t_hash *tmp;
-	
+	int		i;
+	t_hash	*tmp;
+
+	i = 1;
 	while (dijkstra(graph))
 	{
 		//printf("\nPath %d:\n", i);
@@ -50,14 +51,13 @@ void	get_paths(t_graph *graph)
 		i++;
 		//printf("End Path\n");
 	}
-	
 	tmp = graph->end;
 	graph->start->mark = INT_MAX;
 	graph->end = graph->start;
 	graph->start = tmp;
 	graph->start->visit = 0;
 	graph->end->visit = 0;
-	while(dijkstra(graph))
+	while (dijkstra(graph))
 	{
 		dijkstra_shortest(graph);
 		printf("\n");

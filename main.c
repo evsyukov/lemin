@@ -57,9 +57,7 @@ int	main(void)
 	ft_putstr("\n");
 	print_paths(graph->begin_path_first_res);
 
-
-//	test_speed_calc();
-//	my_cool_func(graph);
+	// ??? НУЖНО ???
 //	delete_double_nodes(graph);
 	free_graph(graph);
 	printf("\nMalloc:%lu Free:%lu\n",ml, fr);

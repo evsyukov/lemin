@@ -1,6 +1,6 @@
 #include "lem_in.h"
 
-void 	free_path(t_path *path)
+void		free_path(t_path *path)
 {
 	t_path	*temp_path;
 
@@ -12,7 +12,7 @@ void 	free_path(t_path *path)
 	}
 }
 
-void	free_paths(t_paths *paths)
+void		free_paths(t_paths *paths)
 {
 	t_paths	*temp_paths;
 
@@ -25,10 +25,10 @@ void	free_paths(t_paths *paths)
 	}
 }
 
-static int	disable_edge(t_hash	*curr_hash, t_hash *next_hash, int *flag)
+static int	disable_edge(t_hash *curr_hash, t_hash *next_hash, int *flag)
 {
 	t_child	*child;
-	char 	*str_1;
+	char	*str_1;
 	char	*str_2;
 
 	child = curr_hash->child;
@@ -45,9 +45,7 @@ static int	disable_edge(t_hash	*curr_hash, t_hash *next_hash, int *flag)
 				*flag = 1;
 			}
 			else
-			{
 				child->is_part_of_path = 1;
-			}
 			return (1);
 		}
 		child = child->next;
@@ -58,7 +56,7 @@ static int	disable_edge(t_hash	*curr_hash, t_hash *next_hash, int *flag)
 static int	disable_just_edge(t_hash *first, t_hash *second)
 {
 	t_child	*child;
-	char 	*str_1;
+	char	*str_1;
 	char	*str_2;
 
 	child = first->child;
@@ -77,12 +75,12 @@ static int	disable_just_edge(t_hash *first, t_hash *second)
 	return (0);
 }
 
-void reverse_edges(t_graph *graph, t_path *path)
+void		reverse_edges(t_graph *graph, t_path *path)
 {
 	t_path	*next;
 	t_hash	*curr_hash;
 	t_hash	*next_hash;
-	int 	flag;
+	int		flag;
 
 	flag = 0;
 	while (path->node != graph->end)
@@ -92,7 +90,7 @@ void reverse_edges(t_graph *graph, t_path *path)
 		next_hash = next->node;
 		if (!disable_edge(curr_hash, next_hash, &flag))
 		{
-			// DEBUG
+			//	DEBUG
 			ft_putstr("Удаление ребра из прямого пути БФ. Что то пошло не так оО\n");
 			err_exit();
 		}

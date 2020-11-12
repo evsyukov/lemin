@@ -87,9 +87,6 @@
 		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/calc_speed.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/copy_graphs.c">
-			<Option target="lemin"/>
-		</Unit>
 		<Unit filename="/home/smanta/School21/GIT_LEMIN_4/debug_functions.c">
 			<Option target="lemin"/>
 		</Unit>

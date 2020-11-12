@@ -13,10 +13,6 @@ CMakeFiles/lemin.dir/calc_speed.c.o: ../calc_speed.c
 CMakeFiles/lemin.dir/calc_speed.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/calc_speed.c.o: ../libft/libft.h
 
-CMakeFiles/lemin.dir/copy_graphs.c.o: ../copy_graphs.c
-CMakeFiles/lemin.dir/copy_graphs.c.o: ../lem_in.h
-CMakeFiles/lemin.dir/copy_graphs.c.o: ../libft/libft.h
-
 CMakeFiles/lemin.dir/debug_functions.c.o: ../debug_functions.c
 CMakeFiles/lemin.dir/debug_functions.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/debug_functions.c.o: ../libft/libft.h

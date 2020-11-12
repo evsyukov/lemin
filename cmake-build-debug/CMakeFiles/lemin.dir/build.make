@@ -389,22 +389,9 @@ CMakeFiles/lemin.dir/utils_nick_2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/utils_nick_2.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/smanta/School21/GIT_LEMIN_4/utils_nick_2.c -o CMakeFiles/lemin.dir/utils_nick_2.c.s
 
-CMakeFiles/lemin.dir/copy_graphs.c.o: CMakeFiles/lemin.dir/flags.make
-CMakeFiles/lemin.dir/copy_graphs.c.o: ../copy_graphs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/lemin.dir/copy_graphs.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/copy_graphs.c.o   -c /home/smanta/School21/GIT_LEMIN_4/copy_graphs.c
-
-CMakeFiles/lemin.dir/copy_graphs.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/copy_graphs.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/smanta/School21/GIT_LEMIN_4/copy_graphs.c > CMakeFiles/lemin.dir/copy_graphs.c.i
-
-CMakeFiles/lemin.dir/copy_graphs.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/copy_graphs.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/smanta/School21/GIT_LEMIN_4/copy_graphs.c -o CMakeFiles/lemin.dir/copy_graphs.c.s
-
 CMakeFiles/lemin.dir/my_cool_algo.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/my_cool_algo.c.o: ../my_cool_algo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/lemin.dir/my_cool_algo.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/lemin.dir/my_cool_algo.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/my_cool_algo.c.o   -c /home/smanta/School21/GIT_LEMIN_4/my_cool_algo.c
 
 CMakeFiles/lemin.dir/my_cool_algo.c.i: cmake_force
@@ -417,7 +404,7 @@ CMakeFiles/lemin.dir/my_cool_algo.c.s: cmake_force
 
 CMakeFiles/lemin.dir/test_speed_calc.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/test_speed_calc.c.o: ../test_speed_calc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/lemin.dir/test_speed_calc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/lemin.dir/test_speed_calc.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/test_speed_calc.c.o   -c /home/smanta/School21/GIT_LEMIN_4/test_speed_calc.c
 
 CMakeFiles/lemin.dir/test_speed_calc.c.i: cmake_force
@@ -430,7 +417,7 @@ CMakeFiles/lemin.dir/test_speed_calc.c.s: cmake_force
 
 CMakeFiles/lemin.dir/utils_nick_3.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/utils_nick_3.c.o: ../utils_nick_3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/lemin.dir/utils_nick_3.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/lemin.dir/utils_nick_3.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/utils_nick_3.c.o   -c /home/smanta/School21/GIT_LEMIN_4/utils_nick_3.c
 
 CMakeFiles/lemin.dir/utils_nick_3.c.i: cmake_force
@@ -467,7 +454,6 @@ lemin_OBJECTS = \
 "CMakeFiles/lemin.dir/libft/ft_strlen.c.o" \
 "CMakeFiles/lemin.dir/libft/ft_strjoin.c.o" \
 "CMakeFiles/lemin.dir/utils_nick_2.c.o" \
-"CMakeFiles/lemin.dir/copy_graphs.c.o" \
 "CMakeFiles/lemin.dir/my_cool_algo.c.o" \
 "CMakeFiles/lemin.dir/test_speed_calc.c.o" \
 "CMakeFiles/lemin.dir/utils_nick_3.c.o"
@@ -499,13 +485,12 @@ lemin: CMakeFiles/lemin.dir/libft/ft_strcmp.c.o
 lemin: CMakeFiles/lemin.dir/libft/ft_strlen.c.o
 lemin: CMakeFiles/lemin.dir/libft/ft_strjoin.c.o
 lemin: CMakeFiles/lemin.dir/utils_nick_2.c.o
-lemin: CMakeFiles/lemin.dir/copy_graphs.c.o
 lemin: CMakeFiles/lemin.dir/my_cool_algo.c.o
 lemin: CMakeFiles/lemin.dir/test_speed_calc.c.o
 lemin: CMakeFiles/lemin.dir/utils_nick_3.c.o
 lemin: CMakeFiles/lemin.dir/build.make
 lemin: CMakeFiles/lemin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking C executable lemin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking C executable lemin"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lemin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

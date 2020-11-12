@@ -7,7 +7,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/smanta/School21/GIT_LEMIN_4/bellman_ford.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/bellman_ford.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/bfs.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/bfs.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/calc_speed.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/calc_speed.c.o"
-  "/home/smanta/School21/GIT_LEMIN_4/copy_graphs.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/copy_graphs.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/debug_functions.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/debug_functions.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/dijkstra.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/dijkstra.c.o"
   "/home/smanta/School21/GIT_LEMIN_4/ft_atoi_validate_pos.c" "/home/smanta/School21/GIT_LEMIN_4/cmake-build-debug/CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.o"

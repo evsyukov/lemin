@@ -2,8 +2,8 @@
 
 t_path		*add_path_node(t_path **root, t_hash *node)
 {
-	t_path  *path;
-	t_path  *new_path;
+	t_path	*path;
+	t_path	*new_path;
 
 	path = *root;
 	MFAIL((new_path = (t_path *)malloc(sizeof(t_path))));
@@ -16,7 +16,7 @@ t_path		*add_path_node(t_path **root, t_hash *node)
 	return (new_path);
 }
 
-t_path		*get_result_path(t_graph *graph, t_hash	*node, size_t *len_path)
+t_path		*get_result_path(t_graph *graph, t_hash *node, size_t *len_path)
 {
 	t_path	*path;
 	t_child	*child;
@@ -33,7 +33,7 @@ t_path		*get_result_path(t_graph *graph, t_hash	*node, size_t *len_path)
 		while (child != NULL)
 		{
 			if (child->is_part_of_path == 1)
-				break;
+				break ;
 			child = child->next;
 		}
 		if (child == NULL)
@@ -56,7 +56,7 @@ static void	reverse_path(t_path **apath)
 	t_path	*next_current;
 
 	if (apath == NULL || *apath == NULL)
-		return;
+		return ;
 	new_rev = NULL;
 	begin_current = *apath;
 	while (begin_current != NULL)

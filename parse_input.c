@@ -12,7 +12,7 @@
 
 #include "lem_in.h"
 
-int	split_line(char *str, size_t *sp)
+int			split_line(char *str, size_t *sp)
 {
 	size_t i;
 
@@ -37,15 +37,23 @@ int	split_line(char *str, size_t *sp)
 static void	handle_double_node(t_graph *graph,
 						char *first, char *second)
 {
-	char	*first_in_name = NULL;
-	char	*first_out_name = NULL;
-	t_hash	*first_node_in = NULL;
-	t_hash	*first_node_out = NULL;
+	char	*first_in_name;
+	char	*first_out_name;
+	t_hash	*first_node_in;
+	t_hash	*first_node_out;
+	char	*second_in_name;
+	char	*second_out_name;
+	t_hash	*second_node_in;
+	t_hash	*second_node_out;
 
-	char	*second_in_name = NULL;
-	char	*second_out_name = NULL;
-	t_hash	*second_node_in = NULL;
-	t_hash	*second_node_out = NULL;
+	first_in_name = NULL;
+	first_out_name = NULL;
+	first_node_in = NULL;
+	first_node_out = NULL;
+	second_in_name = NULL;
+	second_out_name = NULL;
+	second_node_in = NULL;
+	second_node_out = NULL;
 
 	MFAIL((first_in_name = ft_strjoin(first, "_in")));
 	first_node_in = hash_query(graph->h_table, first_in_name);
@@ -80,14 +88,12 @@ static void	handle_double_node(t_graph *graph,
 
 		if (!is_already_linked(first_node_in, first_node_out))
 		{
-//			add_link_zero(first_node_out, first_node_in, 0);
 			add_link(first_node_in, first_node_out, 0, 0);
 			++edges_num;
 		}
 
 		if (!is_already_linked(second_node_in, second_node_out))
 		{
-//			add_link_zero(second_node_out, second_node_in, 0);
 			add_link(second_node_in, second_node_out, 0, 0);
 			++edges_num;
 		}
@@ -96,7 +102,7 @@ static void	handle_double_node(t_graph *graph,
 		err_exit();
 }
 
-void	parse_connections(t_graph *graph, char *line)
+void		parse_connections(t_graph *graph, char *line)
 {
 	int		i;
 
@@ -108,25 +114,11 @@ void	parse_connections(t_graph *graph, char *line)
 	if (!line[i])
 		err_exit();
 	line[i] = 0;
-//	parent = hash_query(graph->h_table, line);
-//	child = hash_query(graph->h_table, &line[i + 1]);
-	// NICK
 	handle_double_node(graph, line, &line[i + 1]);
-
 	line[i] = '-';
-//	if ((parent && child) && (parent != child))
-//	{
-//		check_if_already_linked(parent, child);
-//		check_if_already_linked(child, parent);
-//		add_link(parent, child);
-//		add_link(child, parent);
-//		edges_num += 2;
-//	}
-//	else
-//		err_exit();
 }
 
-void	parse_links(t_graph *graph, char *line)
+void		parse_links(t_graph *graph, char *line)
 {
 	char *str_ret;
 
@@ -143,7 +135,7 @@ void	parse_links(t_graph *graph, char *line)
 	}
 }
 
-void	parse_rooms(t_graph *graph)
+void		parse_rooms(t_graph *graph)
 {
 	char	*str_ret;
 	t_hash	*node_ret;
@@ -161,12 +153,12 @@ void	parse_rooms(t_graph *graph)
 			break ; // Если парсинг невалидный, комнаты закончились, переходим на парсинг связей как(nodeA-nodeB)
 	}
 	if (graph->start && graph->end) // Проверяем на наличие start и end node
-		parse_links(graph, str_ret); 
+		parse_links(graph, str_ret);
 	else
 		err_exit();
 }
 
-void	err_exit(void)
+void		err_exit(void)
 {
 	write(1, "ERROR\n", 6);
 	exit(1);
@@ -185,7 +177,7 @@ void	parse_comments(char *line, t_graph *graph)
 	}
 }
 
-void	parse_ants_number(t_graph *graph) 
+void		parse_ants_number(t_graph *graph)
 {
 	char	*ret;
 	int		ants_num;
@@ -204,7 +196,7 @@ void	parse_ants_number(t_graph *graph)
 }
 
 static t_hash	*insert_node_to_h_table(char *line, t_hash **h_table,
-									  size_t sp_ind[2], char *adding)
+									size_t sp_ind[2], char *adding)
 {
 	int		l_x;
 	int		l_y;
@@ -212,10 +204,8 @@ static t_hash	*insert_node_to_h_table(char *line, t_hash **h_table,
 	t_hash	*node;
 
 	node = NULL;
-//	MFAIL((strdup = ft_strdup(line)));
 	MFAIL((strdup = ft_strjoin(line, adding)));
 	node = assign_to_table(h_table, strdup);
-
 	l_x = ft_atoi_validate_pos(&line[sp_ind[0] + 1]);
 	l_y = ft_atoi_validate_pos(&line[sp_ind[1] + 1]);
 	if (l_x >= 0 && l_y >= 0)
@@ -236,7 +226,7 @@ t_hash	*parse_node_name(char *line, t_hash **h_table, int flag)
 	t_hash	*node_in;
 	t_hash	*node_out;
 	size_t	sp_ind[2];
-	char 	*str;
+	char	*str;
 
 	i = 0;
 	node_in = NULL;
@@ -249,9 +239,6 @@ t_hash	*parse_node_name(char *line, t_hash **h_table, int flag)
 		if (!hash_query(h_table, str))
 		{
 			FCNT(free(str));
-			// NICK
-			// !!!!
-//			node = insert_node_to_h_table(line, h_table, sp_ind);
 			node_in = insert_node_to_h_table(line, h_table, sp_ind, "_in");
 			node_out = insert_node_to_h_table(line, h_table, sp_ind, "_out");
 			line[sp_ind[0]] = ' ';

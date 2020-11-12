@@ -1,19 +1,18 @@
 #include "lem_in.h"
 
-//static	t_child	* (t_hash *node)
+//static t_child	*find_child_by_hash(t_hash *node, t_hash *find_node)
 //{
 //	t_child	*child;
 //
 //	child = node->child;
 //	while (child != NULL)
 //	{
-//		if (child->c_node->node_name == node->node_name)
-//			return child;
+//		if (child->c_node->node_name == find_node->node_name)
+//			return (child);
 //		child = child->next;
 //	}
-//	return NULL;
+//	return (NULL);
 //}
-//
 
 void	print_solution(t_graph *graph)
 {

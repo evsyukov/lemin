@@ -224,33 +224,6 @@ calc_speed.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/calc_speed.c.s
 .PHONY : calc_speed.c.s
 
-copy_graphs.o: copy_graphs.c.o
-
-.PHONY : copy_graphs.o
-
-# target to build an object file
-copy_graphs.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/copy_graphs.c.o
-.PHONY : copy_graphs.c.o
-
-copy_graphs.i: copy_graphs.c.i
-
-.PHONY : copy_graphs.i
-
-# target to preprocess a source file
-copy_graphs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/copy_graphs.c.i
-.PHONY : copy_graphs.c.i
-
-copy_graphs.s: copy_graphs.c.s
-
-.PHONY : copy_graphs.s
-
-# target to generate assembly for a file
-copy_graphs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/copy_graphs.c.s
-.PHONY : copy_graphs.c.s
-
 debug_functions.o: debug_functions.c.o
 
 .PHONY : debug_functions.o
@@ -917,9 +890,6 @@ help:
 	@echo "... calc_speed.o"
 	@echo "... calc_speed.i"
 	@echo "... calc_speed.s"
-	@echo "... copy_graphs.o"
-	@echo "... copy_graphs.i"
-	@echo "... copy_graphs.s"
 	@echo "... debug_functions.o"
 	@echo "... debug_functions.i"
 	@echo "... debug_functions.s"

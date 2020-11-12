@@ -15,28 +15,18 @@ size_t			do_calc_speed(int num, const size_t *arr, size_t len)
 	size_t	result;
 	size_t	index;
 	size_t	area;
-//	size_t	prev, curr;
 
 	result = 0;
 	index = 0;
 	while (num > 0 && index < len - 1)
 	{
 		++index;
-//		prev = arr[index - 1];
-//		curr = arr[index];
-//		while (index < len && prev == curr)
-//		{
-//			++index;
-//			prev = arr[index - 1];
-//			curr = arr[index];
-//		}
-//		area = index * (curr - prev);
 		while (index < len && arr[index - 1] == arr[index])
 			++index;
 		if (index == len)
 		{
 			--index;
-			break;
+			break ;
 		}
 		area = index * (arr[index] - arr[index - 1]);
 		num -= area;
@@ -63,7 +53,7 @@ void			li_sort(size_t *arr, size_t len)
 	size_t	index;
 
 	if (len <= 1)
-		return;
+		return ;
 	count = 0;
 	while (count < len)
 	{
@@ -89,7 +79,7 @@ size_t			calc_speed(t_graph *graph)
 	index = 0;
 	num_paths = graph->num_paths_second_res;
 	paths_to_calc = graph->begin_path_second_res;
-	MFAIL((path_lens = (size_t *)malloc(sizeof(size_t) * num_paths)))
+	MFAIL((path_lens = (size_t *)malloc(sizeof(size_t) * num_paths)));
 	while (index < num_paths && paths_to_calc != NULL)
 	{
 		path_lens[index] = paths_to_calc->num_nodes;
@@ -99,5 +89,5 @@ size_t			calc_speed(t_graph *graph)
 	li_sort(path_lens, num_paths);
 	result = do_calc_speed(graph->ants_num, path_lens, num_paths);
 	FCNT((free(path_lens)));
-    return (result);
+	return (result);
 }
