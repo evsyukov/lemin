@@ -1,7 +1,6 @@
 #include "lem_in.h"
 
-t_path			*
-add_path_node(t_path **root, t_hash *node)
+t_path			*add_path_node(t_path **root, t_hash *node)
 {
 	t_path	*path;
 	t_path	*new_path;
@@ -66,9 +65,12 @@ static void		reverse_path(t_path **apath)
 	{
 		next_current = begin_current->next;
 		begin_current->next = new_rev;
+		if (new_rev != NULL)
+			new_rev->prev = begin_current;
 		new_rev = begin_current;
 		begin_current = next_current;
 	}
+	new_rev->prev = NULL;
 	*apath = new_rev;
 }
 
@@ -99,8 +101,8 @@ void	mod_name(t_path	*path)
 	char	*str;
 	size_t	len;
 
-//	str = path->node->node_name;
 	// запись изначального имени
+//	MFAIL((path->node_name = ft_strdup(path->node->node_name)));
 	path->node_name = ft_strdup(path->node->node_name);
 	str = path->node_name;
 	len = ft_strlen(str);
@@ -129,6 +131,8 @@ void	get_normal_path(t_path **apath)
 			path->next = path_next->next;
 			if (path_next->next != NULL)
 				path_next->next->prev = path;
+//			if (path_next->node_name != NULL)
+//				FCNT(free(path_next->node_name));
 			FCNT((free(path_next)));
 			mod_name(path->next);
 		}

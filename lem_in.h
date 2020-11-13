@@ -50,6 +50,9 @@ typedef struct	s_paths
 {
 	struct s_path	*path;
 	struct s_paths	*next;
+	struct s_path	*begin_print;
+	struct s_path	*current_print;
+	struct s_path	*end_print;
 	size_t			num_nodes;
 }				t_paths;
 
@@ -57,6 +60,7 @@ typedef struct	s_path
 {
 	struct s_hash	*node;
 	char 			*node_name;
+	size_t 			num_ant;
 	struct s_path	*next;
 	// NICK EDITION
 	struct s_path	*prev;

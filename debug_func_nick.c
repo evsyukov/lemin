@@ -25,7 +25,7 @@ void		print_path(t_path *path)
 	while (path != NULL)
 	{
 		ft_putstr(" node_name = ");
-		ft_putstr(path->node->node_name);
+		ft_putstr(path->node_name);
 		ft_putstr(" -> ");
 		path = path->next;
 	}

@@ -64,11 +64,6 @@ static size_t	get_limits(t_graph *graph)
 	return (result);
 }
 
-void	print_solution(t_graph *graph)
-{
-	(void)(graph);
-}
-
 void	move_from_second_to_first(t_graph *graph)
 {
 	graph->num_paths_first_res = 0; // очистка первого набора путей
@@ -170,5 +165,5 @@ void	my_cool_func(t_graph *graph)
 	ft_putstr("Новый набор путей : \n");
 	print_paths(graph->begin_path_second_res);
 
-	print_solution(graph);
+//	print_solution(graph);
 }

@@ -41,6 +41,9 @@ t_paths		*create_paths(t_path *path, size_t len_path)
 	MFAIL((new_paths = (t_paths *)malloc(sizeof(t_paths))));
 	new_paths->path = path;
 	new_paths->next = NULL;
+	new_paths->begin_print = NULL;
+	new_paths->current_print = NULL;
+	new_paths->end_print = NULL;
 	new_paths->num_nodes = len_path;
 	return (new_paths);
 }

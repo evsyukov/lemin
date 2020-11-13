@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/smanta/clion-2019.2.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/smanta/clion-2019.2.3/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/smanta/School21/GIT_LEMIN_5
+CMAKE_SOURCE_DIR = /Users/smanta/LEM_IN/MY_GIT_6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/smanta/School21/GIT_LEMIN_5/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/smanta/LEM_IN/MY_GIT_6/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/smanta/School21/GIT_LEMIN_5/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/smanta/clion-2019.2.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/smanta/clion-2019.2.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/smanta/School21/GIT_LEMIN_5/cmake-build-debug/CMakeFiles /home/smanta/School21/GIT_LEMIN_5/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/smanta/LEM_IN/MY_GIT_6/cmake-build-debug/CMakeFiles /Users/smanta/LEM_IN/MY_GIT_6/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/smanta/School21/GIT_LEMIN_5/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/smanta/LEM_IN/MY_GIT_6/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -791,6 +791,33 @@ pathfinder.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/pathfinder.c.s
 .PHONY : pathfinder.c.s
 
+print_result.o: print_result.c.o
+
+.PHONY : print_result.o
+
+# target to build an object file
+print_result.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/print_result.c.o
+.PHONY : print_result.c.o
+
+print_result.i: print_result.c.i
+
+.PHONY : print_result.i
+
+# target to preprocess a source file
+print_result.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/print_result.c.i
+.PHONY : print_result.c.i
+
+print_result.s: print_result.c.s
+
+.PHONY : print_result.s
+
+# target to generate assembly for a file
+print_result.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/print_result.c.s
+.PHONY : print_result.c.s
+
 test_speed_calc.o: test_speed_calc.c.o
 
 .PHONY : test_speed_calc.o
@@ -980,6 +1007,9 @@ help:
 	@echo "... pathfinder.o"
 	@echo "... pathfinder.i"
 	@echo "... pathfinder.s"
+	@echo "... print_result.o"
+	@echo "... print_result.i"
+	@echo "... print_result.s"
 	@echo "... test_speed_calc.o"
 	@echo "... test_speed_calc.i"
 	@echo "... test_speed_calc.s"
