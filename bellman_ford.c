@@ -24,10 +24,11 @@ t_path          *get_bellman_ford_path(t_graph *graph, size_t *len_path)
 	int             d[nodes_num];
 	int             p[nodes_num];
 	t_child         *child_ptr;
-	unsigned long   k;
+//	unsigned long   k;
 	int             value;
 	unsigned long   i;
 	int             t;
+	size_t 			any;
 
     path = NULL;
     init_d_by_value(d, 2000000000);
@@ -35,9 +36,11 @@ t_path          *get_bellman_ford_path(t_graph *graph, size_t *len_path)
     d[graph->num_start_node] = 0;
 
     t_hash *node;
-    k = 1;
-    while (k < nodes_num)
+//    k = 1;
+//    while (k < nodes_num)
+    while (1)
     {
+    	any = 0;
 		i = 0;
 		while (i < nodes_num)
 		{
@@ -49,12 +52,15 @@ t_path          *get_bellman_ford_path(t_graph *graph, size_t *len_path)
                 {
                     d[value] = d[i] + child_ptr->weight;
                     p[value] = i;
+                    any = 1;
                 }
                 child_ptr = child_ptr->next;
             }
             ++i;
         }
-         ++k;
+		if (any == 0)
+			break ;
+//         ++k;
     }
     *len_path = 0;
     if (d[graph->num_end_node] == 2000000000)

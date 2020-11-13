@@ -1,6 +1,7 @@
 #include "lem_in.h"
 
-t_path			*add_path_node(t_path **root, t_hash *node)
+t_path			*
+add_path_node(t_path **root, t_hash *node)
 {
 	t_path	*path;
 	t_path	*new_path;
@@ -8,6 +9,7 @@ t_path			*add_path_node(t_path **root, t_hash *node)
 	path = *root;
 	MFAIL((new_path = (t_path *)malloc(sizeof(t_path))));
 	new_path->node = node;
+	new_path->node_name = NULL;
 	new_path->next = path;
 	new_path->prev = NULL;
 	if (path != NULL)
@@ -97,7 +99,10 @@ void	mod_name(t_path	*path)
 	char	*str;
 	size_t	len;
 
-	str = path->node->node_name;
+//	str = path->node->node_name;
+	// запись изначального имени
+	path->node_name = ft_strdup(path->node->node_name);
+	str = path->node_name;
 	len = ft_strlen(str);
 	if (str[len - 1] == 't')
 		str[len - 4] = '\0';
@@ -118,8 +123,8 @@ void	get_normal_path(t_path **apath)
 	{
 		path_next = path->next;
 		mod_name(path_next);
-		if (check_nodenames_is_family(path->node->node_name,
-							path_next->node->node_name))
+		if (ft_strequ(path->node_name, path_next->node_name))
+//		if (ft_strequ(path->node->node_name, path_next->node->node_name))
 		{
 			path->next = path_next->next;
 			if (path_next->next != NULL)

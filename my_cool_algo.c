@@ -34,20 +34,22 @@ static size_t	get_num_childs_start(t_graph *graph)
 
 static size_t	get_num_childs_end(t_graph *graph)
 {
+	size_t	len_child;
 	size_t	len;
 	char	*str_in;
 	char	*str_out;
 	t_hash	*hash;
 
 	str_in = ft_strdup(graph->end->node_name);
-	str_in[ft_strlen(str_in) - 3] = '\0';
+	len = ft_strlen(str_in);
+	str_in[len - 3] = '\0';
 	str_out = ft_strjoin(str_in, "_out");
 	hash = hash_query(graph->h_table, str_out);
-	len = get_len_child(hash->child);
-	str_in[ft_strlen(str_in) - 3] = '_';
+	len_child = get_len_child(hash->child);
+	str_in[len - 3] = '_';
 	free(str_in);
 	free(str_out);
-	return (len);
+	return (len_child);
 }
 
 static size_t	get_limits(t_graph *graph)
@@ -67,33 +69,53 @@ void	print_solution(t_graph *graph)
 	(void)(graph);
 }
 
+void	move_from_second_to_first(t_graph *graph)
+{
+	graph->num_paths_first_res = 0; // очистка первого набора путей
+	free_paths(graph->begin_path_first_res); // очистка (+ free) первого набора путей
+	graph->end_path_first_res = NULL; // очистка первого набора путей
+
+	graph->num_paths_first_res = graph->num_paths_second_res; // копирование из второго набора в первый
+	graph->begin_path_first_res = graph->begin_path_second_res; // копирование (*) из второго набора в первый
+	graph->end_path_first_res = graph->end_path_second_res; // копирование из второго набора в первый
+
+	graph->num_paths_second_res = 0; // очистка второго набора путей
+	graph->begin_path_second_res = NULL; // очистка второго набора путей
+	graph->end_path_second_res = NULL; // очистка второго набора путей
+}
+
 void	real_func(t_graph *graph)
 {
 	size_t	speed_current;
 	size_t	speed_next;
 	size_t	limits;
+	int		flag;
 
+	flag = -1;
 	limits = get_limits(graph);
-	speed_next = (size_t)INT_MAX;
-	speed_current = speed_next;
-	while (speed_next > 0 && speed_next <= speed_current && limits-- > 0)
+//	speed_next = (size_t)INT_MAX;
+//	speed_current = speed_next;
+	speed_current = (size_t)INT_MAX;
+	speed_next = speed_current - 1;
+	while (speed_next > 0 && speed_next < speed_current && limits > 0)
+	{
+//		if (speed_next == speed_current)
+//			break ;
+//		if (speed_next == speed_current && ++flag == 1)
+//			break ;
+//		else
+//			flag = 0;
+		--limits;
+		speed_current = speed_next;
+		move_from_second_to_first(graph);
+		speed_next = get_set_paths(graph);
+//		print_paths(graph->begin_path_second_res);
+//		ft_putstr("\n");
+	}
+	if (limits == 0 && speed_next > 0 && speed_next < speed_current)
 	{
 		speed_current = speed_next;
-		graph->num_paths_first_res = 0; // очистка первого набора путей
-		free_paths(graph->begin_path_first_res); // очистка (+ free) первого набора путей
-		graph->end_path_first_res = NULL; // очистка первого набора путей
-
-		graph->num_paths_first_res = graph->num_paths_second_res; // копирование из второго набора в первый
-		graph->begin_path_first_res = graph->begin_path_second_res; // копирование (*) из второго набора в первый
-		graph->end_path_first_res = graph->end_path_second_res; // копирование из второго набора в первый
-
-		graph->num_paths_second_res = 0; // очистка второго набора путей
-		graph->begin_path_second_res = NULL; // очистка второго набора путей
-		graph->end_path_second_res = NULL; // очистка второго набора путей
-
-		speed_next = get_set_paths(graph);
-		print_paths(graph->begin_path_second_res);
-		ft_putstr("\n");
+		move_from_second_to_first(graph);
 	}
 	graph->speed = speed_current;
 }

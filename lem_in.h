@@ -56,6 +56,7 @@ typedef struct	s_paths
 typedef struct	s_path
 {
 	struct s_hash	*node;
+	char 			*node_name;
 	struct s_path	*next;
 	// NICK EDITION
 	struct s_path	*prev;
