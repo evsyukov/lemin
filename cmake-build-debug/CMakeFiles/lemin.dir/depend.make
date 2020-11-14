@@ -85,6 +85,10 @@ CMakeFiles/lemin.dir/pathfinder.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/pathfinder.c.o: ../libft/libft.h
 CMakeFiles/lemin.dir/pathfinder.c.o: ../pathfinder.c
 
+CMakeFiles/lemin.dir/print_result.c.o: ../lem_in.h
+CMakeFiles/lemin.dir/print_result.c.o: ../libft/libft.h
+CMakeFiles/lemin.dir/print_result.c.o: ../print_result.c
+
 CMakeFiles/lemin.dir/test_speed_calc.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/test_speed_calc.c.o: ../libft/libft.h
 CMakeFiles/lemin.dir/test_speed_calc.c.o: ../test_speed_calc.c

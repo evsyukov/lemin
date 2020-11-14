@@ -36,9 +36,35 @@ void	init_paths(t_paths *paths)
 	}
 }
 
-void	move_and_add(t_paths *paths, size_t *count_ants, size_t	*sum_ants)
+
+
+void	move_and_add(t_graph *graph, t_paths *paths,
+				  size_t *count_ants, size_t *sum_ants)
 {
-	
+	t_path	*path;
+	t_path	*begin_path;
+	t_path	*path_next;
+
+	path = paths->begin_print;
+	begin_path = paths->path;
+	while (path != NULL)
+	{
+		path_next = path->next;
+		if (path->node == begin_path->node
+			&& *count_ants <= graph->ants_num)
+		{
+			path_next->num_ant = *count_ants;
+			*count_ants += 1;
+			*sum_ants += 1;
+		}
+		else if (path_next == NULL)
+			*sum_ants -= 1;
+		else
+		{
+			
+		}
+		path = path->prev;
+	}
 }
 
 void	print_state(t_paths *paths)
@@ -62,7 +88,7 @@ void	print_solution(t_graph *graph)
 	init_paths(paths);
 	while (count_ants <= graph->ants_num || sum_ants_at_paths > 0)
 	{
-		move_and_add(paths, &count_ants, &sum_ants_at_paths);
+		move_and_add(graph, paths, &count_ants, &sum_ants_at_paths);
 		print_state(paths);
 	}
 }
