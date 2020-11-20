@@ -6,7 +6,7 @@
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 22:28:00 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/10 23:39:58 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/20 23:04:28 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,17 +36,15 @@ extern unsigned long edges_num;
 
 typedef	struct		s_child
 {
-	struct s_hash	*c_node; //  Указатель на вершину t_hash (данные по вершине)
-	int				flow; // флаг что ребро в эту сторону есть --->
-	int				weight; // вес ребра [1, 0, -1]
-	struct s_child	*next; // Указатель списка на следующую вершину
-	// NICK
-	int 			is_reverse;
-	int 			is_part_of_path; //
+	int				flow;
+	int				weight;
+	int				is_reverse;
+	int				is_part_of_path;
+	struct s_hash	*c_node;
+	struct s_child	*next;
 }					t_child;
 
-// NICK EDITION
-typedef struct	s_paths
+typedef struct		s_paths
 {
 	struct s_path	*path;
 	struct s_paths	*next;
@@ -54,83 +52,55 @@ typedef struct	s_paths
 	struct s_path	*current_print;
 	struct s_path	*end_print;
 	size_t			num_nodes;
-}				t_paths;
+}					t_paths;
 
-typedef struct	s_path
+typedef struct		s_path
 {
 	struct s_hash	*node;
-	char 			*node_name;
-	size_t 			num_ant;
+	char			*node_name;
+	size_t			num_ant;
 	struct s_path	*next;
-	// NICK EDITION
 	struct s_path	*prev;
-} 				t_path;
+}					t_path;
 
-typedef struct	s_vis
+typedef	struct		s_hash
 {
-	struct s_hash	*node;
-	struct s_vis	*next;
-}				t_vis;
-
-typedef	struct				s_hash
-{
-	char		*node_name;
-	int		x;
-	int		y;
-	struct		s_hash *next; // Тут хранятся коллизии хэш таблицы (Список)
-	size_t			visit; // NICK - не использую
-	size_t 		mark; // NICK - не использую
-	size_t		bfs_level; // NICK - не использую
-	t_child		*child; // Тут хранятся связи для данной ноды (Список)
-	struct s_hash 	*prev;
-	// NICK EDITION
-	size_t		num_node; // номер ноды (индекс в arr_nodes)
+	char			*node_name;
+	int				x;
+	int				y;
+	size_t			visit;
+	size_t			mark;
+	size_t			bfs_level;
+	t_child			*child;
+	struct s_hash	*prev;
+	struct s_hash	*next;
+	size_t			num_node;
 }					t_hash;
 
 typedef struct		s_graph
 {
-	t_hash			**h_table; // Указатель на хэш таблицу
-	t_hash			*start; 
+	t_hash			**h_table;
+	t_hash			*start;
 	t_hash			*end;
-	int				ants_num;
+	size_t			ants_num;
 	char			*map_buf;
-	t_path			*paths_list; // NICK - не использовал его
-	// NICK EDITION
-	t_hash			**arr_nodes; // массив указателей на указатели на "комнаты"
-	size_t			num_start_node; // номер (индекс) стартовой комнаты
-	size_t 			num_childs_start; // кол-во соседей из старта
-	size_t			num_end_node; // номер (индекс) конечной комнаты
-	size_t 			num_childs_end; // кол-во соседей из конца
-
-	int32_t			speed; // кол-во ходов прохода муравьями по путям
-
-	size_t			num_paths; // кол-во путей в списке путей (BF)
-	t_paths			*begin_path; // указатель на первый путь в списке путей (BF)
-	t_paths			*end_path; // указатель на последний путь в списке путей (BF)
-
-	size_t			num_paths_first_res; // кол-во путей в списке путей (конечный набор)
-	t_paths			*begin_path_first_res; // указатель на первый путь в списке путей (конечный набор)
-	t_paths			*end_path_first_res; // указатель на последний путь в списке путей (конечный набор)
-
-	size_t			num_paths_second_res; // кол-во путей в списке путей (конечный набор)
-	t_paths			*begin_path_second_res; // указатель на первый путь в списке путей (конечный набор)
-	t_paths			*end_path_second_res; // указатель на последний путь в списке путей (конечный набор)
+	t_path			*paths_list;
+	t_hash			**arr_nodes;
+	size_t			num_start_node;
+	size_t			num_childs_start;
+	size_t			num_end_node;
+	size_t			num_childs_end;
+	int32_t			speed;
+	size_t			num_paths;
+	t_paths			*begin_path;
+	t_paths			*end_path;
+	size_t			num_paths_first_res;
+	t_paths			*begin_path_first_res;
+	t_paths			*end_path_first_res;
+	size_t			num_paths_second_res;
+	t_paths			*begin_path_second_res;
+	t_paths			*end_path_second_res;
 }					t_graph;
-
-typedef struct	s_q
-{
-		struct s_hash	*q_node;
-		struct s_q		*next;
-}				t_q;
-
-
-typedef struct s_list
-{
-    int val;
-	size_t index;
-    struct s_list *prev;
-    struct s_list *next;
-}           t_list;
 
 /*
 ** -------------------------- Hash table functions ----------------------------
@@ -142,7 +112,6 @@ t_hash				**hash_table_init();
 t_hash				*assign_to_table(t_hash **table, char *node_name);
 void				free_hash_table(t_hash **h_table);
 t_graph				*graph_init();
-//void				add_link(t_hash *parent, t_hash *child);
 void				check_if_already_linked(t_hash *haystack, t_hash *needle);
 
 /*
@@ -161,97 +130,81 @@ char				*gnl(char *text);
 void				err_exit();
 
 /*
-** -------------------------- Bfs functions --------------------------------
-*/
-
-t_hash				*bfs(t_graph *graph);
-void				q_push(t_hash *node, t_q **queue);
-t_hash				*q_pop(t_q **queue);
-void				*get_shortest_path(t_hash *end_node);
-t_path				*path_init(t_hash *start);
-t_path				*clone_path(t_path *path);
-void				append_to_path(t_path **path, t_hash *node);
-void				free_queue(t_q *queue);
-
-/*
 ** -------------------------- Debug functions --------------------------------
 */
+
 void				print_hash_table_child(t_hash **h_table);
 void				print_hash_table(t_hash **h_table);
-void				print_queue(t_q *queue);
-
 int					dijkstra(t_graph *graph);
 void				dijkstra_shortest_reverse(t_graph *graph);
 t_child				*get_edge(t_child *haystack, t_hash *needle);
 void				get_paths(t_graph *graph);
 
-
-// NICK EDITION
 /*
 ** -------------------------- Bellman_ford.c ---------------------------------
 */
+
 t_path				*get_bellman_ford_path(t_graph *graph, size_t *len_path);
 
 /*
 ** -------------------------- Utils_nick.c -----------------------------------
 */
+
 t_hash				**make_arr_nodes(t_graph *graph);
 t_paths				*create_paths(t_path *path, size_t len_path);
 void				add_path(t_graph *graph, t_path *new_path, size_t len_path);
-void				add_path_second(t_graph *graph, t_path *new_path, size_t len_path);
-
+void				add_path_second(t_graph *graph, t_path
+*new_path, size_t len_path);
 void				add_link(t_hash *parent, t_hash *child,
-					  int weight, int is_part_of_path);
+int weight, int is_part_of_path);
 int					is_already_linked(t_hash *haystack, t_hash *needle);
 void				reverse_edges(t_graph *graph, t_path *path);
-
 
 /*
 ** -------------------------- calc_speed.c -----------------------------------
 */
+
 void				li_sort(size_t *arr, size_t len);
 size_t				do_calc_speed(int num, const size_t *arr, size_t len);
 size_t				calc_speed(t_graph *graph);
 
 /*
-** -------------------------- debug_func_nick.c -----------------------------------
+** -------------------------- debug_func_nick.c -------------------------------
 */
+
 void				print_graph_arr(t_hash **arr);
 void				print_path(t_path *path);
 void				print_paths(t_paths *paths);
+void				test_speed_calc();
 
 /*
 ** -------------------------- my_cool_algo.c -----------------------------------
 */
+
 void				real_func(t_graph *graph);
 void				my_cool_func(t_graph *graph);
 
 /*
 ** -------------------------- utils_free.c -----------------------------------
 */
+
 void				free_path(t_path *path);
 void				free_paths(t_paths *paths);
 void				free_graph(t_graph *graph);
+void				free_nodes(t_hash *node);
+
 
 /*
 ** -------------------------- utils_nick_3.c -----------------------------------
 */
+
 t_path				*add_path_node(t_path **root, t_hash *node);
 size_t				get_set_paths(t_graph *graph);
 
 /*
 ** -------------------------- print_result.c -----------------------------------
 */
+
 void				print_solution(t_graph *graph);
-
-// DEBUG
-void				test_speed_calc();
-
-/*
-** -------------------------- Move ants funcs ----------------------------
-*/
-
-
-void    delete_double_nodes(t_graph *graph);
 
 #endif

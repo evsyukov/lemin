@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   parse_functions.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmustach <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/21 17:08:45 by nmustach          #+#    #+#             */
-/*   Updated: 2020/09/14 01:22:17 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/20 22:14:06 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
 
-t_graph	*graph_init(void)
+t_graph			*graph_init(void)
 {
 	t_graph	*graph;
 
@@ -20,7 +20,6 @@ t_graph	*graph_init(void)
 	graph->start = NULL;
 	graph->end = NULL;
 	graph->h_table = hash_table_init();
-	// NICK
 	graph->arr_nodes = NULL;
 	graph->num_childs_start = 0;
 	graph->num_childs_end = 0;
@@ -37,7 +36,7 @@ t_graph	*graph_init(void)
 	return (graph);
 }
 
-int	parse_start_node(char *line, t_graph *graph)
+int		parse_start_node(char *line, t_graph *graph)
 {
 	t_hash	*node;
 	char	*str_ret;
@@ -58,7 +57,7 @@ int	parse_start_node(char *line, t_graph *graph)
 	return (0);
 }
 
-int	parse_end_node(char *line, t_graph *graph)
+int		parse_end_node(char *line, t_graph *graph)
 {
 	t_hash	*node;
 	char	*str_ret;
@@ -79,7 +78,7 @@ int	parse_end_node(char *line, t_graph *graph)
 	return (0);
 }
 
-void	check_if_already_linked(t_hash *haystack, t_hash *needle)
+void		check_if_already_linked(t_hash *haystack, t_hash *needle)
 {
 	t_child	*c_node_hay;
 
@@ -92,7 +91,6 @@ void	check_if_already_linked(t_hash *haystack, t_hash *needle)
 	}
 }
 
-// NICK
 int		is_already_linked(t_hash *haystack, t_hash *needle)
 {
 	t_child	*c_node_hay;
@@ -107,30 +105,8 @@ int		is_already_linked(t_hash *haystack, t_hash *needle)
 	return (0);
 }
 
-//void	add_link(t_hash *parent, t_hash *child)
-//{
-//	t_child *new;
-//	t_child *c_list;
-//
-//	MFAIL((new = malloc(sizeof(t_child))));
-//	new->next = NULL;
-//	new->c_node = child;
-//	new->flow = 1;
-//	new->weight = 1;
-//	if (parent->child == NULL)
-//		parent->child = new;
-//	else
-//	{
-//		c_list = parent->child;
-//		while (c_list->next)
-//			c_list = c_list->next;
-//		c_list->next = new;
-//	}
-//}
-
-// NICK
-void				add_link(t_hash *parent, t_hash *child,
-							 int weight, int is_part_of_path)
+void	add_link(t_hash *parent, t_hash *child,
+int weight, int is_part_of_path)
 {
 	t_child *new;
 	t_child *c_list;
