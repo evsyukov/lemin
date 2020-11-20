@@ -6,7 +6,7 @@
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 22:28:00 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/20 22:32:09 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/20 22:49:15 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ typedef	struct		s_child
 	struct s_child	*next;
 }					t_child;
 
-typedef struct	s_paths
+typedef struct		s_paths
 {
 	struct s_path	*path;
 	struct s_paths	*next;
@@ -52,22 +52,16 @@ typedef struct	s_paths
 	struct s_path	*current_print;
 	struct s_path	*end_print;
 	size_t			num_nodes;
-}				t_paths;
+}					t_paths;
 
-typedef struct	s_path
+typedef struct		s_path
 {
 	struct s_hash	*node;
 	char			*node_name;
 	size_t			num_ant;
 	struct s_path	*next;
 	struct s_path	*prev;
-}				t_path;
-
-typedef struct	s_vis
-{
-	struct s_hash	*node;
-	struct s_vis	*next;
-}				t_vis;
+}					t_path;
 
 typedef	struct		s_hash
 {
@@ -138,9 +132,9 @@ void				err_exit();
 /*
 ** -------------------------- Debug functions --------------------------------
 */
+
 void				print_hash_table_child(t_hash **h_table);
 void				print_hash_table(t_hash **h_table);
-
 int					dijkstra(t_graph *graph);
 void				dijkstra_shortest_reverse(t_graph *graph);
 t_child				*get_edge(t_child *haystack, t_hash *needle);
@@ -149,15 +143,18 @@ void				get_paths(t_graph *graph);
 /*
 ** -------------------------- Bellman_ford.c ---------------------------------
 */
+
 t_path				*get_bellman_ford_path(t_graph *graph, size_t *len_path);
 
 /*
 ** -------------------------- Utils_nick.c -----------------------------------
 */
+
 t_hash				**make_arr_nodes(t_graph *graph);
 t_paths				*create_paths(t_path *path, size_t len_path);
 void				add_path(t_graph *graph, t_path *new_path, size_t len_path);
-void				add_path_second(t_graph *graph, t_path *new_path, size_t len_path);
+void				add_path_second(t_graph *graph, t_path
+*new_path, size_t len_path);
 void				add_link(t_hash *parent, t_hash *child,
 int weight, int is_part_of_path);
 int					is_already_linked(t_hash *haystack, t_hash *needle);
@@ -166,6 +163,7 @@ void				reverse_edges(t_graph *graph, t_path *path);
 /*
 ** -------------------------- calc_speed.c -----------------------------------
 */
+
 void				li_sort(size_t *arr, size_t len);
 size_t				do_calc_speed(int num, const size_t *arr, size_t len);
 size_t				calc_speed(t_graph *graph);
@@ -173,6 +171,7 @@ size_t				calc_speed(t_graph *graph);
 /*
 ** -------------------------- debug_func_nick.c -------------------------------
 */
+
 void				print_graph_arr(t_hash **arr);
 void				print_path(t_path *path);
 void				print_paths(t_paths *paths);
@@ -181,12 +180,14 @@ void				test_speed_calc();
 /*
 ** -------------------------- my_cool_algo.c -----------------------------------
 */
+
 void				real_func(t_graph *graph);
 void				my_cool_func(t_graph *graph);
 
 /*
 ** -------------------------- utils_free.c -----------------------------------
 */
+
 void				free_path(t_path *path);
 void				free_paths(t_paths *paths);
 void				free_graph(t_graph *graph);
@@ -194,12 +195,14 @@ void				free_graph(t_graph *graph);
 /*
 ** -------------------------- utils_nick_3.c -----------------------------------
 */
+
 t_path				*add_path_node(t_path **root, t_hash *node);
 size_t				get_set_paths(t_graph *graph);
 
 /*
 ** -------------------------- print_result.c -----------------------------------
 */
+
 void				print_solution(t_graph *graph);
 
 #endif
