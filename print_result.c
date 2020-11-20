@@ -37,7 +37,7 @@ void	move_and_add_one(t_graph *graph, t_paths *paths,
 			}
 			// иначе (если нет муравьев на старте)
 			// двигаем удказатель end_print вперед
-			else if (paths->end_print != NULL)
+			else if (paths->end_print->node != graph->end)
 				paths->end_print = paths->end_print->next;
 		}
 		// иначе, если текущая нода - последняя
