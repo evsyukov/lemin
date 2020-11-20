@@ -3,24 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   debug_functions.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmustach <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/20 18:27:05 by nmustach          #+#    #+#             */
-/*   Updated: 2020/07/07 16:45:41 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/20 22:21:14 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
-
-void	print_queue(t_q *queue)
-{
-	while (queue)
-	{
-		printf("%s\n", queue->q_node->node_name);
-		queue = queue->next;
-	}
-}
-
 
 void	print_hash_table(t_hash **h_table)
 {

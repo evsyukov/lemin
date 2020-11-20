@@ -6,7 +6,7 @@
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 22:14:48 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/10 21:26:28 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/20 22:05:39 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,16 +82,13 @@ static void	handle_double_node(t_graph *graph,
 		check_if_already_linked(second_node_out, first_node_in);
 //		check_if_already_linked(first_node_in, first_node_out);
 //		check_if_already_linked(second_node_in, second_node_out);
-
 		add_link(first_node_out, second_node_in, 1, 0);
 		add_link(second_node_out, first_node_in, 1, 0);
-
 		if (!is_already_linked(first_node_in, first_node_out))
 		{
 			add_link(first_node_in, first_node_out, 0, 0);
 			++edges_num;
 		}
-
 		if (!is_already_linked(second_node_in, second_node_out))
 		{
 			add_link(second_node_in, second_node_out, 0, 0);
@@ -140,19 +137,19 @@ void		parse_rooms(t_graph *graph)
 	char	*str_ret;
 	t_hash	*node_ret;
 
-	while ((str_ret = gnl(graph->map_buf)) != NULL) // Читаем line by line пока читаются валидные комнаты с координатами как (nodename 25 25)
+	while ((str_ret = gnl(graph->map_buf)) != NULL)
 	{
 		if (str_ret[0] == '#')
 		{
 			parse_comments(str_ret, graph);
 			continue ;
 		}
-		if ((node_ret = parse_node_name(str_ret, graph->h_table, 0))) // Парсим имена комнат и добавляем их в хэш таблицу
+		if ((node_ret = parse_node_name(str_ret, graph->h_table, 0)))
 			continue ;
 		else
-			break ; // Если парсинг невалидный, комнаты закончились, переходим на парсинг связей как(nodeA-nodeB)
+			break ;
 	}
-	if (graph->start && graph->end) // Проверяем на наличие start и end node
+	if (graph->start && graph->end)
 		parse_links(graph, str_ret);
 	else
 		err_exit();
@@ -220,32 +217,37 @@ static t_hash	*insert_node_to_h_table(char *line, t_hash **h_table,
 	return (node);
 }
 
+void	split_and_insert(t_hash **h_table, char *line, t_hash **node_in,
+t_hash **node_out, size_t sp_ind[2])
+{
+	char *str;
+
+	MFAIL((str = ft_strjoin(line, "in")));
+	if (!hash_query(h_table, str))
+	{
+		FCNT(free(str));
+		*node_in = insert_node_to_h_table(line, h_table, sp_ind, "_in");
+		*node_out = insert_node_to_h_table(line, h_table, sp_ind, "_out");
+		line[sp_ind[0]] = ' ';
+		line[sp_ind[1]] = ' ';
+	}
+	else
+		err_exit();
+}
+
 t_hash	*parse_node_name(char *line, t_hash **h_table, int flag)
 {
-	size_t	i;
 	t_hash	*node_in;
 	t_hash	*node_out;
 	size_t	sp_ind[2];
-	char	*str;
 
-	i = 0;
 	node_in = NULL;
 	node_out = NULL;
-	if (!line || line[i] == ' ' || line[i] == 'L')
+	if (!line || line[0] == ' ' || line[0] == 'L')
 		err_exit();
 	if (split_line(line, sp_ind))
 	{
-		MFAIL((str = ft_strjoin(line, "in")));
-		if (!hash_query(h_table, str))
-		{
-			FCNT(free(str));
-			node_in = insert_node_to_h_table(line, h_table, sp_ind, "_in");
-			node_out = insert_node_to_h_table(line, h_table, sp_ind, "_out");
-			line[sp_ind[0]] = ' ';
-			line[sp_ind[1]] = ' ';
-		}
-		else
-			err_exit();
+		split_and_insert(h_table, line, &node_in, &node_out, sp_ind);
 		nodes_num += 2;
 		if (flag == PARSE_END)
 			return (node_in);
@@ -260,11 +262,10 @@ t_graph	*parse_input(void)
 	t_graph	*graph;
 
 	graph = NULL;
-	graph = graph_init(); // Инициализиуем хэш таблицу и указатели на начальную и конечную ноду
-	graph->map_buf = read_to_str(0);  // Читаем в буфер входной поток (0)
+	graph = graph_init();
+	graph->map_buf = read_to_str(0);
 	parse_ants_number(graph);
 	parse_rooms(graph);
-	// NICK пока убрал эту проверку
 //	if (!graph->start->child || !graph->end->child)
 //		err_exit();
 	return (graph);

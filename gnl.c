@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   gnl.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmustach <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/14 00:24:47 by nmustach          #+#    #+#             */
-/*   Updated: 2020/09/14 00:28:12 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/20 21:40:57 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,26 @@
 
 char	*gnl(char *text)
 {
-	static int	i; // Static переменная для сохранения индекса между запусками функции
+	static int	i;
 	int			b;
 
 	b = 0;
 	if ((i == 0 && (!text[0])) || (i < 0))
 		return (NULL);
-	if (i > 0) // Тут возвращаем \n на место после предыдущего запуска функции
+	if (i > 0)
 	{
-		text[i] = '\n'; 
-		text = &text[i + 1]; // Двигаем указатель на +1 символ
+		text[i] = '\n';
+		text = &text[i + 1];
 		i += 1;
 	}
-	if (!text[0]) // После сдвига указателя проверить, не является ли это концом строки
+	if (!text[0])
 		return (NULL);
-	while (text[b] != '\n' && text[b]) // Двигаем указатель до ближайшего \n или \0
+	while (text[b] != '\n' && text[b])
 	{
 		b += 1;
 		i += 1;
 	}
-	if (!text[b]) // Если в предыдущем цикле дошли до \0, это означает, что строка закончилась, в следующий запуск функция должна вернуть NULL
+	if (!text[b])
 		i = -1;
 	text[b] = '\0';
 	return (text);
@@ -43,11 +43,11 @@ char	*enlarge_buffer(char *old_buf, size_t *mem_buf)
 {
 	char	*new_buf;
 
-	*mem_buf = *mem_buf * 2; // Увеличиваем размер буфера в 2 раза
+	*mem_buf = *mem_buf * 2;
 	MFAIL((new_buf = malloc(sizeof(char) * *mem_buf)));
 	new_buf[0] = 0;
-	ft_strcat(new_buf, old_buf); // Копируем из старого в новый
-	FCNT(free(old_buf)); // Удаляем старый
+	ft_strcat(new_buf, old_buf);
+	FCNT(free(old_buf));
 	return (new_buf);
 }
 
@@ -56,8 +56,8 @@ char	*read_to_str(int fd)
 	char	read_buf[1001];
 	char	*buf;
 	int		ret;
-	size_t	buf_s; // Переменная для хранения размера заполненности буфера
-	size_t	mem_buf; // Стартовый буфер в 5000 байт
+	size_t	buf_s;
+	size_t	mem_buf;
 
 	buf_s = 0;
 	mem_buf = 5000;
@@ -65,11 +65,11 @@ char	*read_to_str(int fd)
 	buf[0] = '\0';
 	while ((ret = read(fd, read_buf, 1000)) > 0)
 	{
-		if (buf_s + ret >= mem_buf) // Тут проверяем, требуется ли увелечение буфера.
+		if (buf_s + ret >= mem_buf)
 			buf = enlarge_buffer(buf, &mem_buf);
 		read_buf[ret] = '\0';
 		ft_strcat(buf, read_buf);
-		buf_s += ret; // Увеличиваем размер заполненности буфера
+		buf_s += ret;
 	}
 	return (buf);
 }
