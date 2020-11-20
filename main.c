@@ -45,7 +45,7 @@ int	main(void)
 	print_paths(graph->begin_path_first_res);
 
 	// PRINT RESULT
-//	print_solution(graph);
+	print_solution(graph);
 
 	// ??? НУЖНО ???
 //	delete_double_nodes(graph);

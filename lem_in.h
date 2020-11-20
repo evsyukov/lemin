@@ -239,6 +239,11 @@ void				free_graph(t_graph *graph);
 t_path				*add_path_node(t_path **root, t_hash *node);
 size_t				get_set_paths(t_graph *graph);
 
+/*
+** -------------------------- print_result.c -----------------------------------
+*/
+void				print_solution(t_graph *graph);
+
 // DEBUG
 void				test_speed_calc();
 
