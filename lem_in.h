@@ -6,7 +6,7 @@
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 22:28:00 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/20 22:49:15 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/20 23:04:28 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -191,6 +191,8 @@ void				my_cool_func(t_graph *graph);
 void				free_path(t_path *path);
 void				free_paths(t_paths *paths);
 void				free_graph(t_graph *graph);
+void				free_nodes(t_hash *node);
+
 
 /*
 ** -------------------------- utils_nick_3.c -----------------------------------
