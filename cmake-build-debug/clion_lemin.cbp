@@ -81,9 +81,6 @@
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/bellman_ford.c">
 			<Option target="lemin"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/bfs.c">
-			<Option target="lemin"/>
-		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/calc_speed.c">
 			<Option target="lemin"/>
 		</Unit>
@@ -91,9 +88,6 @@
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/debug_functions.c">
-			<Option target="lemin"/>
-		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/dijkstra.c">
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/ft_atoi_validate_pos.c">
@@ -148,9 +142,6 @@
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/parse_input.c">
-			<Option target="lemin"/>
-		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/pathfinder.c">
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/print_result.c">

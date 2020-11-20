@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lemin.dir/bellman_ford.c.o"
-  "CMakeFiles/lemin.dir/bfs.c.o"
   "CMakeFiles/lemin.dir/calc_speed.c.o"
   "CMakeFiles/lemin.dir/debug_func_nick.c.o"
   "CMakeFiles/lemin.dir/debug_functions.c.o"
-  "CMakeFiles/lemin.dir/dijkstra.c.o"
   "CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.o"
   "CMakeFiles/lemin.dir/gnl.c.o"
   "CMakeFiles/lemin.dir/hash.c.o"
@@ -22,7 +20,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/lemin.dir/my_cool_algo.c.o"
   "CMakeFiles/lemin.dir/parse_functions.c.o"
   "CMakeFiles/lemin.dir/parse_input.c.o"
-  "CMakeFiles/lemin.dir/pathfinder.c.o"
   "CMakeFiles/lemin.dir/print_result.c.o"
   "CMakeFiles/lemin.dir/test_speed_calc.c.o"
   "CMakeFiles/lemin.dir/utils_free.c.o"

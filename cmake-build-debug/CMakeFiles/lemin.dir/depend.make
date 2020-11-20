@@ -5,10 +5,6 @@ CMakeFiles/lemin.dir/bellman_ford.c.o: ../bellman_ford.c
 CMakeFiles/lemin.dir/bellman_ford.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/bellman_ford.c.o: ../libft/libft.h
 
-CMakeFiles/lemin.dir/bfs.c.o: ../bfs.c
-CMakeFiles/lemin.dir/bfs.c.o: ../lem_in.h
-CMakeFiles/lemin.dir/bfs.c.o: ../libft/libft.h
-
 CMakeFiles/lemin.dir/calc_speed.c.o: ../calc_speed.c
 CMakeFiles/lemin.dir/calc_speed.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/calc_speed.c.o: ../libft/libft.h
@@ -20,10 +16,6 @@ CMakeFiles/lemin.dir/debug_func_nick.c.o: ../libft/libft.h
 CMakeFiles/lemin.dir/debug_functions.c.o: ../debug_functions.c
 CMakeFiles/lemin.dir/debug_functions.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/debug_functions.c.o: ../libft/libft.h
-
-CMakeFiles/lemin.dir/dijkstra.c.o: ../dijkstra.c
-CMakeFiles/lemin.dir/dijkstra.c.o: ../lem_in.h
-CMakeFiles/lemin.dir/dijkstra.c.o: ../libft/libft.h
 
 CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.o: ../ft_atoi_validate_pos.c
 CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.o: ../lem_in.h
@@ -80,10 +72,6 @@ CMakeFiles/lemin.dir/parse_functions.c.o: ../parse_functions.c
 CMakeFiles/lemin.dir/parse_input.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/parse_input.c.o: ../libft/libft.h
 CMakeFiles/lemin.dir/parse_input.c.o: ../parse_input.c
-
-CMakeFiles/lemin.dir/pathfinder.c.o: ../lem_in.h
-CMakeFiles/lemin.dir/pathfinder.c.o: ../libft/libft.h
-CMakeFiles/lemin.dir/pathfinder.c.o: ../pathfinder.c
 
 CMakeFiles/lemin.dir/print_result.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/print_result.c.o: ../libft/libft.h

@@ -5,11 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/smanta/LEM_IN/MY_GIT_8/bellman_ford.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/bellman_ford.c.o"
-  "/Users/smanta/LEM_IN/MY_GIT_8/bfs.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/bfs.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_8/calc_speed.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/calc_speed.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_8/debug_func_nick.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/debug_func_nick.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_8/debug_functions.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/debug_functions.c.o"
-  "/Users/smanta/LEM_IN/MY_GIT_8/dijkstra.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/dijkstra.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_8/ft_atoi_validate_pos.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_8/gnl.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/gnl.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_8/hash.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/hash.c.o"
@@ -27,7 +25,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/smanta/LEM_IN/MY_GIT_8/my_cool_algo.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/my_cool_algo.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_8/parse_functions.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/parse_functions.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_8/parse_input.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/parse_input.c.o"
-  "/Users/smanta/LEM_IN/MY_GIT_8/pathfinder.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/pathfinder.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_8/print_result.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/print_result.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_8/test_speed_calc.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/test_speed_calc.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_8/utils_free.c" "/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles/lemin.dir/utils_free.c.o"

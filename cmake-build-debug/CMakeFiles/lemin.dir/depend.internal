@@ -5,10 +5,6 @@ CMakeFiles/lemin.dir/bellman_ford.c.o
  /Users/smanta/LEM_IN/MY_GIT_8/bellman_ford.c
  /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h
-CMakeFiles/lemin.dir/bfs.c.o
- /Users/smanta/LEM_IN/MY_GIT_8/bfs.c
- /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
- /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h
 CMakeFiles/lemin.dir/calc_speed.c.o
  /Users/smanta/LEM_IN/MY_GIT_8/calc_speed.c
  /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
@@ -19,10 +15,6 @@ CMakeFiles/lemin.dir/debug_func_nick.c.o
  /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h
 CMakeFiles/lemin.dir/debug_functions.c.o
  /Users/smanta/LEM_IN/MY_GIT_8/debug_functions.c
- /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
- /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h
-CMakeFiles/lemin.dir/dijkstra.c.o
- /Users/smanta/LEM_IN/MY_GIT_8/dijkstra.c
  /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h
 CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.o
@@ -81,10 +73,6 @@ CMakeFiles/lemin.dir/parse_input.c.o
  /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h
  /Users/smanta/LEM_IN/MY_GIT_8/parse_input.c
-CMakeFiles/lemin.dir/pathfinder.c.o
- /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
- /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h
- /Users/smanta/LEM_IN/MY_GIT_8/pathfinder.c
 CMakeFiles/lemin.dir/print_result.c.o
  /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h

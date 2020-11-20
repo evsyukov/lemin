@@ -170,33 +170,6 @@ bellman_ford.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/bellman_ford.c.s
 .PHONY : bellman_ford.c.s
 
-bfs.o: bfs.c.o
-
-.PHONY : bfs.o
-
-# target to build an object file
-bfs.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/bfs.c.o
-.PHONY : bfs.c.o
-
-bfs.i: bfs.c.i
-
-.PHONY : bfs.i
-
-# target to preprocess a source file
-bfs.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/bfs.c.i
-.PHONY : bfs.c.i
-
-bfs.s: bfs.c.s
-
-.PHONY : bfs.s
-
-# target to generate assembly for a file
-bfs.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/bfs.c.s
-.PHONY : bfs.c.s
-
 calc_speed.o: calc_speed.c.o
 
 .PHONY : calc_speed.o
@@ -277,33 +250,6 @@ debug_functions.s: debug_functions.c.s
 debug_functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_functions.c.s
 .PHONY : debug_functions.c.s
-
-dijkstra.o: dijkstra.c.o
-
-.PHONY : dijkstra.o
-
-# target to build an object file
-dijkstra.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/dijkstra.c.o
-.PHONY : dijkstra.c.o
-
-dijkstra.i: dijkstra.c.i
-
-.PHONY : dijkstra.i
-
-# target to preprocess a source file
-dijkstra.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/dijkstra.c.i
-.PHONY : dijkstra.c.i
-
-dijkstra.s: dijkstra.c.s
-
-.PHONY : dijkstra.s
-
-# target to generate assembly for a file
-dijkstra.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/dijkstra.c.s
-.PHONY : dijkstra.c.s
 
 ft_atoi_validate_pos.o: ft_atoi_validate_pos.c.o
 
@@ -764,33 +710,6 @@ parse_input.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/parse_input.c.s
 .PHONY : parse_input.c.s
 
-pathfinder.o: pathfinder.c.o
-
-.PHONY : pathfinder.o
-
-# target to build an object file
-pathfinder.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/pathfinder.c.o
-.PHONY : pathfinder.c.o
-
-pathfinder.i: pathfinder.c.i
-
-.PHONY : pathfinder.i
-
-# target to preprocess a source file
-pathfinder.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/pathfinder.c.i
-.PHONY : pathfinder.c.i
-
-pathfinder.s: pathfinder.c.s
-
-.PHONY : pathfinder.s
-
-# target to generate assembly for a file
-pathfinder.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/pathfinder.c.s
-.PHONY : pathfinder.c.s
-
 print_result.o: print_result.c.o
 
 .PHONY : print_result.o
@@ -938,9 +857,6 @@ help:
 	@echo "... bellman_ford.o"
 	@echo "... bellman_ford.i"
 	@echo "... bellman_ford.s"
-	@echo "... bfs.o"
-	@echo "... bfs.i"
-	@echo "... bfs.s"
 	@echo "... calc_speed.o"
 	@echo "... calc_speed.i"
 	@echo "... calc_speed.s"
@@ -950,9 +866,6 @@ help:
 	@echo "... debug_functions.o"
 	@echo "... debug_functions.i"
 	@echo "... debug_functions.s"
-	@echo "... dijkstra.o"
-	@echo "... dijkstra.i"
-	@echo "... dijkstra.s"
 	@echo "... ft_atoi_validate_pos.o"
 	@echo "... ft_atoi_validate_pos.i"
 	@echo "... ft_atoi_validate_pos.s"
@@ -1004,9 +917,6 @@ help:
 	@echo "... parse_input.o"
 	@echo "... parse_input.i"
 	@echo "... parse_input.s"
-	@echo "... pathfinder.o"
-	@echo "... pathfinder.i"
-	@echo "... pathfinder.s"
 	@echo "... print_result.o"
 	@echo "... print_result.i"
 	@echo "... print_result.s"
