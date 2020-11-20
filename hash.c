@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   hash.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmustach <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/20 14:44:25 by nmustach          #+#    #+#             */
-/*   Updated: 2020/09/14 01:33:25 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/20 23:14:20 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
 
-t_hash	**hash_table_init(void)
+t_hash			**hash_table_init(void)
 {
 	size_t	i;
 	t_hash	**hash_table;
@@ -27,7 +27,7 @@ t_hash	**hash_table_init(void)
 	return (hash_table);
 }
 
-t_hash	*assign_to_table(t_hash **table, char *node_name)
+t_hash			*assign_to_table(t_hash **table, char *node_name)
 {
 	t_hash			*new;
 	unsigned int	hash_val;
@@ -68,44 +68,46 @@ unsigned int	calc_hash(char *node_name)
 	return (value % TABLE_SIZE);
 }
 
-void	free_hash_table(t_hash **h_table)
+void			free_hash_table(t_hash **h_table)
 {
 	size_t	i;
-	t_hash	*node;
-	t_hash	*next;
-	t_child	*child_list;
-	t_child	*child_next;
 
 	i = 0;
 	while (i < TABLE_SIZE)
 	{
 		if (h_table[i])
-		{
-			node = h_table[i];
-			while (node)
-			{
-				next = node->next;
-				FCNT(free(node->node_name));
-				if (node->child)
-				{
-					child_list = node->child;
-					while (child_list)
-					{
-						child_next = child_list->next;
-						FCNT(free(child_list));
-						child_list = child_next;
-					}
-				}
-				FCNT(free(node));
-				node = next;
-			}
-		}
+			free_nodes(h_table[i]);
 		i++;
 	}
 	FCNT(free(h_table));
 }
 
-t_hash	*hash_query(t_hash **h_table, char *node_name)
+void			free_nodes(t_hash *node)
+{
+	t_child	*child_list;
+	t_child	*child_next;
+	t_hash	*next;
+
+	while (node)
+	{
+		next = node->next;
+		FCNT(free(node->node_name));
+		if (node->child)
+		{
+			child_list = node->child;
+			while (child_list)
+			{
+				child_next = child_list->next;
+				FCNT(free(child_list));
+				child_list = child_next;
+			}
+		}
+		FCNT(free(node));
+		node = next;
+	}
+}
+
+t_hash		*hash_query(t_hash **h_table, char *node_name)
 {
 	t_hash			*node;
 	unsigned int	hash_val;
