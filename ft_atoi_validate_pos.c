@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi_validate_pos.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmustach <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 23:49:12 by nmustach          #+#    #+#             */
-/*   Updated: 2020/09/14 01:37:50 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/21 19:09:21 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
 
-int	ft_atoi_validate_pos(const char *str)
+int		ft_atoi_validate_pos(const char *str)
 {
 	int	i;
 	int	num;
@@ -29,31 +29,20 @@ int	ft_atoi_validate_pos(const char *str)
 	return (num);
 }
 
-int	check_nodenames_is_family(char *str, char *str1)
+void	parse_ants_number(t_graph *graph)
 {
-	size_t	str_l;
-	size_t	str1_l;
-	int		result;
+	char	*ret;
+	int		ants_num;
 
-	result = 0;
-	str_l = ft_strlen(str);
-	str1_l = ft_strlen(str1);
-	if (!((str[str_l - 1] == 't' && str1[str1_l - 1] == 'n')
-		|| (str[str_l - 1] == 'n' && str1[str1_l - 1] == 't')))
-		return (0);
-	if (str[str_l - 1] == 't')
-		str_l -= 4;
-	if (str[str_l - 1] == 'n')
-		str_l -= 3;
-	if (str1[str1_l - 1] == 't')
-		str1_l -= 4;
-	if (str1[str1_l - 1] == 'n')
-		str1_l -= 3;
-	str[str_l] = '\0';
-	str1[str1_l] = '\0';
-	if (ft_strequ(str, str1))
-		result = 1;
-	str[str_l] = '_';
-	str1[str1_l] = '_';
-	return (result);
+	ants_num = 0;
+	if ((ret = gnl(graph->map_buf)) != NULL)
+	{
+		ants_num = ft_atoi_validate_pos(ret);
+		if (ants_num > 0)
+			graph->ants_num = ants_num;
+		else
+			err_exit();
+	}
+	else
+		err_exit();
 }
