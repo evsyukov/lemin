@@ -6,7 +6,7 @@
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 22:14:48 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/20 22:05:39 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/21 17:12:57 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,8 +80,6 @@ static void	handle_double_node(t_graph *graph,
 	{
 		check_if_already_linked(first_node_out, second_node_in);
 		check_if_already_linked(second_node_out, first_node_in);
-//		check_if_already_linked(first_node_in, first_node_out);
-//		check_if_already_linked(second_node_in, second_node_out);
 		add_link(first_node_out, second_node_in, 1, 0);
 		add_link(second_node_out, first_node_in, 1, 0);
 		if (!is_already_linked(first_node_in, first_node_out))
@@ -217,22 +215,25 @@ static t_hash	*insert_node_to_h_table(char *line, t_hash **h_table,
 	return (node);
 }
 
-void	split_and_insert(t_hash **h_table, char *line, t_hash **node_in,
-t_hash **node_out, size_t sp_ind[2])
+t_hash	*split_and_insert(t_hash **h_table, char *line,
+t_hash **node_in, size_t sp_ind[2])
 {
-	char *str;
+	char	*str;
+	t_hash	*node_out;
 
+	node_out = NULL;
 	MFAIL((str = ft_strjoin(line, "in")));
 	if (!hash_query(h_table, str))
 	{
 		FCNT(free(str));
 		*node_in = insert_node_to_h_table(line, h_table, sp_ind, "_in");
-		*node_out = insert_node_to_h_table(line, h_table, sp_ind, "_out");
+		node_out = insert_node_to_h_table(line, h_table, sp_ind, "_out");
 		line[sp_ind[0]] = ' ';
 		line[sp_ind[1]] = ' ';
 	}
 	else
 		err_exit();
+	return (node_out);
 }
 
 t_hash	*parse_node_name(char *line, t_hash **h_table, int flag)
@@ -242,12 +243,11 @@ t_hash	*parse_node_name(char *line, t_hash **h_table, int flag)
 	size_t	sp_ind[2];
 
 	node_in = NULL;
-	node_out = NULL;
 	if (!line || line[0] == ' ' || line[0] == 'L')
 		err_exit();
 	if (split_line(line, sp_ind))
 	{
-		split_and_insert(h_table, line, &node_in, &node_out, sp_ind);
+		node_out = split_and_insert(h_table, line, &node_in, sp_ind);
 		nodes_num += 2;
 		if (flag == PARSE_END)
 			return (node_in);
