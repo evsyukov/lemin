@@ -90,6 +90,9 @@
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/debug_functions.c">
 			<Option target="lemin"/>
 		</Unit>
+		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/free_hash.c">
+			<Option target="lemin"/>
+		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/ft_atoi_validate_pos.c">
 			<Option target="lemin"/>
 		</Unit>
@@ -97,6 +100,9 @@
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/hash.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/insert_to_hash_functions.c">
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/lem_in.h">
@@ -132,6 +138,9 @@
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/libft/ft_strlen.c">
 			<Option target="lemin"/>
 		</Unit>
+		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/links_functions.c">
+			<Option target="lemin"/>
+		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/main.c">
 			<Option target="lemin"/>
 		</Unit>
@@ -148,6 +157,9 @@
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/test_speed_calc.c">
+			<Option target="lemin"/>
+		</Unit>
+		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/utils.c">
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/utils_free.c">

@@ -52,6 +52,7 @@ typedef struct		s_paths
 	struct s_path	*current_print;
 	struct s_path	*end_print;
 	size_t			num_nodes;
+	size_t			num_allowed_ants;
 }					t_paths;
 
 typedef struct		s_path

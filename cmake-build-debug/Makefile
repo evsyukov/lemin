@@ -251,6 +251,33 @@ debug_functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_functions.c.s
 .PHONY : debug_functions.c.s
 
+free_hash.o: free_hash.c.o
+
+.PHONY : free_hash.o
+
+# target to build an object file
+free_hash.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/free_hash.c.o
+.PHONY : free_hash.c.o
+
+free_hash.i: free_hash.c.i
+
+.PHONY : free_hash.i
+
+# target to preprocess a source file
+free_hash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/free_hash.c.i
+.PHONY : free_hash.c.i
+
+free_hash.s: free_hash.c.s
+
+.PHONY : free_hash.s
+
+# target to generate assembly for a file
+free_hash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/free_hash.c.s
+.PHONY : free_hash.c.s
+
 ft_atoi_validate_pos.o: ft_atoi_validate_pos.c.o
 
 .PHONY : ft_atoi_validate_pos.o
@@ -331,6 +358,33 @@ hash.s: hash.c.s
 hash.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/hash.c.s
 .PHONY : hash.c.s
+
+insert_to_hash_functions.o: insert_to_hash_functions.c.o
+
+.PHONY : insert_to_hash_functions.o
+
+# target to build an object file
+insert_to_hash_functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/insert_to_hash_functions.c.o
+.PHONY : insert_to_hash_functions.c.o
+
+insert_to_hash_functions.i: insert_to_hash_functions.c.i
+
+.PHONY : insert_to_hash_functions.i
+
+# target to preprocess a source file
+insert_to_hash_functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/insert_to_hash_functions.c.i
+.PHONY : insert_to_hash_functions.c.i
+
+insert_to_hash_functions.s: insert_to_hash_functions.c.s
+
+.PHONY : insert_to_hash_functions.s
+
+# target to generate assembly for a file
+insert_to_hash_functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/insert_to_hash_functions.c.s
+.PHONY : insert_to_hash_functions.c.s
 
 libft/ft_isdigit.o: libft/ft_isdigit.c.o
 
@@ -602,6 +656,33 @@ libft/ft_strlen.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strlen.c.s
 .PHONY : libft/ft_strlen.c.s
 
+links_functions.o: links_functions.c.o
+
+.PHONY : links_functions.o
+
+# target to build an object file
+links_functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/links_functions.c.o
+.PHONY : links_functions.c.o
+
+links_functions.i: links_functions.c.i
+
+.PHONY : links_functions.i
+
+# target to preprocess a source file
+links_functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/links_functions.c.i
+.PHONY : links_functions.c.i
+
+links_functions.s: links_functions.c.s
+
+.PHONY : links_functions.s
+
+# target to generate assembly for a file
+links_functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/links_functions.c.s
+.PHONY : links_functions.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -764,6 +845,33 @@ test_speed_calc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/test_speed_calc.c.s
 .PHONY : test_speed_calc.c.s
 
+utils.o: utils.c.o
+
+.PHONY : utils.o
+
+# target to build an object file
+utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils.c.o
+.PHONY : utils.c.o
+
+utils.i: utils.c.i
+
+.PHONY : utils.i
+
+# target to preprocess a source file
+utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils.c.i
+.PHONY : utils.c.i
+
+utils.s: utils.c.s
+
+.PHONY : utils.s
+
+# target to generate assembly for a file
+utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils.c.s
+.PHONY : utils.c.s
+
 utils_free.o: utils_free.c.o
 
 .PHONY : utils_free.o
@@ -866,6 +974,9 @@ help:
 	@echo "... debug_functions.o"
 	@echo "... debug_functions.i"
 	@echo "... debug_functions.s"
+	@echo "... free_hash.o"
+	@echo "... free_hash.i"
+	@echo "... free_hash.s"
 	@echo "... ft_atoi_validate_pos.o"
 	@echo "... ft_atoi_validate_pos.i"
 	@echo "... ft_atoi_validate_pos.s"
@@ -875,6 +986,9 @@ help:
 	@echo "... hash.o"
 	@echo "... hash.i"
 	@echo "... hash.s"
+	@echo "... insert_to_hash_functions.o"
+	@echo "... insert_to_hash_functions.i"
+	@echo "... insert_to_hash_functions.s"
 	@echo "... libft/ft_isdigit.o"
 	@echo "... libft/ft_isdigit.i"
 	@echo "... libft/ft_isdigit.s"
@@ -905,6 +1019,9 @@ help:
 	@echo "... libft/ft_strlen.o"
 	@echo "... libft/ft_strlen.i"
 	@echo "... libft/ft_strlen.s"
+	@echo "... links_functions.o"
+	@echo "... links_functions.i"
+	@echo "... links_functions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -923,6 +1040,9 @@ help:
 	@echo "... test_speed_calc.o"
 	@echo "... test_speed_calc.i"
 	@echo "... test_speed_calc.s"
+	@echo "... utils.o"
+	@echo "... utils.i"
+	@echo "... utils.s"
 	@echo "... utils_free.o"
 	@echo "... utils_free.i"
 	@echo "... utils_free.s"
