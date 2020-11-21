@@ -188,11 +188,10 @@ void				print_paths(t_paths *paths);
 void				test_speed_calc();
 
 /*
-** -------------------------- my_cool_algo.c -----------------------------------
+** -------------------------- find_solution.c -----------------------------------
 */
 
-void				real_func(t_graph *graph);
-void				my_cool_func(t_graph *graph);
+void				find_solution(t_graph *graph);
 
 /*
 ** -------------------------- utils_free.c -----------------------------------

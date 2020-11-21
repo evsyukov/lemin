@@ -17,6 +17,10 @@ CMakeFiles/lemin.dir/debug_functions.c.o: ../debug_functions.c
 CMakeFiles/lemin.dir/debug_functions.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/debug_functions.c.o: ../libft/libft.h
 
+CMakeFiles/lemin.dir/find_solution.c.o: ../find_solution.c
+CMakeFiles/lemin.dir/find_solution.c.o: ../lem_in.h
+CMakeFiles/lemin.dir/find_solution.c.o: ../libft/libft.h
+
 CMakeFiles/lemin.dir/free_hash.c.o: ../free_hash.c
 CMakeFiles/lemin.dir/free_hash.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/free_hash.c.o: ../libft/libft.h
@@ -72,10 +76,6 @@ CMakeFiles/lemin.dir/links_functions.c.o: ../links_functions.c
 CMakeFiles/lemin.dir/main.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/main.c.o: ../libft/libft.h
 CMakeFiles/lemin.dir/main.c.o: ../main.c
-
-CMakeFiles/lemin.dir/my_cool_algo.c.o: ../lem_in.h
-CMakeFiles/lemin.dir/my_cool_algo.c.o: ../libft/libft.h
-CMakeFiles/lemin.dir/my_cool_algo.c.o: ../my_cool_algo.c
 
 CMakeFiles/lemin.dir/parse_functions.c.o: ../lem_in.h
 CMakeFiles/lemin.dir/parse_functions.c.o: ../libft/libft.h

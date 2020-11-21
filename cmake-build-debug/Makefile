@@ -251,6 +251,33 @@ debug_functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_functions.c.s
 .PHONY : debug_functions.c.s
 
+find_solution.o: find_solution.c.o
+
+.PHONY : find_solution.o
+
+# target to build an object file
+find_solution.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/find_solution.c.o
+.PHONY : find_solution.c.o
+
+find_solution.i: find_solution.c.i
+
+.PHONY : find_solution.i
+
+# target to preprocess a source file
+find_solution.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/find_solution.c.i
+.PHONY : find_solution.c.i
+
+find_solution.s: find_solution.c.s
+
+.PHONY : find_solution.s
+
+# target to generate assembly for a file
+find_solution.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/find_solution.c.s
+.PHONY : find_solution.c.s
+
 free_hash.o: free_hash.c.o
 
 .PHONY : free_hash.o
@@ -710,33 +737,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/main.c.s
 .PHONY : main.c.s
 
-my_cool_algo.o: my_cool_algo.c.o
-
-.PHONY : my_cool_algo.o
-
-# target to build an object file
-my_cool_algo.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/my_cool_algo.c.o
-.PHONY : my_cool_algo.c.o
-
-my_cool_algo.i: my_cool_algo.c.i
-
-.PHONY : my_cool_algo.i
-
-# target to preprocess a source file
-my_cool_algo.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/my_cool_algo.c.i
-.PHONY : my_cool_algo.c.i
-
-my_cool_algo.s: my_cool_algo.c.s
-
-.PHONY : my_cool_algo.s
-
-# target to generate assembly for a file
-my_cool_algo.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/my_cool_algo.c.s
-.PHONY : my_cool_algo.c.s
-
 parse_functions.o: parse_functions.c.o
 
 .PHONY : parse_functions.o
@@ -974,6 +974,9 @@ help:
 	@echo "... debug_functions.o"
 	@echo "... debug_functions.i"
 	@echo "... debug_functions.s"
+	@echo "... find_solution.o"
+	@echo "... find_solution.i"
+	@echo "... find_solution.s"
 	@echo "... free_hash.o"
 	@echo "... free_hash.i"
 	@echo "... free_hash.s"
@@ -1025,9 +1028,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... my_cool_algo.o"
-	@echo "... my_cool_algo.i"
-	@echo "... my_cool_algo.s"
 	@echo "... parse_functions.o"
 	@echo "... parse_functions.i"
 	@echo "... parse_functions.s"

@@ -17,6 +17,10 @@ CMakeFiles/lemin.dir/debug_functions.c.o
  /Users/smanta/LEM_IN/MY_GIT_8/debug_functions.c
  /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h
+CMakeFiles/lemin.dir/find_solution.c.o
+ /Users/smanta/LEM_IN/MY_GIT_8/find_solution.c
+ /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
+ /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h
 CMakeFiles/lemin.dir/free_hash.c.o
  /Users/smanta/LEM_IN/MY_GIT_8/free_hash.c
  /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
@@ -73,10 +77,6 @@ CMakeFiles/lemin.dir/main.c.o
  /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h
  /Users/smanta/LEM_IN/MY_GIT_8/main.c
-CMakeFiles/lemin.dir/my_cool_algo.c.o
- /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
- /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h
- /Users/smanta/LEM_IN/MY_GIT_8/my_cool_algo.c
 CMakeFiles/lemin.dir/parse_functions.c.o
  /Users/smanta/LEM_IN/MY_GIT_8/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_8/libft/libft.h

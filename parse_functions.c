@@ -104,7 +104,8 @@ t_graph		*parse_input(void)
 	graph->map_buf = read_to_str(0);
 	parse_ants_number(graph);
 	parse_rooms(graph);
-//	if (!graph->start->child || !graph->end->child)
-//		err_exit();
+	if (!graph->start->child || !graph->end->child
+		|| graph->end->child->c_node->child)
+		err_exit();
 	return (graph);
 }

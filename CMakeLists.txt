@@ -5,7 +5,7 @@ set(CMAKE_C_STANDARD 99)
 
 add_executable(lemin main.c bellman_ford.c calc_speed.c debug_func_nick.c
         debug_functions.c free_hash.c ft_atoi_validate_pos.c gnl.c hash.c
-        insert_to_hash_functions.c lem_in.h links_functions.c my_cool_algo.c
+        insert_to_hash_functions.c lem_in.h links_functions.c find_solution.c
         parse_functions.c parse_input.c print_result.c test_speed_calc.c
         utils.c utils_free.c utils_nick.c utils_nick_3.c
         libft/ft_putstr.c libft/ft_putnbr.c libft/ft_isdigit.c

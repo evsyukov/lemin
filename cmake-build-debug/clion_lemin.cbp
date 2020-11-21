@@ -90,6 +90,9 @@
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/debug_functions.c">
 			<Option target="lemin"/>
 		</Unit>
+		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/find_solution.c">
+			<Option target="lemin"/>
+		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/free_hash.c">
 			<Option target="lemin"/>
 		</Unit>
@@ -142,9 +145,6 @@
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/main.c">
-			<Option target="lemin"/>
-		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/my_cool_algo.c">
 			<Option target="lemin"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_8/parse_functions.c">

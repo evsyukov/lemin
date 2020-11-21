@@ -220,18 +220,18 @@ CMakeFiles/lemin.dir/links_functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/links_functions.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/links_functions.c -o CMakeFiles/lemin.dir/links_functions.c.s
 
-CMakeFiles/lemin.dir/my_cool_algo.c.o: CMakeFiles/lemin.dir/flags.make
-CMakeFiles/lemin.dir/my_cool_algo.c.o: ../my_cool_algo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/lemin.dir/my_cool_algo.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/my_cool_algo.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/my_cool_algo.c
+CMakeFiles/lemin.dir/find_solution.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/find_solution.c.o: ../find_solution.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/lemin.dir/find_solution.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/find_solution.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/find_solution.c
 
-CMakeFiles/lemin.dir/my_cool_algo.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/my_cool_algo.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/my_cool_algo.c > CMakeFiles/lemin.dir/my_cool_algo.c.i
+CMakeFiles/lemin.dir/find_solution.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/find_solution.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/find_solution.c > CMakeFiles/lemin.dir/find_solution.c.i
 
-CMakeFiles/lemin.dir/my_cool_algo.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/my_cool_algo.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/my_cool_algo.c -o CMakeFiles/lemin.dir/my_cool_algo.c.s
+CMakeFiles/lemin.dir/find_solution.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/find_solution.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/find_solution.c -o CMakeFiles/lemin.dir/find_solution.c.s
 
 CMakeFiles/lemin.dir/parse_functions.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/parse_functions.c.o: ../parse_functions.c
@@ -480,7 +480,7 @@ lemin_OBJECTS = \
 "CMakeFiles/lemin.dir/hash.c.o" \
 "CMakeFiles/lemin.dir/insert_to_hash_functions.c.o" \
 "CMakeFiles/lemin.dir/links_functions.c.o" \
-"CMakeFiles/lemin.dir/my_cool_algo.c.o" \
+"CMakeFiles/lemin.dir/find_solution.c.o" \
 "CMakeFiles/lemin.dir/parse_functions.c.o" \
 "CMakeFiles/lemin.dir/parse_input.c.o" \
 "CMakeFiles/lemin.dir/print_result.c.o" \
@@ -514,7 +514,7 @@ lemin: CMakeFiles/lemin.dir/gnl.c.o
 lemin: CMakeFiles/lemin.dir/hash.c.o
 lemin: CMakeFiles/lemin.dir/insert_to_hash_functions.c.o
 lemin: CMakeFiles/lemin.dir/links_functions.c.o
-lemin: CMakeFiles/lemin.dir/my_cool_algo.c.o
+lemin: CMakeFiles/lemin.dir/find_solution.c.o
 lemin: CMakeFiles/lemin.dir/parse_functions.c.o
 lemin: CMakeFiles/lemin.dir/parse_input.c.o
 lemin: CMakeFiles/lemin.dir/print_result.c.o
