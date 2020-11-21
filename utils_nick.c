@@ -87,34 +87,34 @@ void		add_path(t_graph *graph, t_path *new_path, size_t len_path)
 void		add_path_second(t_graph *graph, t_path *new_path, size_t len_path)
 {
 	t_paths	*path;
-	t_paths	*temp;
+	t_paths	*new_object_paths;
 
 	if (graph == NULL)
 		return ;
 	path = graph->begin_path_second_res;
-	temp = create_paths(new_path, len_path);
+	new_object_paths = create_paths(new_path, len_path);
 	if (path != NULL)
 	{
 		if (path->num_nodes > len_path)
 		{
-			temp->next = path;
-			graph->begin_path_second_res = temp;
+			new_object_paths->next = path;
+			graph->begin_path_second_res = new_object_paths;
 		}
 		else
 		{
-			while (path->next != NULL && path->next->num_nodes <= len_path)
+			while (path->next != NULL && path->next->num_nodes < len_path)
 				path = path->next;
-			temp->next = path->next;
-			path->next = temp;
-			if (path->next == NULL)
-				graph->end_path_second_res = temp;
+			new_object_paths->next = path->next;
+			path->next = new_object_paths;
+			if (new_object_paths->next == NULL)
+				graph->end_path_second_res = new_object_paths;
 		}
 //		path->next = create_paths(new_path, len_path);
 //		graph->end_path = path->next;
 	}
 	else
 	{
-		graph->begin_path_second_res = temp;
+		graph->begin_path_second_res = new_object_paths;
 //		graph->begin_path = create_paths(new_path, len_path);
 		graph->end_path_second_res = graph->begin_path_second_res;
 	}
