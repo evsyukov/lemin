@@ -40,15 +40,19 @@ static size_t	get_num_childs_end(t_graph *graph)
 	char	*str_out;
 	t_hash	*hash;
 
-	str_in = ft_strdup(graph->end->node_name);
+	MFAIL((str_in = ft_strdup(graph->end->node_name)));
+//	str_in = ft_strdup(graph->end->node_name);
 	len = ft_strlen(str_in);
 	str_in[len - 3] = '\0';
-	str_out = ft_strjoin(str_in, "_out");
+	MFAIL((str_out = ft_strjoin(str_in, "_out")));
+//	str_out = ft_strjoin(str_in, "_out");
 	hash = hash_query(graph->h_table, str_out);
 	len_child = get_len_child(hash->child);
 	str_in[len - 3] = '_';
-	free(str_in);
-	free(str_out);
+	FCNT((free(str_in)));
+//	free(str_in);
+	FCNT((free(str_out)));
+//	free(str_out);
 	return (len_child);
 }
 

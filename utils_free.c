@@ -8,8 +8,10 @@ void		free_path(t_path *path)
 	{
 		temp_path = path;
 		path = path->next;
-//		if (temp_path->node_name != NULL)
-//			FCNT((free(temp_path->node_name)));
+		if (temp_path->node_name != NULL)
+		{
+			FCNT((free(temp_path->node_name)));
+		}
 		FCNT(free(temp_path));
 	}
 }

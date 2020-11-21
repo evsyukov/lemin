@@ -166,7 +166,9 @@ void	print_solution(t_graph *graph)
 
 		// как правильно надо печатать по сабджекту
 		if (sum_ants_at_paths)
+		{
 			print_state(paths);
-		ft_putstr("\n");
+			ft_putstr("\n");
+		}
 	}
 }

@@ -102,8 +102,8 @@ void	mod_name(t_path	*path)
 	size_t	len;
 
 	// запись изначального имени
-//	MFAIL((path->node_name = ft_strdup(path->node->node_name)));
-	path->node_name = ft_strdup(path->node->node_name);
+	MFAIL((path->node_name = ft_strdup(path->node->node_name)));
+//	path->node_name = ft_strdup(path->node->node_name);
 	str = path->node_name;
 	len = ft_strlen(str);
 	if (str[len - 1] == 't')
@@ -132,7 +132,7 @@ void	get_normal_path(t_path **apath)
 			if (path_next->next != NULL)
 				path_next->next->prev = path;
 //			if (path_next->node_name != NULL)
-//				FCNT(free(path_next->node_name));
+			FCNT(free(path_next->node_name));
 			FCNT((free(path_next)));
 			mod_name(path->next);
 		}
