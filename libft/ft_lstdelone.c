@@ -1,32 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nmustach <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/14 22:05:30 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/21 15:02:22 by nmustach         ###   ########.fr       */
+/*   Created: 2019/10/20 20:40:23 by nmustach          #+#    #+#             */
+/*   Updated: 2020/11/09 02:19:50 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
-	char	*src;
-	char	occ;
-	int		len;
-
-	len = 0;
-	len = ft_strlen(s);
-	occ = (char)(c);
-	src = (char*)(s);
-	while (len >= 0)
-	{
-		if (src[len] == occ)
-			return (src + len);
-		len--;
-	}
-	return (NULL);
+	del((*alst)->content, (*alst)->content_size);
+	free(*alst);
+	*alst = NULL;
 }

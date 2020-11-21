@@ -29,19 +29,20 @@ LFTPATH = ./libft -lft
 
 SRC = $(wildcard *.c)
 
+LIB = $(wildcard ./libft/libft.a)
+
 LIBSRC = $(wildcard ./libft/*.c)
 
 OBJ = $(addprefix $(OBJDIR),$(SRC:.c=.o))
  
-all: $(NAME) 
+all: $(NAME)
 
-$(NAME): $(OBJ) $(LIBSRC)
+$(NAME): $(LIBSRC) $(OBJ)
+		@make -C $(LFTPATH)
 		@echo 'Linking $@... '
-		@make -s -C $(LFTPATH)
 		@$(CC) $(FLAGS) -o $(NAME) $(OBJ) -L $(LFTPATH)
 		@echo 'DONE'
-		
-		
+
 include $(wildcard $(OBJDIR)*.d)  
 
 $(OBJDIR)%.o : %.c
@@ -51,11 +52,13 @@ $(OBJDIR)%.o : %.c
 
 clean:
 		@echo 'rm object files..'
+		make clean -C $(LFTPATH)
 		@rm -f $(OBJ)
 		@echo 'DONE'
 
 fclean:
 		@echo 'rm object files & executable..'
+		make fclean -C $(LFTPATH)
 		@rm -f $(OBJ)
 		@rm -f $(NAME)
 		@echo 'DONE'

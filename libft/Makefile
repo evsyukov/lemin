@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nmustach <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/17 16:38:23 by nmustach          #+#    #+#              #
-#    Updated: 2020/06/29 04:54:16 by nmustach         ###   ########.fr        #
+#    Updated: 2020/11/21 15:27:21 by nmustach         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,29 +24,24 @@ SRCS = ft_memset.c ft_bzero.c ft_memcpy.c ft_memccpy.c \
       ft_strjoin.c ft_strtrim.c ft_strsplit.c ft_itoa.c \
       ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c \
       ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c 
-HEAD = ./
 BIN = $(SRCS:.c=.o)  
-
-
-
-CFLAGS = -Wall -Wextra -Werror -MD
-CC = clang
+HEAD = ./libft.h
 
 
 all: $(NAME)
 
-$(NAME): $(BIN)
+$(NAME):$(BIN)
 	ar rc $(NAME) $(BIN)
 	ranlib $(NAME)
-     
-     
-#%.o : %.c Makefile \
-#	$(CC) $(CFLAGS) -MD -c $< -o $@
-	  
+
+%.o : %.c $(HEAD)
+	@gcc -Wall -Wextra -Werror -c $< -o $@
+	@echo 'Compile $<'
+
 clean:
 	rm -f $(BIN)
 
 fclean: clean 
-	rm -f $(NAME) 
+	rm -f $(NAME)
 
 re: fclean all
