@@ -6,13 +6,13 @@
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/21 17:08:45 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/20 22:14:06 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/21 18:48:18 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
 
-t_graph			*graph_init(void)
+t_graph		*graph_init(void)
 {
 	t_graph	*graph;
 
@@ -36,7 +36,7 @@ t_graph			*graph_init(void)
 	return (graph);
 }
 
-int		parse_start_node(char *line, t_graph *graph)
+int			parse_start_node(char *line, t_graph *graph)
 {
 	t_hash	*node;
 	char	*str_ret;
@@ -57,7 +57,7 @@ int		parse_start_node(char *line, t_graph *graph)
 	return (0);
 }
 
-int		parse_end_node(char *line, t_graph *graph)
+int			parse_end_node(char *line, t_graph *graph)
 {
 	t_hash	*node;
 	char	*str_ret;
@@ -78,53 +78,33 @@ int		parse_end_node(char *line, t_graph *graph)
 	return (0);
 }
 
-void		check_if_already_linked(t_hash *haystack, t_hash *needle)
+void		parse_links(t_graph *graph, char *line)
 {
-	t_child	*c_node_hay;
+	char *str_ret;
 
-	c_node_hay = haystack->child;
-	while (c_node_hay)
+	parse_connections(graph, line);
+	while ((str_ret = gnl(graph->map_buf)) != NULL)
 	{
-		if (c_node_hay->c_node == needle)
-			err_exit();
-		c_node_hay = c_node_hay->next;
+		if (str_ret[0] == '#')
+		{
+			if (str_ret[0] == '#' && str_ret[1] == '#')
+				err_exit();
+			continue ;
+		}
+		parse_connections(graph, str_ret);
 	}
 }
 
-int		is_already_linked(t_hash *haystack, t_hash *needle)
+t_graph		*parse_input(void)
 {
-	t_child	*c_node_hay;
+	t_graph	*graph;
 
-	c_node_hay = haystack->child;
-	while (c_node_hay)
-	{
-		if (c_node_hay->c_node == needle)
-			return (1);
-		c_node_hay = c_node_hay->next;
-	}
-	return (0);
-}
-
-void	add_link(t_hash *parent, t_hash *child,
-int weight, int is_part_of_path)
-{
-	t_child *new;
-	t_child *c_list;
-
-	MFAIL((new = malloc(sizeof(t_child))));
-	new->next = NULL;
-	new->c_node = child;
-	new->flow = 1;
-	new->weight = weight;
-	new->is_reverse = weight == -1 ? 1 : 0;
-	new->is_part_of_path = is_part_of_path;
-	if (parent->child == NULL)
-		parent->child = new;
-	else
-	{
-		c_list = parent->child;
-		while (c_list->next)
-			c_list = c_list->next;
-		c_list->next = new;
-	}
+	graph = NULL;
+	graph = graph_init();
+	graph->map_buf = read_to_str(0);
+	parse_ants_number(graph);
+	parse_rooms(graph);
+//	if (!graph->start->child || !graph->end->child)
+//		err_exit();
+	return (graph);
 }

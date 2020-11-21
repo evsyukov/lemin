@@ -6,7 +6,7 @@
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 22:28:00 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/20 23:04:28 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/21 19:13:48 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,15 +113,24 @@ t_hash				*assign_to_table(t_hash **table, char *node_name);
 void				free_hash_table(t_hash **h_table);
 t_graph				*graph_init();
 void				check_if_already_linked(t_hash *haystack, t_hash *needle);
+void				free_nodes(t_hash *node);
+void				handle_double_node(t_graph *graph,
+char *first, char *second);
+t_hash				*split_and_insert(t_hash **h_table, char *line,
+t_hash **node_in, size_t sp_ind[2]);
 
 /*
 ** -------------------------- Parsing functions --------------------------------
 */
 
 void				parse_comments(char *line, t_graph *graph);
+void				parse_connections(t_graph *graph, char *line);
+void				parse_links(t_graph *graph, char *line);
 int					parse_start_node(char *line, t_graph *graph);
 int					parse_end_node(char *line, t_graph *graph);
 t_graph				*parse_input();
+void				parse_ants_number(t_graph *graph);
+void				parse_rooms(t_graph *graph);
 int					ft_atoi_validate_pos(const char *str);
 int					check_nodenames_is_family(char *str, char *str1);
 t_hash				*parse_node_name(char *line, t_hash **h_table, int flag);
@@ -191,8 +200,6 @@ void				my_cool_func(t_graph *graph);
 void				free_path(t_path *path);
 void				free_paths(t_paths *paths);
 void				free_graph(t_graph *graph);
-void				free_nodes(t_hash *node);
-
 
 /*
 ** -------------------------- utils_nick_3.c -----------------------------------

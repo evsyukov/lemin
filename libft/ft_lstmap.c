@@ -1,32 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nmustach <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/14 22:05:30 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/21 15:02:22 by nmustach         ###   ########.fr       */
+/*   Created: 2019/10/22 20:49:55 by nmustach          #+#    #+#             */
+/*   Updated: 2020/11/09 02:19:19 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	char	*src;
-	char	occ;
-	int		len;
+	t_list	*start;
+	t_list	*current;
 
-	len = 0;
-	len = ft_strlen(s);
-	occ = (char)(c);
-	src = (char*)(s);
-	while (len >= 0)
+	if (lst == NULL)
+		return (NULL);
+	start = f(lst);
+	current = start;
+	while (lst->next)
 	{
-		if (src[len] == occ)
-			return (src + len);
-		len--;
+		lst = lst->next;
+		current->next = f(lst);
+		current = current->next;
 	}
-	return (NULL);
+	return (start);
 }

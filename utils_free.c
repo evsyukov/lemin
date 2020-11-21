@@ -36,7 +36,6 @@ void	free_graph(t_graph *graph)
 	free_paths(graph->begin_path);
 	free_paths(graph->begin_path_first_res);
 	free_paths(graph->begin_path_second_res);
-
 	FCNT(free(graph));
 }
 
