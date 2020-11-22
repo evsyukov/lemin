@@ -87,6 +87,7 @@ typedef struct		s_graph
 	char			*map_buf;
 	t_path			*paths_list;
 	t_hash			**arr_nodes;
+	size_t			any_bf;
 	size_t			num_start_node;
 	size_t			num_childs_start;
 	size_t			num_end_node;
@@ -115,8 +116,6 @@ void				free_hash_table(t_hash **h_table);
 t_graph				*graph_init();
 void				check_if_already_linked(t_hash *haystack, t_hash *needle);
 void				free_nodes(t_hash *node);
-void				handle_double_node(t_graph *graph,
-char *first, char *second);
 t_hash				*split_and_insert(t_hash **h_table, char *line,
 t_hash **node_in, size_t sp_ind[2]);
 
@@ -133,7 +132,7 @@ t_graph				*parse_input();
 void				parse_ants_number(t_graph *graph);
 void				parse_rooms(t_graph *graph);
 int					ft_atoi_validate_pos(const char *str);
-int					check_nodenames_is_family(char *str, char *str1);
+int					is_family(char *str, char *str1);
 t_hash				*parse_node_name(char *line, t_hash **h_table, int flag);
 char				*read_to_str(int fd);
 char				*gnl(char *text);
@@ -153,18 +152,23 @@ void				get_paths(t_graph *graph);
 /*
 ** -------------------------- Bellman_ford.c ---------------------------------
 */
+t_path				*get_bellman_ford_path(t_graph *graph);
+int					is_one_path_exist(t_graph *graph);
 
-t_path				*get_bellman_ford_path(t_graph *graph, size_t *len_path);
+/*
+** -------------------------- get_normal_paths.c -------------------------------
+*/
+void				get_normal_paths(t_graph *graph);
+
+/*
+** -------------------------- get_set_paths.c ----------------------------------
+*/
+size_t				get_set_paths(t_graph *graph);
 
 /*
 ** -------------------------- Utils_nick.c -----------------------------------
 */
-
 t_hash				**make_arr_nodes(t_graph *graph);
-t_paths				*create_paths(t_path *path, size_t len_path);
-void				add_path(t_graph *graph, t_path *new_path, size_t len_path);
-void				add_path_second(t_graph *graph, t_path
-*new_path, size_t len_path);
 void				add_link(t_hash *parent, t_hash *child,
 int weight, int is_part_of_path);
 int					is_already_linked(t_hash *haystack, t_hash *needle);
@@ -173,7 +177,6 @@ void				reverse_edges(t_graph *graph, t_path *path);
 /*
 ** -------------------------- calc_speed.c -----------------------------------
 */
-
 void				li_sort(size_t *arr, size_t len);
 size_t				do_calc_speed(int num, const size_t *arr, size_t len);
 size_t				calc_speed(t_graph *graph);
@@ -181,7 +184,6 @@ size_t				calc_speed(t_graph *graph);
 /*
 ** -------------------------- debug_func_nick.c -------------------------------
 */
-
 void				print_graph_arr(t_hash **arr);
 void				print_path(t_path *path);
 void				print_paths(t_paths *paths);
@@ -190,28 +192,38 @@ void				test_speed_calc();
 /*
 ** -------------------------- find_solution.c -----------------------------------
 */
-
 void				find_solution(t_graph *graph);
 
 /*
-** -------------------------- utils_free.c -----------------------------------
+** -------------------------- utils.c -----------------------------------
 */
-
 void				free_path(t_path *path);
 void				free_paths(t_paths *paths);
 void				free_graph(t_graph *graph);
 
 /*
-** -------------------------- utils_nick_3.c -----------------------------------
+** -------------------------- split_nodes.c -----------------------------------
 */
+void				handle_double_node(t_graph *graph,
+									char *first, char *second);
 
+/*
+** -------------------------- add_path.c -----------------------------------
+*/
 t_path				*add_path_node(t_path **root, t_hash *node);
-size_t				get_set_paths(t_graph *graph);
+t_paths				*create_paths(t_path *path, size_t len_path);
+void				add_path_second(t_graph *graph, t_path
+*new_path, size_t len_path);
+
+/*
+** -------------------------- move_ants.c -----------------------------------
+*/
+void				move_ants(t_graph *graph, t_paths *paths,
+						size_t *count_ants, size_t *sum_ants);
 
 /*
 ** -------------------------- print_result.c -----------------------------------
 */
-
 void				print_solution(t_graph *graph);
 
 #endif

@@ -1,77 +1,34 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   bellman_ford.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: smanta <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/22 17:49:14 by smanta            #+#    #+#             */
+/*   Updated: 2020/11/22 17:49:21 by smanta           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lem_in.h"
 
-static void	init_d_by_value(int *d, int value)
+static void		init_d_by_value(int *d, int value)
 {
-	unsigned long i;
+	unsigned long	i;
 
 	i = 0;
 	while (i < nodes_num)
 		d[i++] = value;
 }
 
-t_path	*get_bellman_ford_path(t_graph *graph, size_t *len_path)
+static t_path	*get_path(t_graph *graph, const int *d, const int *p)
 {
-	/*
-    INF = 10 ** 9
-    F = [INF] * N
-    F[start] = 0
-    for k in range(1, N):
-    for i in range(N):
-    for j in range(N):
-    if F[j] + W[j][i] < F[i]:
-    F[i] = F[j] + W[j][i]
-    */
 	t_path			*path;
-	int				d[nodes_num];
-	int				p[nodes_num];
-	t_child			*child_ptr;
-//	unsigned long   k;
-	int				value;
-	unsigned long	i;
 	int				t;
-	size_t			any;
 
 	path = NULL;
-	init_d_by_value(d, 2000000000);
-	init_d_by_value(p, -1);
-	d[graph->num_start_node] = 0;
-
-	t_hash *node;
-//    k = 1;
-//    while (k < nodes_num)
-	while (1)
-	{
-		any = 0;
-		i = 0;
-		while (i < nodes_num)
-		{
-			node = graph->arr_nodes[i];
-			child_ptr = node->child;
-			while (child_ptr != NULL)
-			{
-				value = child_ptr->c_node->num_node;
-				if (child_ptr->flow == 1 && d[value] > d[i] + child_ptr->weight)
-				{
-					d[value] = d[i] + child_ptr->weight;
-					p[value] = i;
-					any = 1;
-				}
-				child_ptr = child_ptr->next;
-			}
-			++i;
-		}
-		if (any == 0)
-			break ;
-//         ++k;
-	}
-	*len_path = 0;
 	if (d[graph->num_end_node] == 2000000000)
-	{
-	// НЕТ пути вообще -> Выход
-		write(1, "There is NO WAY between Start and End rooms\n", 44);
 		return (NULL);
-//		err_exit();
-	}
 	else
 	{
 		t = graph->num_end_node;
@@ -80,10 +37,65 @@ t_path	*get_bellman_ford_path(t_graph *graph, size_t *len_path)
 			if (add_path_node(&path, (graph->arr_nodes)[t]) == NULL)
 				err_exit();
 			t = p[t];
-			*len_path += 1;
 		}
 	}
-	*len_path /= 2;
-//*len_path = d[graph->num_end_node];
 	return (path);
+}
+
+static void		some_func(t_graph *graph,
+					unsigned long i, int *d, int *p)
+{
+	t_child			*child_ptr;
+	t_hash			*node;
+	int				value;
+
+	node = graph->arr_nodes[i];
+	child_ptr = node->child;
+	while (child_ptr != NULL)
+	{
+		value = child_ptr->c_node->num_node;
+		if (child_ptr->flow == 1 && d[value] > d[i] + child_ptr->weight)
+		{
+			d[value] = d[i] + child_ptr->weight;
+			p[value] = (int)i;
+			graph->any_bf = 1;
+		}
+		child_ptr = child_ptr->next;
+	}
+}
+
+t_path			*get_bellman_ford_path(t_graph *graph)
+{
+	int				d[nodes_num];
+	int				p[nodes_num];
+	unsigned long	i;
+
+	init_d_by_value(d, 2000000000);
+	init_d_by_value(p, -1);
+	d[graph->num_start_node] = 0;
+	graph->any_bf = 1;
+	while (graph->any_bf == 1)
+	{
+		graph->any_bf = 0;
+		i = 0;
+		while (i < nodes_num)
+		{
+			some_func(graph, i, d, p);
+			++i;
+		}
+	}
+	return (get_path(graph, d, p));
+}
+
+int				is_one_path_exist(t_graph *graph)
+{
+	t_path	*path;
+	int 	result;
+
+	result = 1;
+	path = get_bellman_ford_path(graph);
+	if (path == NULL)
+		result = 0;
+	free_path(path);
+	return (result);
 }

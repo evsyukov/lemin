@@ -1,45 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   reverse_edges.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: smanta <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/11/22 19:19:38 by smanta            #+#    #+#             */
+/*   Updated: 2020/11/22 19:19:39 by smanta           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lem_in.h"
-
-void		free_path(t_path *path)
-{
-	t_path	*temp_path;
-
-	while (path != NULL)
-	{
-		temp_path = path;
-		path = path->next;
-		if (temp_path->node_name != NULL)
-		{
-			FCNT((free(temp_path->node_name)));
-		}
-		FCNT(free(temp_path));
-	}
-}
-
-void		free_paths(t_paths *paths)
-{
-	t_paths	*temp_paths;
-
-	while (paths != NULL)
-	{
-		temp_paths = paths;
-		paths = paths->next;
-		free_path(temp_paths->path);
-		FCNT(free(temp_paths));
-	}
-}
-
-void	free_graph(t_graph *graph)
-{
-	free_hash_table(graph->h_table);
-	FCNT(free(graph->map_buf));
-	// NICK
-	FCNT(free(graph->arr_nodes));
-	free_paths(graph->begin_path);
-	free_paths(graph->begin_path_first_res);
-	free_paths(graph->begin_path_second_res);
-	FCNT(free(graph));
-}
 
 static int	disable_edge(t_hash *curr_hash, t_hash *next_hash, int *flag)
 {
@@ -105,28 +76,16 @@ void		reverse_edges(t_graph *graph, t_path *path)
 		next = path->next;
 		next_hash = next->node;
 		if (!disable_edge(curr_hash, next_hash, &flag))
-		{
-			//	DEBUG
-			ft_putstr("Удаление ребра из прямого пути БФ. Что то пошло не так оО\n");
 			err_exit();
-		}
 		if (flag == 0)
 		{
-			if (check_nodenames_is_family(curr_hash->node_name, next_hash->node_name))
+			if (is_family(curr_hash->node_name, next_hash->node_name))
 				add_link(next_hash, curr_hash, 0, 0);
 			else
 				add_link(next_hash, curr_hash, -1, 0);
 		}
-		else
-		{
-			if (!disable_just_edge(next_hash, curr_hash))
-			{
-				// DEBUG
-				ft_putstr("Удаление ребра из прямого пути БФ. JUST_FUNC. Что то пошло не так оО\n");
-				err_exit();
-			}
-			flag = 0;
-		}
+		else if ((flag = 0) == 0 && !disable_just_edge(next_hash, curr_hash))
+			err_exit();
 		path = next;
 	}
 }

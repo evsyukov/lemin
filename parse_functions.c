@@ -21,6 +21,7 @@ t_graph		*graph_init(void)
 	graph->end = NULL;
 	graph->h_table = hash_table_init();
 	graph->arr_nodes = NULL;
+	graph->any_bf = 0;
 	graph->num_childs_start = 0;
 	graph->num_childs_end = 0;
 	graph->speed = INT_MAX;
@@ -105,7 +106,7 @@ t_graph		*parse_input(void)
 	parse_ants_number(graph);
 	parse_rooms(graph);
 	if (!graph->start->child || !graph->end->child
-		|| graph->end->child->c_node->child)
+		|| !graph->end->child->c_node->child)
 		err_exit();
 	return (graph);
 }

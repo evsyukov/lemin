@@ -12,13 +12,53 @@
 
 #include "lem_in.h"
 
-void		err_exit(void)
+void	err_exit(void)
 {
 	write(1, "ERROR\n", 6);
 	exit(1);
 }
 
-int	check_nodenames_is_family(char *str, char *str1)
+void	free_path(t_path *path)
+{
+	t_path	*temp_path;
+
+	while (path != NULL)
+	{
+		temp_path = path;
+		path = path->next;
+		if (temp_path->node_name != NULL)
+		{
+			FCNT((free(temp_path->node_name)));
+		}
+		FCNT(free(temp_path));
+	}
+}
+
+void	free_paths(t_paths *paths)
+{
+	t_paths	*temp_paths;
+
+	while (paths != NULL)
+	{
+		temp_paths = paths;
+		paths = paths->next;
+		free_path(temp_paths->path);
+		FCNT(free(temp_paths));
+	}
+}
+
+void	free_graph(t_graph *graph)
+{
+	free_hash_table(graph->h_table);
+	FCNT(free(graph->map_buf));
+	FCNT(free(graph->arr_nodes));
+	free_paths(graph->begin_path);
+	free_paths(graph->begin_path_first_res);
+	free_paths(graph->begin_path_second_res);
+	FCNT(free(graph));
+}
+
+int		is_family(char *str, char *str1)
 {
 	size_t	str_l;
 	size_t	str1_l;

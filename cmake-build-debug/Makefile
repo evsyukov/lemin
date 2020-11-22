@@ -143,6 +143,33 @@ lemin/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/build
 .PHONY : lemin/fast
 
+add_path.o: add_path.c.o
+
+.PHONY : add_path.o
+
+# target to build an object file
+add_path.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/add_path.c.o
+.PHONY : add_path.c.o
+
+add_path.i: add_path.c.i
+
+.PHONY : add_path.i
+
+# target to preprocess a source file
+add_path.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/add_path.c.i
+.PHONY : add_path.c.i
+
+add_path.s: add_path.c.s
+
+.PHONY : add_path.s
+
+# target to generate assembly for a file
+add_path.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/add_path.c.s
+.PHONY : add_path.c.s
+
 bellman_ford.o: bellman_ford.c.o
 
 .PHONY : bellman_ford.o
@@ -331,6 +358,60 @@ ft_atoi_validate_pos.s: ft_atoi_validate_pos.c.s
 ft_atoi_validate_pos.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.s
 .PHONY : ft_atoi_validate_pos.c.s
+
+get_normal_paths.o: get_normal_paths.c.o
+
+.PHONY : get_normal_paths.o
+
+# target to build an object file
+get_normal_paths.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_normal_paths.c.o
+.PHONY : get_normal_paths.c.o
+
+get_normal_paths.i: get_normal_paths.c.i
+
+.PHONY : get_normal_paths.i
+
+# target to preprocess a source file
+get_normal_paths.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_normal_paths.c.i
+.PHONY : get_normal_paths.c.i
+
+get_normal_paths.s: get_normal_paths.c.s
+
+.PHONY : get_normal_paths.s
+
+# target to generate assembly for a file
+get_normal_paths.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_normal_paths.c.s
+.PHONY : get_normal_paths.c.s
+
+get_set_paths.o: get_set_paths.c.o
+
+.PHONY : get_set_paths.o
+
+# target to build an object file
+get_set_paths.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_set_paths.c.o
+.PHONY : get_set_paths.c.o
+
+get_set_paths.i: get_set_paths.c.i
+
+.PHONY : get_set_paths.i
+
+# target to preprocess a source file
+get_set_paths.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_set_paths.c.i
+.PHONY : get_set_paths.c.i
+
+get_set_paths.s: get_set_paths.c.s
+
+.PHONY : get_set_paths.s
+
+# target to generate assembly for a file
+get_set_paths.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_set_paths.c.s
+.PHONY : get_set_paths.c.s
 
 gnl.o: gnl.c.o
 
@@ -737,6 +818,60 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/main.c.s
 .PHONY : main.c.s
 
+make_arr_nodes.o: make_arr_nodes.c.o
+
+.PHONY : make_arr_nodes.o
+
+# target to build an object file
+make_arr_nodes.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/make_arr_nodes.c.o
+.PHONY : make_arr_nodes.c.o
+
+make_arr_nodes.i: make_arr_nodes.c.i
+
+.PHONY : make_arr_nodes.i
+
+# target to preprocess a source file
+make_arr_nodes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/make_arr_nodes.c.i
+.PHONY : make_arr_nodes.c.i
+
+make_arr_nodes.s: make_arr_nodes.c.s
+
+.PHONY : make_arr_nodes.s
+
+# target to generate assembly for a file
+make_arr_nodes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/make_arr_nodes.c.s
+.PHONY : make_arr_nodes.c.s
+
+move_ants.o: move_ants.c.o
+
+.PHONY : move_ants.o
+
+# target to build an object file
+move_ants.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/move_ants.c.o
+.PHONY : move_ants.c.o
+
+move_ants.i: move_ants.c.i
+
+.PHONY : move_ants.i
+
+# target to preprocess a source file
+move_ants.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/move_ants.c.i
+.PHONY : move_ants.c.i
+
+move_ants.s: move_ants.c.s
+
+.PHONY : move_ants.s
+
+# target to generate assembly for a file
+move_ants.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/move_ants.c.s
+.PHONY : move_ants.c.s
+
 parse_functions.o: parse_functions.c.o
 
 .PHONY : parse_functions.o
@@ -818,6 +953,60 @@ print_result.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/print_result.c.s
 .PHONY : print_result.c.s
 
+reverse_edges.o: reverse_edges.c.o
+
+.PHONY : reverse_edges.o
+
+# target to build an object file
+reverse_edges.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/reverse_edges.c.o
+.PHONY : reverse_edges.c.o
+
+reverse_edges.i: reverse_edges.c.i
+
+.PHONY : reverse_edges.i
+
+# target to preprocess a source file
+reverse_edges.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/reverse_edges.c.i
+.PHONY : reverse_edges.c.i
+
+reverse_edges.s: reverse_edges.c.s
+
+.PHONY : reverse_edges.s
+
+# target to generate assembly for a file
+reverse_edges.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/reverse_edges.c.s
+.PHONY : reverse_edges.c.s
+
+split_node.o: split_node.c.o
+
+.PHONY : split_node.o
+
+# target to build an object file
+split_node.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/split_node.c.o
+.PHONY : split_node.c.o
+
+split_node.i: split_node.c.i
+
+.PHONY : split_node.i
+
+# target to preprocess a source file
+split_node.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/split_node.c.i
+.PHONY : split_node.c.i
+
+split_node.s: split_node.c.s
+
+.PHONY : split_node.s
+
+# target to generate assembly for a file
+split_node.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/split_node.c.s
+.PHONY : split_node.c.s
+
 test_speed_calc.o: test_speed_calc.c.o
 
 .PHONY : test_speed_calc.o
@@ -872,87 +1061,6 @@ utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils.c.s
 .PHONY : utils.c.s
 
-utils_free.o: utils_free.c.o
-
-.PHONY : utils_free.o
-
-# target to build an object file
-utils_free.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_free.c.o
-.PHONY : utils_free.c.o
-
-utils_free.i: utils_free.c.i
-
-.PHONY : utils_free.i
-
-# target to preprocess a source file
-utils_free.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_free.c.i
-.PHONY : utils_free.c.i
-
-utils_free.s: utils_free.c.s
-
-.PHONY : utils_free.s
-
-# target to generate assembly for a file
-utils_free.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_free.c.s
-.PHONY : utils_free.c.s
-
-utils_nick.o: utils_nick.c.o
-
-.PHONY : utils_nick.o
-
-# target to build an object file
-utils_nick.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_nick.c.o
-.PHONY : utils_nick.c.o
-
-utils_nick.i: utils_nick.c.i
-
-.PHONY : utils_nick.i
-
-# target to preprocess a source file
-utils_nick.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_nick.c.i
-.PHONY : utils_nick.c.i
-
-utils_nick.s: utils_nick.c.s
-
-.PHONY : utils_nick.s
-
-# target to generate assembly for a file
-utils_nick.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_nick.c.s
-.PHONY : utils_nick.c.s
-
-utils_nick_3.o: utils_nick_3.c.o
-
-.PHONY : utils_nick_3.o
-
-# target to build an object file
-utils_nick_3.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_nick_3.c.o
-.PHONY : utils_nick_3.c.o
-
-utils_nick_3.i: utils_nick_3.c.i
-
-.PHONY : utils_nick_3.i
-
-# target to preprocess a source file
-utils_nick_3.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_nick_3.c.i
-.PHONY : utils_nick_3.c.i
-
-utils_nick_3.s: utils_nick_3.c.s
-
-.PHONY : utils_nick_3.s
-
-# target to generate assembly for a file
-utils_nick_3.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils_nick_3.c.s
-.PHONY : utils_nick_3.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -962,6 +1070,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... lemin"
+	@echo "... add_path.o"
+	@echo "... add_path.i"
+	@echo "... add_path.s"
 	@echo "... bellman_ford.o"
 	@echo "... bellman_ford.i"
 	@echo "... bellman_ford.s"
@@ -983,6 +1094,12 @@ help:
 	@echo "... ft_atoi_validate_pos.o"
 	@echo "... ft_atoi_validate_pos.i"
 	@echo "... ft_atoi_validate_pos.s"
+	@echo "... get_normal_paths.o"
+	@echo "... get_normal_paths.i"
+	@echo "... get_normal_paths.s"
+	@echo "... get_set_paths.o"
+	@echo "... get_set_paths.i"
+	@echo "... get_set_paths.s"
 	@echo "... gnl.o"
 	@echo "... gnl.i"
 	@echo "... gnl.s"
@@ -1028,6 +1145,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... make_arr_nodes.o"
+	@echo "... make_arr_nodes.i"
+	@echo "... make_arr_nodes.s"
+	@echo "... move_ants.o"
+	@echo "... move_ants.i"
+	@echo "... move_ants.s"
 	@echo "... parse_functions.o"
 	@echo "... parse_functions.i"
 	@echo "... parse_functions.s"
@@ -1037,21 +1160,18 @@ help:
 	@echo "... print_result.o"
 	@echo "... print_result.i"
 	@echo "... print_result.s"
+	@echo "... reverse_edges.o"
+	@echo "... reverse_edges.i"
+	@echo "... reverse_edges.s"
+	@echo "... split_node.o"
+	@echo "... split_node.i"
+	@echo "... split_node.s"
 	@echo "... test_speed_calc.o"
 	@echo "... test_speed_calc.i"
 	@echo "... test_speed_calc.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"
-	@echo "... utils_free.o"
-	@echo "... utils_free.i"
-	@echo "... utils_free.s"
-	@echo "... utils_nick.o"
-	@echo "... utils_nick.i"
-	@echo "... utils_nick.s"
-	@echo "... utils_nick_3.o"
-	@echo "... utils_nick_3.i"
-	@echo "... utils_nick_3.s"
 .PHONY : help
 
 

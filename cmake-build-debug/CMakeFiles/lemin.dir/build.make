@@ -298,48 +298,35 @@ CMakeFiles/lemin.dir/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/utils.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/utils.c -o CMakeFiles/lemin.dir/utils.c.s
 
-CMakeFiles/lemin.dir/utils_free.c.o: CMakeFiles/lemin.dir/flags.make
-CMakeFiles/lemin.dir/utils_free.c.o: ../utils_free.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/lemin.dir/utils_free.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/utils_free.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/utils_free.c
+CMakeFiles/lemin.dir/reverse_edges.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/reverse_edges.c.o: ../reverse_edges.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/lemin.dir/reverse_edges.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/reverse_edges.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/reverse_edges.c
 
-CMakeFiles/lemin.dir/utils_free.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/utils_free.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/utils_free.c > CMakeFiles/lemin.dir/utils_free.c.i
+CMakeFiles/lemin.dir/reverse_edges.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/reverse_edges.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/reverse_edges.c > CMakeFiles/lemin.dir/reverse_edges.c.i
 
-CMakeFiles/lemin.dir/utils_free.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/utils_free.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/utils_free.c -o CMakeFiles/lemin.dir/utils_free.c.s
+CMakeFiles/lemin.dir/reverse_edges.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/reverse_edges.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/reverse_edges.c -o CMakeFiles/lemin.dir/reverse_edges.c.s
 
-CMakeFiles/lemin.dir/utils_nick.c.o: CMakeFiles/lemin.dir/flags.make
-CMakeFiles/lemin.dir/utils_nick.c.o: ../utils_nick.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/lemin.dir/utils_nick.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/utils_nick.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/utils_nick.c
+CMakeFiles/lemin.dir/add_path.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/add_path.c.o: ../add_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/lemin.dir/add_path.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/add_path.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/add_path.c
 
-CMakeFiles/lemin.dir/utils_nick.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/utils_nick.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/utils_nick.c > CMakeFiles/lemin.dir/utils_nick.c.i
+CMakeFiles/lemin.dir/add_path.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/add_path.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/add_path.c > CMakeFiles/lemin.dir/add_path.c.i
 
-CMakeFiles/lemin.dir/utils_nick.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/utils_nick.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/utils_nick.c -o CMakeFiles/lemin.dir/utils_nick.c.s
-
-CMakeFiles/lemin.dir/utils_nick_3.c.o: CMakeFiles/lemin.dir/flags.make
-CMakeFiles/lemin.dir/utils_nick_3.c.o: ../utils_nick_3.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/lemin.dir/utils_nick_3.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/utils_nick_3.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/utils_nick_3.c
-
-CMakeFiles/lemin.dir/utils_nick_3.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/utils_nick_3.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/utils_nick_3.c > CMakeFiles/lemin.dir/utils_nick_3.c.i
-
-CMakeFiles/lemin.dir/utils_nick_3.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/utils_nick_3.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/utils_nick_3.c -o CMakeFiles/lemin.dir/utils_nick_3.c.s
+CMakeFiles/lemin.dir/add_path.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/add_path.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/add_path.c -o CMakeFiles/lemin.dir/add_path.c.s
 
 CMakeFiles/lemin.dir/libft/ft_putstr.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/lemin.dir/libft/ft_putstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/lemin.dir/libft/ft_putstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/libft/ft_putstr.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/libft/ft_putstr.c
 
 CMakeFiles/lemin.dir/libft/ft_putstr.c.i: cmake_force
@@ -352,7 +339,7 @@ CMakeFiles/lemin.dir/libft/ft_putstr.c.s: cmake_force
 
 CMakeFiles/lemin.dir/libft/ft_putnbr.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/libft/ft_putnbr.c.o: ../libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/lemin.dir/libft/ft_putnbr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/lemin.dir/libft/ft_putnbr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/libft/ft_putnbr.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/libft/ft_putnbr.c
 
 CMakeFiles/lemin.dir/libft/ft_putnbr.c.i: cmake_force
@@ -365,7 +352,7 @@ CMakeFiles/lemin.dir/libft/ft_putnbr.c.s: cmake_force
 
 CMakeFiles/lemin.dir/libft/ft_isdigit.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/libft/ft_isdigit.c.o: ../libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/lemin.dir/libft/ft_isdigit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/lemin.dir/libft/ft_isdigit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/libft/ft_isdigit.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/libft/ft_isdigit.c
 
 CMakeFiles/lemin.dir/libft/ft_isdigit.c.i: cmake_force
@@ -378,7 +365,7 @@ CMakeFiles/lemin.dir/libft/ft_isdigit.c.s: cmake_force
 
 CMakeFiles/lemin.dir/libft/ft_strcat.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/libft/ft_strcat.c.o: ../libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/lemin.dir/libft/ft_strcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/lemin.dir/libft/ft_strcat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/libft/ft_strcat.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/libft/ft_strcat.c
 
 CMakeFiles/lemin.dir/libft/ft_strcat.c.i: cmake_force
@@ -391,7 +378,7 @@ CMakeFiles/lemin.dir/libft/ft_strcat.c.s: cmake_force
 
 CMakeFiles/lemin.dir/libft/ft_strequ.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/libft/ft_strequ.c.o: ../libft/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/lemin.dir/libft/ft_strequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/lemin.dir/libft/ft_strequ.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/libft/ft_strequ.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/libft/ft_strequ.c
 
 CMakeFiles/lemin.dir/libft/ft_strequ.c.i: cmake_force
@@ -404,7 +391,7 @@ CMakeFiles/lemin.dir/libft/ft_strequ.c.s: cmake_force
 
 CMakeFiles/lemin.dir/libft/ft_strdup.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/lemin.dir/libft/ft_strdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/lemin.dir/libft/ft_strdup.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/libft/ft_strdup.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/libft/ft_strdup.c
 
 CMakeFiles/lemin.dir/libft/ft_strdup.c.i: cmake_force
@@ -417,7 +404,7 @@ CMakeFiles/lemin.dir/libft/ft_strdup.c.s: cmake_force
 
 CMakeFiles/lemin.dir/libft/ft_putchar.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/libft/ft_putchar.c.o: ../libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/lemin.dir/libft/ft_putchar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/lemin.dir/libft/ft_putchar.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/libft/ft_putchar.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/libft/ft_putchar.c
 
 CMakeFiles/lemin.dir/libft/ft_putchar.c.i: cmake_force
@@ -430,7 +417,7 @@ CMakeFiles/lemin.dir/libft/ft_putchar.c.s: cmake_force
 
 CMakeFiles/lemin.dir/libft/ft_strcmp.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/libft/ft_strcmp.c.o: ../libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/lemin.dir/libft/ft_strcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/lemin.dir/libft/ft_strcmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/libft/ft_strcmp.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/libft/ft_strcmp.c
 
 CMakeFiles/lemin.dir/libft/ft_strcmp.c.i: cmake_force
@@ -443,7 +430,7 @@ CMakeFiles/lemin.dir/libft/ft_strcmp.c.s: cmake_force
 
 CMakeFiles/lemin.dir/libft/ft_strlen.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/lemin.dir/libft/ft_strlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/lemin.dir/libft/ft_strlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/libft/ft_strlen.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/libft/ft_strlen.c
 
 CMakeFiles/lemin.dir/libft/ft_strlen.c.i: cmake_force
@@ -456,7 +443,7 @@ CMakeFiles/lemin.dir/libft/ft_strlen.c.s: cmake_force
 
 CMakeFiles/lemin.dir/libft/ft_strjoin.c.o: CMakeFiles/lemin.dir/flags.make
 CMakeFiles/lemin.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/lemin.dir/libft/ft_strjoin.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/lemin.dir/libft/ft_strjoin.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/libft/ft_strjoin.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/libft/ft_strjoin.c
 
 CMakeFiles/lemin.dir/libft/ft_strjoin.c.i: cmake_force
@@ -466,6 +453,71 @@ CMakeFiles/lemin.dir/libft/ft_strjoin.c.i: cmake_force
 CMakeFiles/lemin.dir/libft/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/libft/ft_strjoin.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/libft/ft_strjoin.c -o CMakeFiles/lemin.dir/libft/ft_strjoin.c.s
+
+CMakeFiles/lemin.dir/move_ants.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/move_ants.c.o: ../move_ants.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/lemin.dir/move_ants.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/move_ants.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/move_ants.c
+
+CMakeFiles/lemin.dir/move_ants.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/move_ants.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/move_ants.c > CMakeFiles/lemin.dir/move_ants.c.i
+
+CMakeFiles/lemin.dir/move_ants.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/move_ants.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/move_ants.c -o CMakeFiles/lemin.dir/move_ants.c.s
+
+CMakeFiles/lemin.dir/make_arr_nodes.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/make_arr_nodes.c.o: ../make_arr_nodes.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/lemin.dir/make_arr_nodes.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/make_arr_nodes.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/make_arr_nodes.c
+
+CMakeFiles/lemin.dir/make_arr_nodes.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/make_arr_nodes.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/make_arr_nodes.c > CMakeFiles/lemin.dir/make_arr_nodes.c.i
+
+CMakeFiles/lemin.dir/make_arr_nodes.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/make_arr_nodes.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/make_arr_nodes.c -o CMakeFiles/lemin.dir/make_arr_nodes.c.s
+
+CMakeFiles/lemin.dir/get_set_paths.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/get_set_paths.c.o: ../get_set_paths.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/lemin.dir/get_set_paths.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/get_set_paths.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/get_set_paths.c
+
+CMakeFiles/lemin.dir/get_set_paths.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/get_set_paths.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/get_set_paths.c > CMakeFiles/lemin.dir/get_set_paths.c.i
+
+CMakeFiles/lemin.dir/get_set_paths.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/get_set_paths.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/get_set_paths.c -o CMakeFiles/lemin.dir/get_set_paths.c.s
+
+CMakeFiles/lemin.dir/get_normal_paths.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/get_normal_paths.c.o: ../get_normal_paths.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/lemin.dir/get_normal_paths.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/get_normal_paths.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/get_normal_paths.c
+
+CMakeFiles/lemin.dir/get_normal_paths.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/get_normal_paths.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/get_normal_paths.c > CMakeFiles/lemin.dir/get_normal_paths.c.i
+
+CMakeFiles/lemin.dir/get_normal_paths.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/get_normal_paths.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/get_normal_paths.c -o CMakeFiles/lemin.dir/get_normal_paths.c.s
+
+CMakeFiles/lemin.dir/split_node.c.o: CMakeFiles/lemin.dir/flags.make
+CMakeFiles/lemin.dir/split_node.c.o: ../split_node.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/lemin.dir/split_node.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lemin.dir/split_node.c.o   -c /Users/smanta/LEM_IN/MY_GIT_8/split_node.c
+
+CMakeFiles/lemin.dir/split_node.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lemin.dir/split_node.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_8/split_node.c > CMakeFiles/lemin.dir/split_node.c.i
+
+CMakeFiles/lemin.dir/split_node.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lemin.dir/split_node.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_8/split_node.c -o CMakeFiles/lemin.dir/split_node.c.s
 
 # Object files for target lemin
 lemin_OBJECTS = \
@@ -486,9 +538,8 @@ lemin_OBJECTS = \
 "CMakeFiles/lemin.dir/print_result.c.o" \
 "CMakeFiles/lemin.dir/test_speed_calc.c.o" \
 "CMakeFiles/lemin.dir/utils.c.o" \
-"CMakeFiles/lemin.dir/utils_free.c.o" \
-"CMakeFiles/lemin.dir/utils_nick.c.o" \
-"CMakeFiles/lemin.dir/utils_nick_3.c.o" \
+"CMakeFiles/lemin.dir/reverse_edges.c.o" \
+"CMakeFiles/lemin.dir/add_path.c.o" \
 "CMakeFiles/lemin.dir/libft/ft_putstr.c.o" \
 "CMakeFiles/lemin.dir/libft/ft_putnbr.c.o" \
 "CMakeFiles/lemin.dir/libft/ft_isdigit.c.o" \
@@ -498,7 +549,12 @@ lemin_OBJECTS = \
 "CMakeFiles/lemin.dir/libft/ft_putchar.c.o" \
 "CMakeFiles/lemin.dir/libft/ft_strcmp.c.o" \
 "CMakeFiles/lemin.dir/libft/ft_strlen.c.o" \
-"CMakeFiles/lemin.dir/libft/ft_strjoin.c.o"
+"CMakeFiles/lemin.dir/libft/ft_strjoin.c.o" \
+"CMakeFiles/lemin.dir/move_ants.c.o" \
+"CMakeFiles/lemin.dir/make_arr_nodes.c.o" \
+"CMakeFiles/lemin.dir/get_set_paths.c.o" \
+"CMakeFiles/lemin.dir/get_normal_paths.c.o" \
+"CMakeFiles/lemin.dir/split_node.c.o"
 
 # External object files for target lemin
 lemin_EXTERNAL_OBJECTS =
@@ -520,9 +576,8 @@ lemin: CMakeFiles/lemin.dir/parse_input.c.o
 lemin: CMakeFiles/lemin.dir/print_result.c.o
 lemin: CMakeFiles/lemin.dir/test_speed_calc.c.o
 lemin: CMakeFiles/lemin.dir/utils.c.o
-lemin: CMakeFiles/lemin.dir/utils_free.c.o
-lemin: CMakeFiles/lemin.dir/utils_nick.c.o
-lemin: CMakeFiles/lemin.dir/utils_nick_3.c.o
+lemin: CMakeFiles/lemin.dir/reverse_edges.c.o
+lemin: CMakeFiles/lemin.dir/add_path.c.o
 lemin: CMakeFiles/lemin.dir/libft/ft_putstr.c.o
 lemin: CMakeFiles/lemin.dir/libft/ft_putnbr.c.o
 lemin: CMakeFiles/lemin.dir/libft/ft_isdigit.c.o
@@ -533,9 +588,14 @@ lemin: CMakeFiles/lemin.dir/libft/ft_putchar.c.o
 lemin: CMakeFiles/lemin.dir/libft/ft_strcmp.c.o
 lemin: CMakeFiles/lemin.dir/libft/ft_strlen.c.o
 lemin: CMakeFiles/lemin.dir/libft/ft_strjoin.c.o
+lemin: CMakeFiles/lemin.dir/move_ants.c.o
+lemin: CMakeFiles/lemin.dir/make_arr_nodes.c.o
+lemin: CMakeFiles/lemin.dir/get_set_paths.c.o
+lemin: CMakeFiles/lemin.dir/get_normal_paths.c.o
+lemin: CMakeFiles/lemin.dir/split_node.c.o
 lemin: CMakeFiles/lemin.dir/build.make
 lemin: CMakeFiles/lemin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking C executable lemin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/smanta/LEM_IN/MY_GIT_8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking C executable lemin"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lemin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
