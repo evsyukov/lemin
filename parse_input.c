@@ -45,7 +45,7 @@ void	parse_rooms(t_graph *graph)
 			parse_comments(str_ret, graph);
 			continue ;
 		}
-		if ((node_ret = parse_node_name(str_ret, graph->h_table, 0)))
+		if ((node_ret = parse_node_name(graph, str_ret, 0)))
 			continue ;
 		else
 			break ;
@@ -69,7 +69,7 @@ void	parse_comments(char *line, t_graph *graph)
 	}
 }
 
-t_hash	*parse_node_name(char *line, t_hash **h_table, int flag)
+t_hash	*parse_node_name(t_graph *graph, char *line, int flag)
 {
 	t_hash	*node_in;
 	t_hash	*node_out;
@@ -80,8 +80,8 @@ t_hash	*parse_node_name(char *line, t_hash **h_table, int flag)
 		err_exit();
 	if (split_line(line, sp_ind))
 	{
-		node_out = split_and_insert(h_table, line, &node_in, sp_ind);
-		nodes_num += 2;
+		node_out = split_and_insert(graph->h_table, line, &node_in, sp_ind);
+		graph->nodes_num += 2;
 		if (flag == PARSE_END)
 			return (node_in);
 		return (node_out);

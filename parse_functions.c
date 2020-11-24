@@ -25,15 +25,10 @@ t_graph		*graph_init(void)
 	graph->num_childs_start = 0;
 	graph->num_childs_end = 0;
 	graph->speed = INT_MAX;
-	graph->num_paths = 0;
 	graph->begin_path = NULL;
-	graph->end_path = NULL;
-	graph->num_paths_first_res = 0;
 	graph->begin_path_first_res = NULL;
-	graph->end_path_first_res = NULL;
 	graph->num_paths_second_res = 0;
 	graph->begin_path_second_res = NULL;
-	graph->end_path_second_res = NULL;
 	return (graph);
 }
 
@@ -47,7 +42,7 @@ int			parse_start_node(char *line, t_graph *graph)
 		if (graph->start)
 			err_exit();
 		if (((str_ret = gnl(graph->map_buf)) != NULL)
-		&& (node = parse_node_name(str_ret, graph->h_table, PARSE_START)))
+		&& (node = parse_node_name(graph, str_ret, PARSE_START)))
 		{
 			graph->start = node;
 			return (1);
@@ -68,7 +63,7 @@ int			parse_end_node(char *line, t_graph *graph)
 		if (graph->end)
 			err_exit();
 		if (((str_ret = gnl(graph->map_buf)) != NULL)
-		&& (node = parse_node_name(str_ret, graph->h_table, PARSE_END)))
+		&& (node = parse_node_name(graph, str_ret, PARSE_END)))
 		{
 			graph->end = node;
 			return (1);

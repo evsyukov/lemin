@@ -59,15 +59,10 @@ static size_t	get_limits(t_graph *graph)
 
 static void		move_from_second_to_first(t_graph *graph)
 {
-	graph->num_paths_first_res = 0;
 	free_paths(graph->begin_path_first_res);
-	graph->end_path_first_res = NULL;
-	graph->num_paths_first_res = graph->num_paths_second_res;
 	graph->begin_path_first_res = graph->begin_path_second_res;
-	graph->end_path_first_res = graph->end_path_second_res;
 	graph->num_paths_second_res = 0;
 	graph->begin_path_second_res = NULL;
-	graph->end_path_second_res = NULL;
 }
 
 void			find_solution(t_graph *graph)

@@ -12,7 +12,7 @@
 
 #include "lem_in.h"
 
-t_hash	*insert_node_to_h_table(char *line, t_hash **h_table,
+static t_hash	*insert_node_to_h_table(char *line, t_hash **h_table,
 size_t sp_ind[2], char *adding)
 {
 	int		l_x;
@@ -35,14 +35,14 @@ size_t sp_ind[2], char *adding)
 	return (node);
 }
 
-t_hash	*split_and_insert(t_hash **h_table, char *line,
+t_hash			*split_and_insert(t_hash **h_table, char *line,
 t_hash **node_in, size_t sp_ind[2])
 {
 	char	*str;
 	t_hash	*node_out;
 
 	node_out = NULL;
-	MFAIL((str = ft_strjoin(line, "in")));
+	MFAIL((str = ft_strjoin(line, "_in")));
 	if (!hash_query(h_table, str))
 	{
 		FCNT(free(str));

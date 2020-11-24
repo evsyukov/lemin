@@ -25,8 +25,6 @@ struct s_hash;
 
 extern unsigned long ml;
 extern unsigned long fr;
-extern unsigned long nodes_num;
-extern unsigned long edges_num;
 
 # define FCNT(x) x; fr++
 # define MFAIL(x) if (!x) err_exit(); else ml++;
@@ -49,7 +47,6 @@ typedef struct		s_paths
 	struct s_path	*path;
 	struct s_paths	*next;
 	struct s_path	*begin_print;
-	struct s_path	*current_print;
 	struct s_path	*end_print;
 	size_t			num_nodes;
 	size_t			num_allowed_ants;
@@ -69,9 +66,6 @@ typedef	struct		s_hash
 	char			*node_name;
 	int				x;
 	int				y;
-	size_t			visit;
-	size_t			mark;
-	size_t			bfs_level;
 	t_child			*child;
 	struct s_hash	*prev;
 	struct s_hash	*next;
@@ -84,8 +78,8 @@ typedef struct		s_graph
 	t_hash			*start;
 	t_hash			*end;
 	size_t			ants_num;
+	size_t			nodes_num;
 	char			*map_buf;
-	t_path			*paths_list;
 	t_hash			**arr_nodes;
 	size_t			any_bf;
 	size_t			num_start_node;
@@ -93,15 +87,10 @@ typedef struct		s_graph
 	size_t			num_end_node;
 	size_t			num_childs_end;
 	int32_t			speed;
-	size_t			num_paths;
 	t_paths			*begin_path;
-	t_paths			*end_path;
-	size_t			num_paths_first_res;
 	t_paths			*begin_path_first_res;
-	t_paths			*end_path_first_res;
 	size_t			num_paths_second_res;
 	t_paths			*begin_path_second_res;
-	t_paths			*end_path_second_res;
 }					t_graph;
 
 /*
@@ -109,7 +98,6 @@ typedef struct		s_graph
 */
 
 t_hash				*hash_query(t_hash **h_table, char *node_name);
-unsigned int		calc_hash(char *str);
 t_hash				**hash_table_init();
 t_hash				*assign_to_table(t_hash **table, char *node_name);
 void				free_hash_table(t_hash **h_table);
@@ -120,7 +108,7 @@ t_hash				*split_and_insert(t_hash **h_table, char *line,
 t_hash **node_in, size_t sp_ind[2]);
 
 /*
-** -------------------------- Parsing functions --------------------------------
+** -------------------------- Parsing functions -------------------------------
 */
 
 void				parse_comments(char *line, t_graph *graph);
@@ -132,50 +120,35 @@ t_graph				*parse_input();
 void				parse_ants_number(t_graph *graph);
 void				parse_rooms(t_graph *graph);
 int					ft_atoi_validate_pos(const char *str);
-int					is_family(char *str, char *str1);
-t_hash				*parse_node_name(char *line, t_hash **h_table, int flag);
+t_hash				*parse_node_name(t_graph *graph, char *line, int flag);
 char				*read_to_str(int fd);
 char				*gnl(char *text);
-void				err_exit();
 
 /*
-** -------------------------- Debug functions --------------------------------
+** -------------------------- debug functions ---------------------------------
 */
 
 void				print_hash_table_child(t_hash **h_table);
 void				print_hash_table(t_hash **h_table);
-int					dijkstra(t_graph *graph);
-void				dijkstra_shortest_reverse(t_graph *graph);
-t_child				*get_edge(t_child *haystack, t_hash *needle);
-void				get_paths(t_graph *graph);
 
 /*
-** -------------------------- Bellman_ford.c ---------------------------------
+** -------------------------- bellman_ford.c ----------------------------------
 */
 t_path				*get_bellman_ford_path(t_graph *graph);
 int					is_one_path_exist(t_graph *graph);
 
 /*
-** -------------------------- get_normal_paths.c -------------------------------
+** -------------------------- get_normal_paths.c ------------------------------
 */
 void				get_normal_paths(t_graph *graph);
 
 /*
-** -------------------------- get_set_paths.c ----------------------------------
+** -------------------------- get_set_paths.c ---------------------------------
 */
 size_t				get_set_paths(t_graph *graph);
 
 /*
-** -------------------------- Utils_nick.c -----------------------------------
-*/
-t_hash				**make_arr_nodes(t_graph *graph);
-void				add_link(t_hash *parent, t_hash *child,
-int weight, int is_part_of_path);
-int					is_already_linked(t_hash *haystack, t_hash *needle);
-void				reverse_edges(t_graph *graph, t_path *path);
-
-/*
-** -------------------------- calc_speed.c -----------------------------------
+** -------------------------- calc_speed.c ------------------------------------
 */
 void				li_sort(size_t *arr, size_t len);
 size_t				do_calc_speed(int num, const size_t *arr, size_t len);
@@ -184,31 +157,18 @@ size_t				calc_speed(t_graph *graph);
 /*
 ** -------------------------- debug_func_nick.c -------------------------------
 */
-void				print_graph_arr(t_hash **arr);
+void				print_graph_arr(t_graph *graph);
 void				print_path(t_path *path);
 void				print_paths(t_paths *paths);
 void				test_speed_calc();
 
 /*
-** -------------------------- find_solution.c -----------------------------------
+** -------------------------- find_solution.c ---------------------------------
 */
 void				find_solution(t_graph *graph);
 
 /*
-** -------------------------- utils.c -----------------------------------
-*/
-void				free_path(t_path *path);
-void				free_paths(t_paths *paths);
-void				free_graph(t_graph *graph);
-
-/*
-** -------------------------- split_nodes.c -----------------------------------
-*/
-void				handle_double_node(t_graph *graph,
-									char *first, char *second);
-
-/*
-** -------------------------- add_path.c -----------------------------------
+** -------------------------- add_path.c --------------------------------------
 */
 t_path				*add_path_node(t_path **root, t_hash *node);
 t_paths				*create_paths(t_path *path, size_t len_path);
@@ -216,14 +176,46 @@ void				add_path_second(t_graph *graph, t_path
 *new_path, size_t len_path);
 
 /*
-** -------------------------- move_ants.c -----------------------------------
+** -------------------------- link_functions.c --------------------------------
+*/
+void				add_link(t_hash *parent, t_hash *child,
+							 int weight, int is_part_of_path);
+int					is_already_linked(t_hash *haystack, t_hash *needle);
+
+/*
+** -------------------------- make_arr_nodes.c --------------------------------
+*/
+t_hash				**make_arr_nodes(t_graph *graph);
+
+/*
+** -------------------------- move_ants.c -------------------------------------
 */
 void				move_ants(t_graph *graph, t_paths *paths,
 						size_t *count_ants, size_t *sum_ants);
 
 /*
-** -------------------------- print_result.c -----------------------------------
+** -------------------------- print_result.c ----------------------------------
 */
 void				print_solution(t_graph *graph);
+
+/*
+** -------------------------- reverse_edges.c ---------------------------------
+*/
+void				reverse_edges(t_graph *graph, t_path *path);
+
+/*
+** -------------------------- split_nodes.c -----------------------------------
+*/
+void				handle_double_node(t_graph *graph,
+									   char *first, char *second);
+
+/*
+** -------------------------- utils.c -----------------------------------------
+*/
+void				err_exit();
+void				free_path(t_path *path);
+void				free_paths(t_paths *paths);
+void				free_graph(t_graph *graph);
+int					is_family(char *str, char *str1);
 
 #endif

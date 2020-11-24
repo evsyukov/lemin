@@ -37,7 +37,6 @@ t_paths			*create_paths(t_path *path, size_t len_path)
 	new_paths->path = path;
 	new_paths->next = NULL;
 	new_paths->begin_print = NULL;
-	new_paths->current_print = NULL;
 	new_paths->end_print = NULL;
 	new_paths->num_nodes = len_path;
 	return (new_paths);
@@ -61,14 +60,9 @@ void			add_path_second(t_graph *graph,
 				path = path->next;
 			new_paths->next = path->next;
 			path->next = new_paths;
-			if (new_paths->next == NULL)
-				graph->end_path_second_res = new_paths;
 		}
 	}
 	else
-	{
 		graph->begin_path_second_res = new_paths;
-		graph->end_path_second_res = graph->begin_path_second_res;
-	}
 	graph->num_paths_second_res += 1;
 }

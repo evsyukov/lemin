@@ -1,15 +1,15 @@
 #include "lem_in.h"
 
-void		print_graph_arr(t_hash **arr)
+void		print_graph_arr(t_graph *graph)
 {
-	t_hash			*node;
-	unsigned long	i;
-	char			*str;
+	t_hash	*node;
+	size_t	i;
+	char	*str;
 
 	i = 0;
-	while (i < nodes_num)
+	while (i < graph->nodes_num)
 	{
-		node = arr[i];
+		node = (graph->arr_nodes)[i];
 		ft_putstr("index arr = ");
 		ft_putnbr(i);
 		ft_putstr(", node_name = ");

@@ -14,9 +14,6 @@
 
 unsigned long ml = 0;
 unsigned long fr = 0;
-unsigned long nodes_num = 0;
-unsigned long edges_num = 0;
-
 
 int	main(void)
 {

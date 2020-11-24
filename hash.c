@@ -12,6 +12,18 @@
 
 #include "lem_in.h"
 
+static unsigned int	calc_hash(const char *node_name)
+{
+	unsigned long int	value;
+	unsigned int		i;
+
+	value = 0;
+	i = 0;
+	while (node_name[i])
+		value = value * HASH_MULT + node_name[i++];
+	return (value % TABLE_SIZE);
+}
+
 t_hash			**hash_table_init(void)
 {
 	size_t	i;
@@ -39,10 +51,7 @@ t_hash			*assign_to_table(t_hash **table, char *node_name)
 	new->child = NULL;
 	new->x = 0;
 	new->y = 0;
-	new->visit = 0;
-	new->bfs_level = INT_MAX;
 	new->node_name = node_name;
-	new->mark = INT_MAX;
 	new->prev = NULL;
 	if (table[hash_val] == NULL)
 		table[hash_val] = new;
@@ -54,18 +63,6 @@ t_hash			*assign_to_table(t_hash **table, char *node_name)
 		node->next = new;
 	}
 	return (new);
-}
-
-unsigned int	calc_hash(char *node_name)
-{
-	unsigned long int	value;
-	unsigned int		i;
-
-	value = 0;
-	i = 0;
-	while (node_name[i])
-		value = value * HASH_MULT + node_name[i++];
-	return (value % TABLE_SIZE);
 }
 
 t_hash			*hash_query(t_hash **h_table, char *node_name)

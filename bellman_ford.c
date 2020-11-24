@@ -12,19 +12,19 @@
 
 #include "lem_in.h"
 
-static void		init_d_by_value(int *d, int value)
+static void		init_d_by_value(int *d, size_t len, int value)
 {
-	unsigned long	i;
+	size_t	i;
 
 	i = 0;
-	while (i < nodes_num)
+	while (i < len)
 		d[i++] = value;
 }
 
 static t_path	*get_path(t_graph *graph, const int *d, const int *p)
 {
-	t_path			*path;
-	int				t;
+	t_path	*path;
+	int		t;
 
 	path = NULL;
 	if (d[graph->num_end_node] == 2000000000)
@@ -43,11 +43,11 @@ static t_path	*get_path(t_graph *graph, const int *d, const int *p)
 }
 
 static void		some_func(t_graph *graph,
-					unsigned long i, int *d, int *p)
+					size_t i, int *d, int *p)
 {
-	t_child			*child_ptr;
-	t_hash			*node;
-	int				value;
+	t_child	*child_ptr;
+	t_hash	*node;
+	int		value;
 
 	node = graph->arr_nodes[i];
 	child_ptr = node->child;
@@ -66,19 +66,19 @@ static void		some_func(t_graph *graph,
 
 t_path			*get_bellman_ford_path(t_graph *graph)
 {
-	int				d[nodes_num];
-	int				p[nodes_num];
-	unsigned long	i;
+	int		d[graph->nodes_num];
+	int		p[graph->nodes_num];
+	size_t	i;
 
-	init_d_by_value(d, 2000000000);
-	init_d_by_value(p, -1);
+	init_d_by_value(d, graph->nodes_num, 2000000000);
+	init_d_by_value(p, graph->nodes_num, -1);
 	d[graph->num_start_node] = 0;
 	graph->any_bf = 1;
 	while (graph->any_bf == 1)
 	{
 		graph->any_bf = 0;
 		i = 0;
-		while (i < nodes_num)
+		while (i < graph->nodes_num)
 		{
 			some_func(graph, i, d, p);
 			++i;
@@ -90,7 +90,7 @@ t_path			*get_bellman_ford_path(t_graph *graph)
 int				is_one_path_exist(t_graph *graph)
 {
 	t_path	*path;
-	int 	result;
+	int		result;
 
 	result = 1;
 	path = get_bellman_ford_path(graph);
