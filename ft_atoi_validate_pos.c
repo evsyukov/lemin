@@ -23,7 +23,11 @@ int		ft_atoi_validate_pos(const char *str)
 		return (-1);
 	while (str[i])
 		if (ft_isdigit(str[i]))
+		{
+			if ((num * 10 + (str[i] - '0')) / 10 != num)
+				err_exit();
 			num = num * 10 + (str[i++] - '0');
+		}
 		else
 			return (-1);
 	return (num);

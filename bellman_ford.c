@@ -27,7 +27,7 @@ static t_path	*get_path(t_graph *graph, const int *d, const int *p)
 	int		t;
 
 	path = NULL;
-	if (d[graph->num_end_node] == 2000000000)
+	if (d[graph->num_end_node] == INT_MAX / 2)
 		return (NULL);
 	else
 	{
@@ -70,7 +70,7 @@ t_path			*get_bellman_ford_path(t_graph *graph)
 	int		p[graph->nodes_num];
 	size_t	i;
 
-	init_d_by_value(d, graph->nodes_num, 2000000000);
+	init_d_by_value(d, graph->nodes_num, INT_MAX / 2);
 	init_d_by_value(p, graph->nodes_num, -1);
 	d[graph->num_start_node] = 0;
 	graph->any_bf = 1;

@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/smanta/clion-2019.2.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/smanta/clion-2019.2.3/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/smanta/School21/GIT_LEMIN_7
+CMAKE_SOURCE_DIR = /Users/smanta/LEM_IN/MY_GIT_9
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/smanta/School21/GIT_LEMIN_7/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /home/smanta/School21/GIT_LEMIN_7/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/smanta/clion-2019.2.3/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/smanta/clion-2019.2.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/smanta/School21/GIT_LEMIN_7/cmake-build-debug/CMakeFiles /home/smanta/School21/GIT_LEMIN_7/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles /Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/smanta/School21/GIT_LEMIN_7/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lemin
+# Target rules for targets named lem-in
 
 # Build rule for target.
-lemin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lemin
-.PHONY : lemin
+lem-in: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lem-in
+.PHONY : lem-in
 
 # fast build rule for target.
-lemin/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/build
-.PHONY : lemin/fast
+lem-in/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/build
+.PHONY : lem-in/fast
 
 add_path.o: add_path.c.o
 
@@ -149,7 +149,7 @@ add_path.o: add_path.c.o
 
 # target to build an object file
 add_path.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/add_path.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/add_path.c.o
 .PHONY : add_path.c.o
 
 add_path.i: add_path.c.i
@@ -158,7 +158,7 @@ add_path.i: add_path.c.i
 
 # target to preprocess a source file
 add_path.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/add_path.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/add_path.c.i
 .PHONY : add_path.c.i
 
 add_path.s: add_path.c.s
@@ -167,7 +167,7 @@ add_path.s: add_path.c.s
 
 # target to generate assembly for a file
 add_path.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/add_path.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/add_path.c.s
 .PHONY : add_path.c.s
 
 bellman_ford.o: bellman_ford.c.o
@@ -176,7 +176,7 @@ bellman_ford.o: bellman_ford.c.o
 
 # target to build an object file
 bellman_ford.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/bellman_ford.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/bellman_ford.c.o
 .PHONY : bellman_ford.c.o
 
 bellman_ford.i: bellman_ford.c.i
@@ -185,7 +185,7 @@ bellman_ford.i: bellman_ford.c.i
 
 # target to preprocess a source file
 bellman_ford.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/bellman_ford.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/bellman_ford.c.i
 .PHONY : bellman_ford.c.i
 
 bellman_ford.s: bellman_ford.c.s
@@ -194,7 +194,7 @@ bellman_ford.s: bellman_ford.c.s
 
 # target to generate assembly for a file
 bellman_ford.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/bellman_ford.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/bellman_ford.c.s
 .PHONY : bellman_ford.c.s
 
 calc_speed.o: calc_speed.c.o
@@ -203,7 +203,7 @@ calc_speed.o: calc_speed.c.o
 
 # target to build an object file
 calc_speed.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/calc_speed.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/calc_speed.c.o
 .PHONY : calc_speed.c.o
 
 calc_speed.i: calc_speed.c.i
@@ -212,7 +212,7 @@ calc_speed.i: calc_speed.c.i
 
 # target to preprocess a source file
 calc_speed.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/calc_speed.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/calc_speed.c.i
 .PHONY : calc_speed.c.i
 
 calc_speed.s: calc_speed.c.s
@@ -221,7 +221,7 @@ calc_speed.s: calc_speed.c.s
 
 # target to generate assembly for a file
 calc_speed.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/calc_speed.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/calc_speed.c.s
 .PHONY : calc_speed.c.s
 
 debug_func_nick.o: debug_func_nick.c.o
@@ -230,7 +230,7 @@ debug_func_nick.o: debug_func_nick.c.o
 
 # target to build an object file
 debug_func_nick.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_func_nick.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_func_nick.c.o
 .PHONY : debug_func_nick.c.o
 
 debug_func_nick.i: debug_func_nick.c.i
@@ -239,7 +239,7 @@ debug_func_nick.i: debug_func_nick.c.i
 
 # target to preprocess a source file
 debug_func_nick.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_func_nick.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_func_nick.c.i
 .PHONY : debug_func_nick.c.i
 
 debug_func_nick.s: debug_func_nick.c.s
@@ -248,7 +248,7 @@ debug_func_nick.s: debug_func_nick.c.s
 
 # target to generate assembly for a file
 debug_func_nick.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_func_nick.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_func_nick.c.s
 .PHONY : debug_func_nick.c.s
 
 debug_functions.o: debug_functions.c.o
@@ -257,7 +257,7 @@ debug_functions.o: debug_functions.c.o
 
 # target to build an object file
 debug_functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_functions.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_functions.c.o
 .PHONY : debug_functions.c.o
 
 debug_functions.i: debug_functions.c.i
@@ -266,7 +266,7 @@ debug_functions.i: debug_functions.c.i
 
 # target to preprocess a source file
 debug_functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_functions.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_functions.c.i
 .PHONY : debug_functions.c.i
 
 debug_functions.s: debug_functions.c.s
@@ -275,7 +275,7 @@ debug_functions.s: debug_functions.c.s
 
 # target to generate assembly for a file
 debug_functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/debug_functions.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_functions.c.s
 .PHONY : debug_functions.c.s
 
 find_solution.o: find_solution.c.o
@@ -284,7 +284,7 @@ find_solution.o: find_solution.c.o
 
 # target to build an object file
 find_solution.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/find_solution.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/find_solution.c.o
 .PHONY : find_solution.c.o
 
 find_solution.i: find_solution.c.i
@@ -293,7 +293,7 @@ find_solution.i: find_solution.c.i
 
 # target to preprocess a source file
 find_solution.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/find_solution.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/find_solution.c.i
 .PHONY : find_solution.c.i
 
 find_solution.s: find_solution.c.s
@@ -302,7 +302,7 @@ find_solution.s: find_solution.c.s
 
 # target to generate assembly for a file
 find_solution.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/find_solution.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/find_solution.c.s
 .PHONY : find_solution.c.s
 
 free_hash.o: free_hash.c.o
@@ -311,7 +311,7 @@ free_hash.o: free_hash.c.o
 
 # target to build an object file
 free_hash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/free_hash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/free_hash.c.o
 .PHONY : free_hash.c.o
 
 free_hash.i: free_hash.c.i
@@ -320,7 +320,7 @@ free_hash.i: free_hash.c.i
 
 # target to preprocess a source file
 free_hash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/free_hash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/free_hash.c.i
 .PHONY : free_hash.c.i
 
 free_hash.s: free_hash.c.s
@@ -329,7 +329,7 @@ free_hash.s: free_hash.c.s
 
 # target to generate assembly for a file
 free_hash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/free_hash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/free_hash.c.s
 .PHONY : free_hash.c.s
 
 ft_atoi_validate_pos.o: ft_atoi_validate_pos.c.o
@@ -338,7 +338,7 @@ ft_atoi_validate_pos.o: ft_atoi_validate_pos.c.o
 
 # target to build an object file
 ft_atoi_validate_pos.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/ft_atoi_validate_pos.c.o
 .PHONY : ft_atoi_validate_pos.c.o
 
 ft_atoi_validate_pos.i: ft_atoi_validate_pos.c.i
@@ -347,7 +347,7 @@ ft_atoi_validate_pos.i: ft_atoi_validate_pos.c.i
 
 # target to preprocess a source file
 ft_atoi_validate_pos.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/ft_atoi_validate_pos.c.i
 .PHONY : ft_atoi_validate_pos.c.i
 
 ft_atoi_validate_pos.s: ft_atoi_validate_pos.c.s
@@ -356,7 +356,7 @@ ft_atoi_validate_pos.s: ft_atoi_validate_pos.c.s
 
 # target to generate assembly for a file
 ft_atoi_validate_pos.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/ft_atoi_validate_pos.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/ft_atoi_validate_pos.c.s
 .PHONY : ft_atoi_validate_pos.c.s
 
 get_normal_paths.o: get_normal_paths.c.o
@@ -365,7 +365,7 @@ get_normal_paths.o: get_normal_paths.c.o
 
 # target to build an object file
 get_normal_paths.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_normal_paths.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/get_normal_paths.c.o
 .PHONY : get_normal_paths.c.o
 
 get_normal_paths.i: get_normal_paths.c.i
@@ -374,7 +374,7 @@ get_normal_paths.i: get_normal_paths.c.i
 
 # target to preprocess a source file
 get_normal_paths.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_normal_paths.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/get_normal_paths.c.i
 .PHONY : get_normal_paths.c.i
 
 get_normal_paths.s: get_normal_paths.c.s
@@ -383,7 +383,7 @@ get_normal_paths.s: get_normal_paths.c.s
 
 # target to generate assembly for a file
 get_normal_paths.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_normal_paths.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/get_normal_paths.c.s
 .PHONY : get_normal_paths.c.s
 
 get_set_paths.o: get_set_paths.c.o
@@ -392,7 +392,7 @@ get_set_paths.o: get_set_paths.c.o
 
 # target to build an object file
 get_set_paths.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_set_paths.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/get_set_paths.c.o
 .PHONY : get_set_paths.c.o
 
 get_set_paths.i: get_set_paths.c.i
@@ -401,7 +401,7 @@ get_set_paths.i: get_set_paths.c.i
 
 # target to preprocess a source file
 get_set_paths.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_set_paths.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/get_set_paths.c.i
 .PHONY : get_set_paths.c.i
 
 get_set_paths.s: get_set_paths.c.s
@@ -410,7 +410,7 @@ get_set_paths.s: get_set_paths.c.s
 
 # target to generate assembly for a file
 get_set_paths.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/get_set_paths.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/get_set_paths.c.s
 .PHONY : get_set_paths.c.s
 
 gnl.o: gnl.c.o
@@ -419,7 +419,7 @@ gnl.o: gnl.c.o
 
 # target to build an object file
 gnl.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/gnl.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/gnl.c.o
 .PHONY : gnl.c.o
 
 gnl.i: gnl.c.i
@@ -428,7 +428,7 @@ gnl.i: gnl.c.i
 
 # target to preprocess a source file
 gnl.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/gnl.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/gnl.c.i
 .PHONY : gnl.c.i
 
 gnl.s: gnl.c.s
@@ -437,7 +437,7 @@ gnl.s: gnl.c.s
 
 # target to generate assembly for a file
 gnl.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/gnl.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/gnl.c.s
 .PHONY : gnl.c.s
 
 hash.o: hash.c.o
@@ -446,7 +446,7 @@ hash.o: hash.c.o
 
 # target to build an object file
 hash.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/hash.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/hash.c.o
 .PHONY : hash.c.o
 
 hash.i: hash.c.i
@@ -455,7 +455,7 @@ hash.i: hash.c.i
 
 # target to preprocess a source file
 hash.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/hash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/hash.c.i
 .PHONY : hash.c.i
 
 hash.s: hash.c.s
@@ -464,7 +464,7 @@ hash.s: hash.c.s
 
 # target to generate assembly for a file
 hash.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/hash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/hash.c.s
 .PHONY : hash.c.s
 
 insert_to_hash_functions.o: insert_to_hash_functions.c.o
@@ -473,7 +473,7 @@ insert_to_hash_functions.o: insert_to_hash_functions.c.o
 
 # target to build an object file
 insert_to_hash_functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/insert_to_hash_functions.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/insert_to_hash_functions.c.o
 .PHONY : insert_to_hash_functions.c.o
 
 insert_to_hash_functions.i: insert_to_hash_functions.c.i
@@ -482,7 +482,7 @@ insert_to_hash_functions.i: insert_to_hash_functions.c.i
 
 # target to preprocess a source file
 insert_to_hash_functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/insert_to_hash_functions.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/insert_to_hash_functions.c.i
 .PHONY : insert_to_hash_functions.c.i
 
 insert_to_hash_functions.s: insert_to_hash_functions.c.s
@@ -491,7 +491,7 @@ insert_to_hash_functions.s: insert_to_hash_functions.c.s
 
 # target to generate assembly for a file
 insert_to_hash_functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/insert_to_hash_functions.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/insert_to_hash_functions.c.s
 .PHONY : insert_to_hash_functions.c.s
 
 libft/ft_isdigit.o: libft/ft_isdigit.c.o
@@ -500,7 +500,7 @@ libft/ft_isdigit.o: libft/ft_isdigit.c.o
 
 # target to build an object file
 libft/ft_isdigit.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_isdigit.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_isdigit.c.o
 .PHONY : libft/ft_isdigit.c.o
 
 libft/ft_isdigit.i: libft/ft_isdigit.c.i
@@ -509,7 +509,7 @@ libft/ft_isdigit.i: libft/ft_isdigit.c.i
 
 # target to preprocess a source file
 libft/ft_isdigit.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_isdigit.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_isdigit.c.i
 .PHONY : libft/ft_isdigit.c.i
 
 libft/ft_isdigit.s: libft/ft_isdigit.c.s
@@ -518,7 +518,7 @@ libft/ft_isdigit.s: libft/ft_isdigit.c.s
 
 # target to generate assembly for a file
 libft/ft_isdigit.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_isdigit.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_isdigit.c.s
 .PHONY : libft/ft_isdigit.c.s
 
 libft/ft_putchar.o: libft/ft_putchar.c.o
@@ -527,7 +527,7 @@ libft/ft_putchar.o: libft/ft_putchar.c.o
 
 # target to build an object file
 libft/ft_putchar.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_putchar.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_putchar.c.o
 .PHONY : libft/ft_putchar.c.o
 
 libft/ft_putchar.i: libft/ft_putchar.c.i
@@ -536,7 +536,7 @@ libft/ft_putchar.i: libft/ft_putchar.c.i
 
 # target to preprocess a source file
 libft/ft_putchar.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_putchar.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_putchar.c.i
 .PHONY : libft/ft_putchar.c.i
 
 libft/ft_putchar.s: libft/ft_putchar.c.s
@@ -545,7 +545,7 @@ libft/ft_putchar.s: libft/ft_putchar.c.s
 
 # target to generate assembly for a file
 libft/ft_putchar.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_putchar.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_putchar.c.s
 .PHONY : libft/ft_putchar.c.s
 
 libft/ft_putnbr.o: libft/ft_putnbr.c.o
@@ -554,7 +554,7 @@ libft/ft_putnbr.o: libft/ft_putnbr.c.o
 
 # target to build an object file
 libft/ft_putnbr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_putnbr.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_putnbr.c.o
 .PHONY : libft/ft_putnbr.c.o
 
 libft/ft_putnbr.i: libft/ft_putnbr.c.i
@@ -563,7 +563,7 @@ libft/ft_putnbr.i: libft/ft_putnbr.c.i
 
 # target to preprocess a source file
 libft/ft_putnbr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_putnbr.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_putnbr.c.i
 .PHONY : libft/ft_putnbr.c.i
 
 libft/ft_putnbr.s: libft/ft_putnbr.c.s
@@ -572,7 +572,7 @@ libft/ft_putnbr.s: libft/ft_putnbr.c.s
 
 # target to generate assembly for a file
 libft/ft_putnbr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_putnbr.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_putnbr.c.s
 .PHONY : libft/ft_putnbr.c.s
 
 libft/ft_putstr.o: libft/ft_putstr.c.o
@@ -581,7 +581,7 @@ libft/ft_putstr.o: libft/ft_putstr.c.o
 
 # target to build an object file
 libft/ft_putstr.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_putstr.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_putstr.c.o
 .PHONY : libft/ft_putstr.c.o
 
 libft/ft_putstr.i: libft/ft_putstr.c.i
@@ -590,7 +590,7 @@ libft/ft_putstr.i: libft/ft_putstr.c.i
 
 # target to preprocess a source file
 libft/ft_putstr.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_putstr.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_putstr.c.i
 .PHONY : libft/ft_putstr.c.i
 
 libft/ft_putstr.s: libft/ft_putstr.c.s
@@ -599,7 +599,7 @@ libft/ft_putstr.s: libft/ft_putstr.c.s
 
 # target to generate assembly for a file
 libft/ft_putstr.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_putstr.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_putstr.c.s
 .PHONY : libft/ft_putstr.c.s
 
 libft/ft_strcat.o: libft/ft_strcat.c.o
@@ -608,7 +608,7 @@ libft/ft_strcat.o: libft/ft_strcat.c.o
 
 # target to build an object file
 libft/ft_strcat.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strcat.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strcat.c.o
 .PHONY : libft/ft_strcat.c.o
 
 libft/ft_strcat.i: libft/ft_strcat.c.i
@@ -617,7 +617,7 @@ libft/ft_strcat.i: libft/ft_strcat.c.i
 
 # target to preprocess a source file
 libft/ft_strcat.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strcat.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strcat.c.i
 .PHONY : libft/ft_strcat.c.i
 
 libft/ft_strcat.s: libft/ft_strcat.c.s
@@ -626,7 +626,7 @@ libft/ft_strcat.s: libft/ft_strcat.c.s
 
 # target to generate assembly for a file
 libft/ft_strcat.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strcat.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strcat.c.s
 .PHONY : libft/ft_strcat.c.s
 
 libft/ft_strcmp.o: libft/ft_strcmp.c.o
@@ -635,7 +635,7 @@ libft/ft_strcmp.o: libft/ft_strcmp.c.o
 
 # target to build an object file
 libft/ft_strcmp.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strcmp.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strcmp.c.o
 .PHONY : libft/ft_strcmp.c.o
 
 libft/ft_strcmp.i: libft/ft_strcmp.c.i
@@ -644,7 +644,7 @@ libft/ft_strcmp.i: libft/ft_strcmp.c.i
 
 # target to preprocess a source file
 libft/ft_strcmp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strcmp.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strcmp.c.i
 .PHONY : libft/ft_strcmp.c.i
 
 libft/ft_strcmp.s: libft/ft_strcmp.c.s
@@ -653,7 +653,7 @@ libft/ft_strcmp.s: libft/ft_strcmp.c.s
 
 # target to generate assembly for a file
 libft/ft_strcmp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strcmp.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strcmp.c.s
 .PHONY : libft/ft_strcmp.c.s
 
 libft/ft_strdup.o: libft/ft_strdup.c.o
@@ -662,7 +662,7 @@ libft/ft_strdup.o: libft/ft_strdup.c.o
 
 # target to build an object file
 libft/ft_strdup.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strdup.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strdup.c.o
 .PHONY : libft/ft_strdup.c.o
 
 libft/ft_strdup.i: libft/ft_strdup.c.i
@@ -671,7 +671,7 @@ libft/ft_strdup.i: libft/ft_strdup.c.i
 
 # target to preprocess a source file
 libft/ft_strdup.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strdup.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strdup.c.i
 .PHONY : libft/ft_strdup.c.i
 
 libft/ft_strdup.s: libft/ft_strdup.c.s
@@ -680,7 +680,7 @@ libft/ft_strdup.s: libft/ft_strdup.c.s
 
 # target to generate assembly for a file
 libft/ft_strdup.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strdup.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strdup.c.s
 .PHONY : libft/ft_strdup.c.s
 
 libft/ft_strequ.o: libft/ft_strequ.c.o
@@ -689,7 +689,7 @@ libft/ft_strequ.o: libft/ft_strequ.c.o
 
 # target to build an object file
 libft/ft_strequ.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strequ.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strequ.c.o
 .PHONY : libft/ft_strequ.c.o
 
 libft/ft_strequ.i: libft/ft_strequ.c.i
@@ -698,7 +698,7 @@ libft/ft_strequ.i: libft/ft_strequ.c.i
 
 # target to preprocess a source file
 libft/ft_strequ.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strequ.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strequ.c.i
 .PHONY : libft/ft_strequ.c.i
 
 libft/ft_strequ.s: libft/ft_strequ.c.s
@@ -707,7 +707,7 @@ libft/ft_strequ.s: libft/ft_strequ.c.s
 
 # target to generate assembly for a file
 libft/ft_strequ.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strequ.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strequ.c.s
 .PHONY : libft/ft_strequ.c.s
 
 libft/ft_strjoin.o: libft/ft_strjoin.c.o
@@ -716,7 +716,7 @@ libft/ft_strjoin.o: libft/ft_strjoin.c.o
 
 # target to build an object file
 libft/ft_strjoin.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strjoin.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strjoin.c.o
 .PHONY : libft/ft_strjoin.c.o
 
 libft/ft_strjoin.i: libft/ft_strjoin.c.i
@@ -725,7 +725,7 @@ libft/ft_strjoin.i: libft/ft_strjoin.c.i
 
 # target to preprocess a source file
 libft/ft_strjoin.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strjoin.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strjoin.c.i
 .PHONY : libft/ft_strjoin.c.i
 
 libft/ft_strjoin.s: libft/ft_strjoin.c.s
@@ -734,7 +734,7 @@ libft/ft_strjoin.s: libft/ft_strjoin.c.s
 
 # target to generate assembly for a file
 libft/ft_strjoin.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strjoin.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strjoin.c.s
 .PHONY : libft/ft_strjoin.c.s
 
 libft/ft_strlen.o: libft/ft_strlen.c.o
@@ -743,7 +743,7 @@ libft/ft_strlen.o: libft/ft_strlen.c.o
 
 # target to build an object file
 libft/ft_strlen.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strlen.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strlen.c.o
 .PHONY : libft/ft_strlen.c.o
 
 libft/ft_strlen.i: libft/ft_strlen.c.i
@@ -752,7 +752,7 @@ libft/ft_strlen.i: libft/ft_strlen.c.i
 
 # target to preprocess a source file
 libft/ft_strlen.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strlen.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strlen.c.i
 .PHONY : libft/ft_strlen.c.i
 
 libft/ft_strlen.s: libft/ft_strlen.c.s
@@ -761,7 +761,7 @@ libft/ft_strlen.s: libft/ft_strlen.c.s
 
 # target to generate assembly for a file
 libft/ft_strlen.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/libft/ft_strlen.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/libft/ft_strlen.c.s
 .PHONY : libft/ft_strlen.c.s
 
 links_functions.o: links_functions.c.o
@@ -770,7 +770,7 @@ links_functions.o: links_functions.c.o
 
 # target to build an object file
 links_functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/links_functions.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/links_functions.c.o
 .PHONY : links_functions.c.o
 
 links_functions.i: links_functions.c.i
@@ -779,7 +779,7 @@ links_functions.i: links_functions.c.i
 
 # target to preprocess a source file
 links_functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/links_functions.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/links_functions.c.i
 .PHONY : links_functions.c.i
 
 links_functions.s: links_functions.c.s
@@ -788,7 +788,7 @@ links_functions.s: links_functions.c.s
 
 # target to generate assembly for a file
 links_functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/links_functions.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/links_functions.c.s
 .PHONY : links_functions.c.s
 
 main.o: main.c.o
@@ -797,7 +797,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -806,7 +806,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -815,7 +815,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/main.c.s
 .PHONY : main.c.s
 
 make_arr_nodes.o: make_arr_nodes.c.o
@@ -824,7 +824,7 @@ make_arr_nodes.o: make_arr_nodes.c.o
 
 # target to build an object file
 make_arr_nodes.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/make_arr_nodes.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/make_arr_nodes.c.o
 .PHONY : make_arr_nodes.c.o
 
 make_arr_nodes.i: make_arr_nodes.c.i
@@ -833,7 +833,7 @@ make_arr_nodes.i: make_arr_nodes.c.i
 
 # target to preprocess a source file
 make_arr_nodes.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/make_arr_nodes.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/make_arr_nodes.c.i
 .PHONY : make_arr_nodes.c.i
 
 make_arr_nodes.s: make_arr_nodes.c.s
@@ -842,7 +842,7 @@ make_arr_nodes.s: make_arr_nodes.c.s
 
 # target to generate assembly for a file
 make_arr_nodes.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/make_arr_nodes.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/make_arr_nodes.c.s
 .PHONY : make_arr_nodes.c.s
 
 move_ants.o: move_ants.c.o
@@ -851,7 +851,7 @@ move_ants.o: move_ants.c.o
 
 # target to build an object file
 move_ants.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/move_ants.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/move_ants.c.o
 .PHONY : move_ants.c.o
 
 move_ants.i: move_ants.c.i
@@ -860,7 +860,7 @@ move_ants.i: move_ants.c.i
 
 # target to preprocess a source file
 move_ants.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/move_ants.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/move_ants.c.i
 .PHONY : move_ants.c.i
 
 move_ants.s: move_ants.c.s
@@ -869,7 +869,7 @@ move_ants.s: move_ants.c.s
 
 # target to generate assembly for a file
 move_ants.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/move_ants.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/move_ants.c.s
 .PHONY : move_ants.c.s
 
 parse_functions.o: parse_functions.c.o
@@ -878,7 +878,7 @@ parse_functions.o: parse_functions.c.o
 
 # target to build an object file
 parse_functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/parse_functions.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/parse_functions.c.o
 .PHONY : parse_functions.c.o
 
 parse_functions.i: parse_functions.c.i
@@ -887,7 +887,7 @@ parse_functions.i: parse_functions.c.i
 
 # target to preprocess a source file
 parse_functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/parse_functions.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/parse_functions.c.i
 .PHONY : parse_functions.c.i
 
 parse_functions.s: parse_functions.c.s
@@ -896,7 +896,7 @@ parse_functions.s: parse_functions.c.s
 
 # target to generate assembly for a file
 parse_functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/parse_functions.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/parse_functions.c.s
 .PHONY : parse_functions.c.s
 
 parse_input.o: parse_input.c.o
@@ -905,7 +905,7 @@ parse_input.o: parse_input.c.o
 
 # target to build an object file
 parse_input.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/parse_input.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/parse_input.c.o
 .PHONY : parse_input.c.o
 
 parse_input.i: parse_input.c.i
@@ -914,7 +914,7 @@ parse_input.i: parse_input.c.i
 
 # target to preprocess a source file
 parse_input.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/parse_input.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/parse_input.c.i
 .PHONY : parse_input.c.i
 
 parse_input.s: parse_input.c.s
@@ -923,7 +923,7 @@ parse_input.s: parse_input.c.s
 
 # target to generate assembly for a file
 parse_input.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/parse_input.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/parse_input.c.s
 .PHONY : parse_input.c.s
 
 print_result.o: print_result.c.o
@@ -932,7 +932,7 @@ print_result.o: print_result.c.o
 
 # target to build an object file
 print_result.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/print_result.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/print_result.c.o
 .PHONY : print_result.c.o
 
 print_result.i: print_result.c.i
@@ -941,7 +941,7 @@ print_result.i: print_result.c.i
 
 # target to preprocess a source file
 print_result.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/print_result.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/print_result.c.i
 .PHONY : print_result.c.i
 
 print_result.s: print_result.c.s
@@ -950,7 +950,7 @@ print_result.s: print_result.c.s
 
 # target to generate assembly for a file
 print_result.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/print_result.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/print_result.c.s
 .PHONY : print_result.c.s
 
 reverse_edges.o: reverse_edges.c.o
@@ -959,7 +959,7 @@ reverse_edges.o: reverse_edges.c.o
 
 # target to build an object file
 reverse_edges.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/reverse_edges.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/reverse_edges.c.o
 .PHONY : reverse_edges.c.o
 
 reverse_edges.i: reverse_edges.c.i
@@ -968,7 +968,7 @@ reverse_edges.i: reverse_edges.c.i
 
 # target to preprocess a source file
 reverse_edges.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/reverse_edges.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/reverse_edges.c.i
 .PHONY : reverse_edges.c.i
 
 reverse_edges.s: reverse_edges.c.s
@@ -977,7 +977,7 @@ reverse_edges.s: reverse_edges.c.s
 
 # target to generate assembly for a file
 reverse_edges.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/reverse_edges.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/reverse_edges.c.s
 .PHONY : reverse_edges.c.s
 
 split_node.o: split_node.c.o
@@ -986,7 +986,7 @@ split_node.o: split_node.c.o
 
 # target to build an object file
 split_node.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/split_node.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/split_node.c.o
 .PHONY : split_node.c.o
 
 split_node.i: split_node.c.i
@@ -995,7 +995,7 @@ split_node.i: split_node.c.i
 
 # target to preprocess a source file
 split_node.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/split_node.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/split_node.c.i
 .PHONY : split_node.c.i
 
 split_node.s: split_node.c.s
@@ -1004,7 +1004,7 @@ split_node.s: split_node.c.s
 
 # target to generate assembly for a file
 split_node.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/split_node.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/split_node.c.s
 .PHONY : split_node.c.s
 
 test_speed_calc.o: test_speed_calc.c.o
@@ -1013,7 +1013,7 @@ test_speed_calc.o: test_speed_calc.c.o
 
 # target to build an object file
 test_speed_calc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/test_speed_calc.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/test_speed_calc.c.o
 .PHONY : test_speed_calc.c.o
 
 test_speed_calc.i: test_speed_calc.c.i
@@ -1022,7 +1022,7 @@ test_speed_calc.i: test_speed_calc.c.i
 
 # target to preprocess a source file
 test_speed_calc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/test_speed_calc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/test_speed_calc.c.i
 .PHONY : test_speed_calc.c.i
 
 test_speed_calc.s: test_speed_calc.c.s
@@ -1031,7 +1031,7 @@ test_speed_calc.s: test_speed_calc.c.s
 
 # target to generate assembly for a file
 test_speed_calc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/test_speed_calc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/test_speed_calc.c.s
 .PHONY : test_speed_calc.c.s
 
 utils.o: utils.c.o
@@ -1040,7 +1040,7 @@ utils.o: utils.c.o
 
 # target to build an object file
 utils.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/utils.c.o
 .PHONY : utils.c.o
 
 utils.i: utils.c.i
@@ -1049,7 +1049,7 @@ utils.i: utils.c.i
 
 # target to preprocess a source file
 utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/utils.c.i
 .PHONY : utils.c.i
 
 utils.s: utils.c.s
@@ -1058,7 +1058,7 @@ utils.s: utils.c.s
 
 # target to generate assembly for a file
 utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lemin.dir/build.make CMakeFiles/lemin.dir/utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/utils.c.s
 .PHONY : utils.c.s
 
 # Help Target
@@ -1069,7 +1069,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lemin"
+	@echo "... lem-in"
 	@echo "... add_path.o"
 	@echo "... add_path.i"
 	@echo "... add_path.s"

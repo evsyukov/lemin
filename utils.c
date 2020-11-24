@@ -14,7 +14,7 @@
 
 void	err_exit(void)
 {
-	write(1, "ERROR\n", 6);
+	write(2, "ERROR\n", 6);
 	exit(1);
 }
 

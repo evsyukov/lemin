@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/lem-in.dir/add_path.c.o"
+  "CMakeFiles/lem-in.dir/bellman_ford.c.o"
+  "CMakeFiles/lem-in.dir/calc_speed.c.o"
+  "CMakeFiles/lem-in.dir/debug_func_nick.c.o"
+  "CMakeFiles/lem-in.dir/debug_functions.c.o"
+  "CMakeFiles/lem-in.dir/find_solution.c.o"
+  "CMakeFiles/lem-in.dir/free_hash.c.o"
+  "CMakeFiles/lem-in.dir/ft_atoi_validate_pos.c.o"
+  "CMakeFiles/lem-in.dir/get_normal_paths.c.o"
+  "CMakeFiles/lem-in.dir/get_set_paths.c.o"
+  "CMakeFiles/lem-in.dir/gnl.c.o"
+  "CMakeFiles/lem-in.dir/hash.c.o"
+  "CMakeFiles/lem-in.dir/insert_to_hash_functions.c.o"
+  "CMakeFiles/lem-in.dir/libft/ft_isdigit.c.o"
+  "CMakeFiles/lem-in.dir/libft/ft_putchar.c.o"
+  "CMakeFiles/lem-in.dir/libft/ft_putnbr.c.o"
+  "CMakeFiles/lem-in.dir/libft/ft_putstr.c.o"
+  "CMakeFiles/lem-in.dir/libft/ft_strcat.c.o"
+  "CMakeFiles/lem-in.dir/libft/ft_strcmp.c.o"
+  "CMakeFiles/lem-in.dir/libft/ft_strdup.c.o"
+  "CMakeFiles/lem-in.dir/libft/ft_strequ.c.o"
+  "CMakeFiles/lem-in.dir/libft/ft_strjoin.c.o"
+  "CMakeFiles/lem-in.dir/libft/ft_strlen.c.o"
+  "CMakeFiles/lem-in.dir/links_functions.c.o"
+  "CMakeFiles/lem-in.dir/main.c.o"
+  "CMakeFiles/lem-in.dir/make_arr_nodes.c.o"
+  "CMakeFiles/lem-in.dir/move_ants.c.o"
+  "CMakeFiles/lem-in.dir/parse_functions.c.o"
+  "CMakeFiles/lem-in.dir/parse_input.c.o"
+  "CMakeFiles/lem-in.dir/print_result.c.o"
+  "CMakeFiles/lem-in.dir/reverse_edges.c.o"
+  "CMakeFiles/lem-in.dir/split_node.c.o"
+  "CMakeFiles/lem-in.dir/test_speed_calc.c.o"
+  "CMakeFiles/lem-in.dir/utils.c.o"
+  "lem-in"
+  "lem-in.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/lem-in.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

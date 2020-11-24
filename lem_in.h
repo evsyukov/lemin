@@ -83,8 +83,8 @@ typedef struct		s_graph
 	t_hash			**arr_nodes;
 	size_t			any_bf;
 	size_t			num_start_node;
-	size_t			num_childs_start;
 	size_t			num_end_node;
+	size_t			num_childs_start;
 	size_t			num_childs_end;
 	int32_t			speed;
 	t_paths			*begin_path;
@@ -179,7 +179,7 @@ void				add_path_second(t_graph *graph, t_path
 ** -------------------------- link_functions.c --------------------------------
 */
 void				add_link(t_hash *parent, t_hash *child,
-							 int weight, int is_part_of_path);
+							int weight, int is_part_of_path);
 int					is_already_linked(t_hash *haystack, t_hash *needle);
 
 /*
@@ -207,7 +207,7 @@ void				reverse_edges(t_graph *graph, t_path *path);
 ** -------------------------- split_nodes.c -----------------------------------
 */
 void				handle_double_node(t_graph *graph,
-									   char *first, char *second);
+									char *first, char *second);
 
 /*
 ** -------------------------- utils.c -----------------------------------------

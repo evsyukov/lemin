@@ -24,15 +24,15 @@ int	main(void)
 	if (!is_one_path_exist(graph))
 		err_exit();
 	find_solution(graph);
-	ft_putstr("Ants num = ");
-	ft_putnbr(graph->ants_num);
-	ft_putstr(" \nНабор путей : Speed = ");
-	ft_putnbr(graph->speed);
-	ft_putstr("\n");
-	print_paths(graph->begin_path_first_res);
-//	write(1, graph->map_buf, ft_strlen(graph->map_buf));
-//	write(1, "\n", 1);
+//	ft_putstr("Ants num = ");
+//	ft_putnbr(graph->ants_num);
+//	ft_putstr(" \nНабор путей : Speed = ");
+//	ft_putnbr(graph->speed);
+//	ft_putstr("\n");
+//	print_paths(graph->begin_path_first_res);
+	write(1, graph->map_buf, ft_strlen(graph->map_buf));
+	write(1, "\n", 1);
 	print_solution(graph);
 	free_graph(graph);
-	printf("\nMalloc:%lu Free:%lu\n", ml, fr);
+//	printf("\nMalloc:%lu Free:%lu\n", ml, fr);
 }

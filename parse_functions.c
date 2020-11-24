@@ -17,9 +17,12 @@ t_graph		*graph_init(void)
 	t_graph	*graph;
 
 	MFAIL((graph = malloc(sizeof(t_graph))));
+	graph->h_table = hash_table_init();
 	graph->start = NULL;
 	graph->end = NULL;
-	graph->h_table = hash_table_init();
+	graph->ants_num = 0;
+	graph->nodes_num = 0;
+	graph->map_buf = NULL;
 	graph->arr_nodes = NULL;
 	graph->any_bf = 0;
 	graph->num_childs_start = 0;
