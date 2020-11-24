@@ -27,7 +27,7 @@ extern unsigned long ml;
 extern unsigned long fr;
 
 # define FCNT(x) x; fr++
-# define MFAIL(x) if (!x) err_exit(); else ml++;
+# define MFAIL(x) if (!(x)) err_exit(); else ml++
 
 # define PARSE_START 1
 # define PARSE_END 0
