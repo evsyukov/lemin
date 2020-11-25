@@ -224,60 +224,6 @@ calc_speed.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/calc_speed.c.s
 .PHONY : calc_speed.c.s
 
-debug_func_nick.o: debug_func_nick.c.o
-
-.PHONY : debug_func_nick.o
-
-# target to build an object file
-debug_func_nick.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_func_nick.c.o
-.PHONY : debug_func_nick.c.o
-
-debug_func_nick.i: debug_func_nick.c.i
-
-.PHONY : debug_func_nick.i
-
-# target to preprocess a source file
-debug_func_nick.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_func_nick.c.i
-.PHONY : debug_func_nick.c.i
-
-debug_func_nick.s: debug_func_nick.c.s
-
-.PHONY : debug_func_nick.s
-
-# target to generate assembly for a file
-debug_func_nick.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_func_nick.c.s
-.PHONY : debug_func_nick.c.s
-
-debug_functions.o: debug_functions.c.o
-
-.PHONY : debug_functions.o
-
-# target to build an object file
-debug_functions.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_functions.c.o
-.PHONY : debug_functions.c.o
-
-debug_functions.i: debug_functions.c.i
-
-.PHONY : debug_functions.i
-
-# target to preprocess a source file
-debug_functions.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_functions.c.i
-.PHONY : debug_functions.c.i
-
-debug_functions.s: debug_functions.c.s
-
-.PHONY : debug_functions.s
-
-# target to generate assembly for a file
-debug_functions.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/debug_functions.c.s
-.PHONY : debug_functions.c.s
-
 find_solution.o: find_solution.c.o
 
 .PHONY : find_solution.o
@@ -926,6 +872,33 @@ parse_input.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/parse_input.c.s
 .PHONY : parse_input.c.s
 
+print_paths.o: print_paths.c.o
+
+.PHONY : print_paths.o
+
+# target to build an object file
+print_paths.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/print_paths.c.o
+.PHONY : print_paths.c.o
+
+print_paths.i: print_paths.c.i
+
+.PHONY : print_paths.i
+
+# target to preprocess a source file
+print_paths.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/print_paths.c.i
+.PHONY : print_paths.c.i
+
+print_paths.s: print_paths.c.s
+
+.PHONY : print_paths.s
+
+# target to generate assembly for a file
+print_paths.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/print_paths.c.s
+.PHONY : print_paths.c.s
+
 print_result.o: print_result.c.o
 
 .PHONY : print_result.o
@@ -1007,33 +980,6 @@ split_node.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/split_node.c.s
 .PHONY : split_node.c.s
 
-test_speed_calc.o: test_speed_calc.c.o
-
-.PHONY : test_speed_calc.o
-
-# target to build an object file
-test_speed_calc.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/test_speed_calc.c.o
-.PHONY : test_speed_calc.c.o
-
-test_speed_calc.i: test_speed_calc.c.i
-
-.PHONY : test_speed_calc.i
-
-# target to preprocess a source file
-test_speed_calc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/test_speed_calc.c.i
-.PHONY : test_speed_calc.c.i
-
-test_speed_calc.s: test_speed_calc.c.s
-
-.PHONY : test_speed_calc.s
-
-# target to generate assembly for a file
-test_speed_calc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lem-in.dir/build.make CMakeFiles/lem-in.dir/test_speed_calc.c.s
-.PHONY : test_speed_calc.c.s
-
 utils.o: utils.c.o
 
 .PHONY : utils.o
@@ -1079,12 +1025,6 @@ help:
 	@echo "... calc_speed.o"
 	@echo "... calc_speed.i"
 	@echo "... calc_speed.s"
-	@echo "... debug_func_nick.o"
-	@echo "... debug_func_nick.i"
-	@echo "... debug_func_nick.s"
-	@echo "... debug_functions.o"
-	@echo "... debug_functions.i"
-	@echo "... debug_functions.s"
 	@echo "... find_solution.o"
 	@echo "... find_solution.i"
 	@echo "... find_solution.s"
@@ -1157,6 +1097,9 @@ help:
 	@echo "... parse_input.o"
 	@echo "... parse_input.i"
 	@echo "... parse_input.s"
+	@echo "... print_paths.o"
+	@echo "... print_paths.i"
+	@echo "... print_paths.s"
 	@echo "... print_result.o"
 	@echo "... print_result.i"
 	@echo "... print_result.s"
@@ -1166,9 +1109,6 @@ help:
 	@echo "... split_node.o"
 	@echo "... split_node.i"
 	@echo "... split_node.s"
-	@echo "... test_speed_calc.o"
-	@echo "... test_speed_calc.i"
-	@echo "... test_speed_calc.s"
 	@echo "... utils.o"
 	@echo "... utils.i"
 	@echo "... utils.s"

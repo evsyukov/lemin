@@ -13,14 +13,6 @@ CMakeFiles/lem-in.dir/calc_speed.c.o: ../calc_speed.c
 CMakeFiles/lem-in.dir/calc_speed.c.o: ../lem_in.h
 CMakeFiles/lem-in.dir/calc_speed.c.o: ../libft/libft.h
 
-CMakeFiles/lem-in.dir/debug_func_nick.c.o: ../debug_func_nick.c
-CMakeFiles/lem-in.dir/debug_func_nick.c.o: ../lem_in.h
-CMakeFiles/lem-in.dir/debug_func_nick.c.o: ../libft/libft.h
-
-CMakeFiles/lem-in.dir/debug_functions.c.o: ../debug_functions.c
-CMakeFiles/lem-in.dir/debug_functions.c.o: ../lem_in.h
-CMakeFiles/lem-in.dir/debug_functions.c.o: ../libft/libft.h
-
 CMakeFiles/lem-in.dir/find_solution.c.o: ../find_solution.c
 CMakeFiles/lem-in.dir/find_solution.c.o: ../lem_in.h
 CMakeFiles/lem-in.dir/find_solution.c.o: ../libft/libft.h
@@ -105,6 +97,10 @@ CMakeFiles/lem-in.dir/parse_input.c.o: ../lem_in.h
 CMakeFiles/lem-in.dir/parse_input.c.o: ../libft/libft.h
 CMakeFiles/lem-in.dir/parse_input.c.o: ../parse_input.c
 
+CMakeFiles/lem-in.dir/print_paths.c.o: ../lem_in.h
+CMakeFiles/lem-in.dir/print_paths.c.o: ../libft/libft.h
+CMakeFiles/lem-in.dir/print_paths.c.o: ../print_paths.c
+
 CMakeFiles/lem-in.dir/print_result.c.o: ../lem_in.h
 CMakeFiles/lem-in.dir/print_result.c.o: ../libft/libft.h
 CMakeFiles/lem-in.dir/print_result.c.o: ../print_result.c
@@ -116,10 +112,6 @@ CMakeFiles/lem-in.dir/reverse_edges.c.o: ../reverse_edges.c
 CMakeFiles/lem-in.dir/split_node.c.o: ../lem_in.h
 CMakeFiles/lem-in.dir/split_node.c.o: ../libft/libft.h
 CMakeFiles/lem-in.dir/split_node.c.o: ../split_node.c
-
-CMakeFiles/lem-in.dir/test_speed_calc.c.o: ../lem_in.h
-CMakeFiles/lem-in.dir/test_speed_calc.c.o: ../libft/libft.h
-CMakeFiles/lem-in.dir/test_speed_calc.c.o: ../test_speed_calc.c
 
 CMakeFiles/lem-in.dir/utils.c.o: ../lem_in.h
 CMakeFiles/lem-in.dir/utils.c.o: ../libft/libft.h

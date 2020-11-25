@@ -87,12 +87,6 @@
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/calc_speed.c">
 			<Option target="lem-in"/>
 		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/debug_func_nick.c">
-			<Option target="lem-in"/>
-		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/debug_functions.c">
-			<Option target="lem-in"/>
-		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/find_solution.c">
 			<Option target="lem-in"/>
 		</Unit>
@@ -168,6 +162,9 @@
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/parse_input.c">
 			<Option target="lem-in"/>
 		</Unit>
+		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/print_paths.c">
+			<Option target="lem-in"/>
+		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/print_result.c">
 			<Option target="lem-in"/>
 		</Unit>
@@ -175,9 +172,6 @@
 			<Option target="lem-in"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/split_node.c">
-			<Option target="lem-in"/>
-		</Unit>
-		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/test_speed_calc.c">
 			<Option target="lem-in"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/utils.c">

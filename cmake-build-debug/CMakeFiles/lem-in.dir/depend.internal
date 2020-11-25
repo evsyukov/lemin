@@ -13,14 +13,6 @@ CMakeFiles/lem-in.dir/calc_speed.c.o
  /Users/smanta/LEM_IN/MY_GIT_9/calc_speed.c
  /Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
-CMakeFiles/lem-in.dir/debug_func_nick.c.o
- /Users/smanta/LEM_IN/MY_GIT_9/debug_func_nick.c
- /Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
- /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
-CMakeFiles/lem-in.dir/debug_functions.c.o
- /Users/smanta/LEM_IN/MY_GIT_9/debug_functions.c
- /Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
- /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
 CMakeFiles/lem-in.dir/find_solution.c.o
  /Users/smanta/LEM_IN/MY_GIT_9/find_solution.c
  /Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
@@ -105,6 +97,10 @@ CMakeFiles/lem-in.dir/parse_input.c.o
  /Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
  /Users/smanta/LEM_IN/MY_GIT_9/parse_input.c
+CMakeFiles/lem-in.dir/print_paths.c.o
+ /Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
+ /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
+ /Users/smanta/LEM_IN/MY_GIT_9/print_paths.c
 CMakeFiles/lem-in.dir/print_result.c.o
  /Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
@@ -117,10 +113,6 @@ CMakeFiles/lem-in.dir/split_node.c.o
  /Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
  /Users/smanta/LEM_IN/MY_GIT_9/split_node.c
-CMakeFiles/lem-in.dir/test_speed_calc.c.o
- /Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
- /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
- /Users/smanta/LEM_IN/MY_GIT_9/test_speed_calc.c
 CMakeFiles/lem-in.dir/utils.c.o
  /Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
  /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h

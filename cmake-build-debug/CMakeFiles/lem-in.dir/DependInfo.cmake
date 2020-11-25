@@ -7,8 +7,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/smanta/LEM_IN/MY_GIT_9/add_path.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/add_path.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_9/bellman_ford.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/bellman_ford.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_9/calc_speed.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/calc_speed.c.o"
-  "/Users/smanta/LEM_IN/MY_GIT_9/debug_func_nick.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/debug_func_nick.c.o"
-  "/Users/smanta/LEM_IN/MY_GIT_9/debug_functions.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/debug_functions.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_9/find_solution.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/find_solution.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_9/free_hash.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/free_hash.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_9/ft_atoi_validate_pos.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/ft_atoi_validate_pos.c.o"
@@ -33,10 +31,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/smanta/LEM_IN/MY_GIT_9/move_ants.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/move_ants.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_9/parse_functions.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/parse_functions.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_9/parse_input.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/parse_input.c.o"
+  "/Users/smanta/LEM_IN/MY_GIT_9/print_paths.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/print_paths.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_9/print_result.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/print_result.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_9/reverse_edges.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/reverse_edges.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_9/split_node.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/split_node.c.o"
-  "/Users/smanta/LEM_IN/MY_GIT_9/test_speed_calc.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/test_speed_calc.c.o"
   "/Users/smanta/LEM_IN/MY_GIT_9/utils.c" "/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles/lem-in.dir/utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

@@ -24,7 +24,7 @@ static unsigned int	calc_hash(const char *node_name)
 	return (value % TABLE_SIZE);
 }
 
-t_hash			**hash_table_init(void)
+t_hash				**hash_table_init(void)
 {
 	size_t	i;
 	t_hash	**hash_table;
@@ -39,7 +39,7 @@ t_hash			**hash_table_init(void)
 	return (hash_table);
 }
 
-t_hash			*assign_to_table(t_hash **table, char *node_name)
+t_hash				*assign_to_table(t_hash **table, char *node_name)
 {
 	t_hash			*new;
 	unsigned int	hash_val;
@@ -65,7 +65,7 @@ t_hash			*assign_to_table(t_hash **table, char *node_name)
 	return (new);
 }
 
-t_hash			*hash_query(t_hash **h_table, char *node_name)
+t_hash				*hash_query(t_hash **h_table, char *node_name)
 {
 	t_hash			*node;
 	unsigned int	hash_val;

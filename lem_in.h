@@ -125,13 +125,6 @@ char				*read_to_str(int fd);
 char				*gnl(char *text);
 
 /*
-** -------------------------- debug functions ---------------------------------
-*/
-
-void				print_hash_table_child(t_hash **h_table);
-void				print_hash_table(t_hash **h_table);
-
-/*
 ** -------------------------- bellman_ford.c ----------------------------------
 */
 t_path				*get_bellman_ford_path(t_graph *graph);
@@ -157,10 +150,7 @@ size_t				calc_speed(t_graph *graph);
 /*
 ** -------------------------- debug_func_nick.c -------------------------------
 */
-void				print_graph_arr(t_graph *graph);
-void				print_path(t_path *path);
 void				print_paths(t_paths *paths);
-void				test_speed_calc();
 
 /*
 ** -------------------------- find_solution.c ---------------------------------
