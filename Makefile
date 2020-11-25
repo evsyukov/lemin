@@ -48,15 +48,14 @@ $(OBJDIR)%.o : %.c
 
 clean:
 		@echo 'rm object files..'
-		make clean -C $(LFTPATH)
-		@rm -f $(OBJ)
+		@make clean -C $(LFTPATH)
+		@rm -rf $(OBJDIR)
 		@echo 'DONE'
 
 fclean:
 		@echo 'rm object files & executable..'
-		make fclean -C $(LFTPATH)
-		@rm -f $(OBJ)
-		@rm -f $(OBJDIR)*.d
+		@make fclean -C $(LFTPATH)
+		@rm -rf $(OBJDIR)
 		@rm -f $(NAME)
 		@echo 'DONE'
 
