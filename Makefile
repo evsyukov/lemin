@@ -15,8 +15,6 @@ NAME = lem-in
 
 FLAGS = -Wall -Wextra -Werror
 
-#PFTPATH = ../ft_printf/ -lftprintf
-
 HEADERS = lem_in.h
 
 OBJDIR = objs/
@@ -28,8 +26,6 @@ OPFLAGS = -O2
 LFTPATH = ./libft -lft
 
 SRC = $(wildcard *.c)
-
-LIB = $(wildcard ./libft/libft.a)
 
 LIBSRC = $(wildcard ./libft/*.c)
 
@@ -47,19 +43,19 @@ include $(wildcard $(OBJDIR)*.d)
 
 $(OBJDIR)%.o : %.c
 		@mkdir -p $(@D)
-		@$(CC) -g -MMD $(FLAGS) -c $< -o $@
+		@$(CC) -MMD $(FLAGS) -c $< -o $@
 		@echo 'Compile $<'
 
 clean:
 		@echo 'rm object files..'
-		make clean -C $(LFTPATH)
-		@rm -f $(OBJ)
+		@make clean -C $(LFTPATH)
+		@rm -rf $(OBJDIR)
 		@echo 'DONE'
 
 fclean:
 		@echo 'rm object files & executable..'
-		make fclean -C $(LFTPATH)
-		@rm -f $(OBJ)
+		@make fclean -C $(LFTPATH)
+		@rm -rf $(OBJDIR)
 		@rm -f $(NAME)
 		@echo 'DONE'
 

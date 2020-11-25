@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_lst_rev.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/13 19:47:56 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/22 15:56:07 by nmustach         ###   ########.fr       */
+/*   Created: 2020/11/22 18:28:04 by nmustach          #+#    #+#             */
+/*   Updated: 2020/11/22 18:56:42 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+void	ft_lst_rev(t_list **list)
 {
-	unsigned char	*ptr;
+	t_list *tmpnext;
+	t_list *tmp2;
 
-	ptr = (unsigned char*)malloc(size * sizeof(unsigned char));
-	if (ptr == NULL)
-		return (NULL);
-	ft_memset(ptr, 0, size);
-	return (ptr);
+	if ((*list)->next != NULL)
+	{
+		tmpnext = (*list)->next;
+		tmp2 = (*list);
+		(*list)->next = NULL;
+		(*list) = tmpnext;
+		while ((*list)->next)
+		{
+			tmpnext = (*list)->next;
+			(*list)->next = tmp2;
+			tmp2 = (*list);
+			(*list) = tmpnext;
+		}
+		(*list)->next = tmp2;
+	}
 }
