@@ -6,7 +6,7 @@
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 23:49:12 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/21 19:09:21 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/25 21:13:25 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,19 @@ int		ft_atoi_validate_pos(const char *str)
 {
 	int	i;
 	int	num;
+	int sign;
 
 	i = 0;
 	num = 0;
+	sign = 1;
 	if (!str[i])
-		return (-1);
+		err_exit();
+	if (str[i] == '-' || str[i] == '+')
+	{
+		if (str[i] == '-')
+			sign = -1;
+		i++;
+	}
 	while (str[i])
 		if (ft_isdigit(str[i]))
 		{
@@ -29,8 +37,8 @@ int		ft_atoi_validate_pos(const char *str)
 			num = num * 10 + (str[i++] - '0');
 		}
 		else
-			return (-1);
-	return (num);
+			err_exit();
+	return (num * sign);
 }
 
 void	parse_ants_number(t_graph *graph)
