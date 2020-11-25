@@ -6,7 +6,7 @@
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/12 19:27:53 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/21 16:17:21 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/25 21:43:53 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,4 +86,12 @@ void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+/*
+** -------------------------- Bonus functions ----------------------------
+*/
+void			ft_strrev(char *input);
+int				ft_is_number(char *input);
+size_t			ft_lst_size(t_list *lst);
+void			ft_lst_rev(t_list **list);
+
 #endif

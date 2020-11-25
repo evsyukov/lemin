@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_lst_size.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/13 19:47:56 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/22 15:56:07 by nmustach         ###   ########.fr       */
+/*   Created: 2020/11/22 17:31:33 by nmustach          #+#    #+#             */
+/*   Updated: 2020/11/22 18:14:14 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+size_t	ft_lst_size(t_list *lst)
 {
-	unsigned char	*ptr;
+	size_t i;
 
-	ptr = (unsigned char*)malloc(size * sizeof(unsigned char));
-	if (ptr == NULL)
-		return (NULL);
-	ft_memset(ptr, 0, size);
-	return (ptr);
+	i = 0;
+	while (lst)
+	{
+		lst = lst->next;
+		i++;
+	}
+	return (i);
 }

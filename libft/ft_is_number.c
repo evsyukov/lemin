@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_is_number.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/13 19:47:56 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/22 15:56:07 by nmustach         ###   ########.fr       */
+/*   Created: 2020/11/22 15:41:30 by nmustach          #+#    #+#             */
+/*   Updated: 2020/11/25 21:43:33 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+int	ft_is_number(char *input)
 {
-	unsigned char	*ptr;
+	size_t i;
 
-	ptr = (unsigned char*)malloc(size * sizeof(unsigned char));
-	if (ptr == NULL)
-		return (NULL);
-	ft_memset(ptr, 0, size);
-	return (ptr);
+	i = 0;
+	if (input[i] == '-' || input[i] == '+')
+		i++;
+	while (input[i])
+	{
+		if (!ft_isdigit(input[i]))
+			return (0);
+		i++;
+	}
+	return (1);
 }
