@@ -17,9 +17,10 @@ static t_hash	*get_hash_node_in(t_graph *graph, char *name)
 	t_hash	*node_in;
 	char	*name_in;
 
-	MFAIL((name_in = ft_strjoin(name, "_in")));
+	if ((name_in = ft_strjoin(name, "_in")) == NULL)
+		err_exit();
 	node_in = hash_query(graph->h_table, name_in);
-	FCNT(free(name_in));
+	free(name_in);
 	return (node_in);
 }
 
@@ -28,9 +29,10 @@ static t_hash	*get_hash_node_out(t_graph *graph, char *name)
 	t_hash	*node_out;
 	char	*name_out;
 
-	MFAIL((name_out = ft_strjoin(name, "_out")));
+	if ((name_out = ft_strjoin(name, "_out")) == NULL)
+		err_exit();
 	node_out = hash_query(graph->h_table, name_out);
-	FCNT(free(name_out));
+	free(name_out);
 	return (node_out);
 }
 

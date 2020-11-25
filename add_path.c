@@ -18,7 +18,8 @@ t_path			*add_path_node(t_path **root, t_hash *node)
 	t_path	*new_path;
 
 	path = *root;
-	MFAIL((new_path = (t_path *)malloc(sizeof(t_path))));
+	if ((new_path = (t_path *)malloc(sizeof(t_path))) == NULL)
+		err_exit();
 	new_path->node = node;
 	new_path->node_name = NULL;
 	new_path->next = path;
@@ -33,7 +34,8 @@ t_paths			*create_paths(t_path *path, size_t len_path)
 {
 	t_paths *new_paths;
 
-	MFAIL((new_paths = (t_paths *)malloc(sizeof(t_paths))));
+	if ((new_paths = (t_paths *)malloc(sizeof(t_paths))) == NULL)
+		err_exit();
 	new_paths->path = path;
 	new_paths->next = NULL;
 	new_paths->begin_print = NULL;

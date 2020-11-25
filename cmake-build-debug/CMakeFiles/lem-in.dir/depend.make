@@ -50,11 +50,17 @@ CMakeFiles/lem-in.dir/libft/ft_isdigit.c.o: ../libft/ft_isdigit.c
 CMakeFiles/lem-in.dir/libft/ft_putchar.c.o: ../libft/ft_putchar.c
 CMakeFiles/lem-in.dir/libft/ft_putchar.c.o: ../libft/libft.h
 
+CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
+CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.o: ../libft/libft.h
+
 CMakeFiles/lem-in.dir/libft/ft_putnbr.c.o: ../libft/ft_putnbr.c
 CMakeFiles/lem-in.dir/libft/ft_putnbr.c.o: ../libft/libft.h
 
 CMakeFiles/lem-in.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
 CMakeFiles/lem-in.dir/libft/ft_putstr.c.o: ../libft/libft.h
+
+CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
+CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.o: ../libft/libft.h
 
 CMakeFiles/lem-in.dir/libft/ft_strcat.c.o: ../libft/ft_strcat.c
 CMakeFiles/lem-in.dir/libft/ft_strcat.c.o: ../libft/libft.h

@@ -30,7 +30,8 @@ t_hash				**hash_table_init(void)
 	t_hash	**hash_table;
 
 	i = 0;
-	MFAIL((hash_table = malloc(sizeof(t_hash*) * TABLE_SIZE)));
+	if ((hash_table = malloc(sizeof(t_hash*) * TABLE_SIZE)) == NULL)
+		err_exit();
 	while (i < TABLE_SIZE)
 	{
 		hash_table[i] = NULL;
@@ -46,7 +47,8 @@ t_hash				*assign_to_table(t_hash **table, char *node_name)
 	t_hash			*node;
 
 	hash_val = calc_hash(node_name);
-	MFAIL((new = malloc(sizeof(t_hash))));
+	if ((new = malloc(sizeof(t_hash))) == NULL)
+		err_exit();
 	new->next = NULL;
 	new->child = NULL;
 	new->x = 0;

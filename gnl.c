@@ -44,10 +44,11 @@ char	*enlarge_buffer(char *old_buf, size_t *mem_buf)
 	char	*new_buf;
 
 	*mem_buf = *mem_buf * 2;
-	MFAIL((new_buf = malloc(sizeof(char) * *mem_buf)));
+	if ((new_buf = malloc(sizeof(char) * *mem_buf)) == NULL)
+		err_exit();
 	new_buf[0] = 0;
 	ft_strcat(new_buf, old_buf);
-	FCNT(free(old_buf));
+	free(old_buf);
 	return (new_buf);
 }
 
@@ -61,7 +62,8 @@ char	*read_to_str(int fd)
 
 	buf_s = 0;
 	mem_buf = 5000;
-	MFAIL((buf = malloc(sizeof(char) * mem_buf)));
+	if ((buf = malloc(sizeof(char) * mem_buf)) == NULL)
+		err_exit();
 	buf[0] = '\0';
 	while ((ret = read(fd, read_buf, 1000)) > 0)
 	{

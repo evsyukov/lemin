@@ -23,7 +23,7 @@ void			free_hash_table(t_hash **h_table)
 			free_nodes(h_table[i]);
 		i++;
 	}
-	FCNT(free(h_table));
+	free(h_table);
 }
 
 void			free_nodes(t_hash *node)
@@ -35,18 +35,18 @@ void			free_nodes(t_hash *node)
 	while (node)
 	{
 		next = node->next;
-		FCNT(free(node->node_name));
+		free(node->node_name);
 		if (node->child)
 		{
 			child_list = node->child;
 			while (child_list)
 			{
 				child_next = child_list->next;
-				FCNT(free(child_list));
+				free(child_list);
 				child_list = child_next;
 			}
 		}
-		FCNT(free(node));
+		free(node);
 		node = next;
 	}
 }

@@ -6,23 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
-stdio.h
--
-unistd.h
--
-libft/libft.h
+/Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putchar_fd.c
+libft.h
 /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
-limits.h
--
 
 /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
 stdlib.h
 -
 unistd.h
 -
-
-/Users/smanta/LEM_IN/MY_GIT_9/main.c
-lem_in.h
-/Users/smanta/LEM_IN/MY_GIT_9/lem_in.h
 

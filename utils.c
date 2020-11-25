@@ -28,9 +28,9 @@ void	free_path(t_path *path)
 		path = path->next;
 		if (temp_path->node_name != NULL)
 		{
-			FCNT((free(temp_path->node_name)));
+			free(temp_path->node_name);
 		}
-		FCNT(free(temp_path));
+		free(temp_path);
 	}
 }
 
@@ -43,19 +43,19 @@ void	free_paths(t_paths *paths)
 		temp_paths = paths;
 		paths = paths->next;
 		free_path(temp_paths->path);
-		FCNT(free(temp_paths));
+		free(temp_paths);
 	}
 }
 
 void	free_graph(t_graph *graph)
 {
 	free_hash_table(graph->h_table);
-	FCNT(free(graph->map_buf));
-	FCNT(free(graph->arr_nodes));
+	free(graph->map_buf);
+	free(graph->arr_nodes);
 	free_paths(graph->begin_path);
 	free_paths(graph->begin_path_first_res);
 	free_paths(graph->begin_path_second_res);
-	FCNT(free(graph));
+	free(graph);
 }
 
 int		is_family(char *str, char *str1)

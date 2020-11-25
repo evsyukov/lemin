@@ -45,7 +45,8 @@ int weight, int is_part_of_path)
 	t_child *new;
 	t_child *c_list;
 
-	MFAIL((new = malloc(sizeof(t_child))));
+	if ((new = malloc(sizeof(t_child))) == NULL)
+		err_exit();
 	new->next = NULL;
 	new->c_node = child;
 	new->flow = 1;

@@ -16,7 +16,8 @@ t_graph		*graph_init(void)
 {
 	t_graph	*graph;
 
-	MFAIL((graph = malloc(sizeof(t_graph))));
+	if ((graph = malloc(sizeof(t_graph))) == NULL)
+		err_exit();
 	graph->h_table = hash_table_init();
 	graph->start = NULL;
 	graph->end = NULL;

@@ -120,10 +120,16 @@
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putchar.c">
 			<Option target="lem-in"/>
 		</Unit>
+		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putchar_fd.c">
+			<Option target="lem-in"/>
+		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putnbr.c">
 			<Option target="lem-in"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putstr.c">
+			<Option target="lem-in"/>
+		</Unit>
+		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putstr_fd.c">
 			<Option target="lem-in"/>
 		</Unit>
 		<Unit filename="/Users/smanta/LEM_IN/MY_GIT_9/libft/ft_strcat.c">

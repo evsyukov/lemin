@@ -50,11 +50,17 @@ CMakeFiles/lem-in.dir/libft/ft_isdigit.c.o
 CMakeFiles/lem-in.dir/libft/ft_putchar.c.o
  /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putchar.c
  /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
+CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.o
+ /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putchar_fd.c
+ /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
 CMakeFiles/lem-in.dir/libft/ft_putnbr.c.o
  /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putnbr.c
  /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
 CMakeFiles/lem-in.dir/libft/ft_putstr.c.o
  /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putstr.c
+ /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
+CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.o
+ /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putstr_fd.c
  /Users/smanta/LEM_IN/MY_GIT_9/libft/libft.h
 CMakeFiles/lem-in.dir/libft/ft_strcat.c.o
  /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_strcat.c

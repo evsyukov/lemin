@@ -21,7 +21,8 @@ size_t sp_ind[2], char *adding)
 	t_hash	*node;
 
 	node = NULL;
-	MFAIL((strdup = ft_strjoin(line, adding)));
+	if ((strdup = ft_strjoin(line, adding)) == NULL)
+		err_exit();
 	node = assign_to_table(h_table, strdup);
 	l_x = ft_atoi_validate_pos(&line[sp_ind[0] + 1]);
 	l_y = ft_atoi_validate_pos(&line[sp_ind[1] + 1]);
@@ -37,10 +38,11 @@ t_hash **node_in, size_t sp_ind[2])
 	t_hash	*node_out;
 
 	node_out = NULL;
-	MFAIL((str = ft_strjoin(line, "_in")));
+	if ((str = ft_strjoin(line, "_in")) == NULL)
+		err_exit();
 	if (!hash_query(h_table, str))
 	{
-		FCNT(free(str));
+		free(str);
 		*node_in = insert_node_to_h_table(line, h_table, sp_ind, "_in");
 		node_out = insert_node_to_h_table(line, h_table, sp_ind, "_out");
 		line[sp_ind[0]] = ' ';

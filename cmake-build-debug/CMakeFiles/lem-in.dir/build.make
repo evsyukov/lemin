@@ -428,9 +428,35 @@ CMakeFiles/lem-in.dir/libft/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem-in.dir/libft/ft_strjoin.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_strjoin.c -o CMakeFiles/lem-in.dir/libft/ft_strjoin.c.s
 
+CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.o: CMakeFiles/lem-in.dir/flags.make
+CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.o   -c /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putstr_fd.c
+
+CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putstr_fd.c > CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.i
+
+CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putstr_fd.c -o CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.s
+
+CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.o: CMakeFiles/lem-in.dir/flags.make
+CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.o   -c /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putchar_fd.c
+
+CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putchar_fd.c > CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.i
+
+CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/smanta/LEM_IN/MY_GIT_9/libft/ft_putchar_fd.c -o CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.s
+
 CMakeFiles/lem-in.dir/move_ants.c.o: CMakeFiles/lem-in.dir/flags.make
 CMakeFiles/lem-in.dir/move_ants.c.o: ../move_ants.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/lem-in.dir/move_ants.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/lem-in.dir/move_ants.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem-in.dir/move_ants.c.o   -c /Users/smanta/LEM_IN/MY_GIT_9/move_ants.c
 
 CMakeFiles/lem-in.dir/move_ants.c.i: cmake_force
@@ -443,7 +469,7 @@ CMakeFiles/lem-in.dir/move_ants.c.s: cmake_force
 
 CMakeFiles/lem-in.dir/make_arr_nodes.c.o: CMakeFiles/lem-in.dir/flags.make
 CMakeFiles/lem-in.dir/make_arr_nodes.c.o: ../make_arr_nodes.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/lem-in.dir/make_arr_nodes.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/lem-in.dir/make_arr_nodes.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem-in.dir/make_arr_nodes.c.o   -c /Users/smanta/LEM_IN/MY_GIT_9/make_arr_nodes.c
 
 CMakeFiles/lem-in.dir/make_arr_nodes.c.i: cmake_force
@@ -456,7 +482,7 @@ CMakeFiles/lem-in.dir/make_arr_nodes.c.s: cmake_force
 
 CMakeFiles/lem-in.dir/get_set_paths.c.o: CMakeFiles/lem-in.dir/flags.make
 CMakeFiles/lem-in.dir/get_set_paths.c.o: ../get_set_paths.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/lem-in.dir/get_set_paths.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/lem-in.dir/get_set_paths.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem-in.dir/get_set_paths.c.o   -c /Users/smanta/LEM_IN/MY_GIT_9/get_set_paths.c
 
 CMakeFiles/lem-in.dir/get_set_paths.c.i: cmake_force
@@ -469,7 +495,7 @@ CMakeFiles/lem-in.dir/get_set_paths.c.s: cmake_force
 
 CMakeFiles/lem-in.dir/get_normal_paths.c.o: CMakeFiles/lem-in.dir/flags.make
 CMakeFiles/lem-in.dir/get_normal_paths.c.o: ../get_normal_paths.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/lem-in.dir/get_normal_paths.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/lem-in.dir/get_normal_paths.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem-in.dir/get_normal_paths.c.o   -c /Users/smanta/LEM_IN/MY_GIT_9/get_normal_paths.c
 
 CMakeFiles/lem-in.dir/get_normal_paths.c.i: cmake_force
@@ -482,7 +508,7 @@ CMakeFiles/lem-in.dir/get_normal_paths.c.s: cmake_force
 
 CMakeFiles/lem-in.dir/split_node.c.o: CMakeFiles/lem-in.dir/flags.make
 CMakeFiles/lem-in.dir/split_node.c.o: ../split_node.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/lem-in.dir/split_node.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/lem-in.dir/split_node.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem-in.dir/split_node.c.o   -c /Users/smanta/LEM_IN/MY_GIT_9/split_node.c
 
 CMakeFiles/lem-in.dir/split_node.c.i: cmake_force
@@ -522,6 +548,8 @@ lem__in_OBJECTS = \
 "CMakeFiles/lem-in.dir/libft/ft_strcmp.c.o" \
 "CMakeFiles/lem-in.dir/libft/ft_strlen.c.o" \
 "CMakeFiles/lem-in.dir/libft/ft_strjoin.c.o" \
+"CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.o" \
+"CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.o" \
 "CMakeFiles/lem-in.dir/move_ants.c.o" \
 "CMakeFiles/lem-in.dir/make_arr_nodes.c.o" \
 "CMakeFiles/lem-in.dir/get_set_paths.c.o" \
@@ -558,6 +586,8 @@ lem-in: CMakeFiles/lem-in.dir/libft/ft_putchar.c.o
 lem-in: CMakeFiles/lem-in.dir/libft/ft_strcmp.c.o
 lem-in: CMakeFiles/lem-in.dir/libft/ft_strlen.c.o
 lem-in: CMakeFiles/lem-in.dir/libft/ft_strjoin.c.o
+lem-in: CMakeFiles/lem-in.dir/libft/ft_putstr_fd.c.o
+lem-in: CMakeFiles/lem-in.dir/libft/ft_putchar_fd.c.o
 lem-in: CMakeFiles/lem-in.dir/move_ants.c.o
 lem-in: CMakeFiles/lem-in.dir/make_arr_nodes.c.o
 lem-in: CMakeFiles/lem-in.dir/get_set_paths.c.o
@@ -565,7 +595,7 @@ lem-in: CMakeFiles/lem-in.dir/get_normal_paths.c.o
 lem-in: CMakeFiles/lem-in.dir/split_node.c.o
 lem-in: CMakeFiles/lem-in.dir/build.make
 lem-in: CMakeFiles/lem-in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking C executable lem-in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/smanta/LEM_IN/MY_GIT_9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking C executable lem-in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem-in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

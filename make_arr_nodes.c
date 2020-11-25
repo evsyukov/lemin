@@ -37,7 +37,8 @@ t_hash			**make_arr_nodes(t_graph *graph)
 	t_hash	**table;
 	t_hash	**arr;
 
-	MFAIL((arr = (t_hash **)malloc(sizeof(t_hash *) * graph->nodes_num)));
+	if ((arr = (t_hash **)malloc(sizeof(t_hash *) * graph->nodes_num)) == NULL)
+		err_exit();
 	table = graph->h_table;
 	index_table = 0;
 	index_arr = 0;

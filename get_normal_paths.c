@@ -17,7 +17,8 @@ static void	mod_name(t_path *path)
 	char	*str;
 	size_t	len;
 
-	MFAIL((path->node_name = ft_strdup(path->node->node_name)));
+	if ((path->node_name = ft_strdup(path->node->node_name)) == NULL)
+		err_exit();
 	str = path->node_name;
 	len = ft_strlen(str);
 	if (str[len - 1] == 't')
@@ -44,8 +45,8 @@ static void	get_normal_path(t_path **apath)
 			path->next = path_next->next;
 			if (path_next->next != NULL)
 				path_next->next->prev = path;
-			FCNT(free(path_next->node_name));
-			FCNT((free(path_next)));
+			free(path_next->node_name);
+			free(path_next);
 			mod_name(path->next);
 		}
 		path = path->next;

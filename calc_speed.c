@@ -91,7 +91,8 @@ size_t			calc_speed(t_graph *graph)
 	index = 0;
 	num_paths = graph->num_paths_second_res;
 	paths_to_calc = graph->begin_path_second_res;
-	MFAIL((path_lens = (size_t *)malloc(sizeof(size_t) * num_paths)));
+	if ((path_lens = (size_t *)malloc(sizeof(size_t) * num_paths)) == NULL)
+		err_exit();
 	while (index < num_paths && paths_to_calc != NULL)
 	{
 		path_lens[index] = paths_to_calc->num_nodes;
@@ -100,6 +101,6 @@ size_t			calc_speed(t_graph *graph)
 	}
 	li_sort(path_lens, num_paths);
 	result = do_calc_speed(graph->ants_num, path_lens, num_paths);
-	FCNT((free(path_lens)));
+	free(path_lens);
 	return (result);
 }

@@ -15,6 +15,8 @@
 
 # define TABLE_SIZE 10000
 # define HASH_MULT 37
+# define PARSE_START 1
+# define PARSE_END 0
 
 # include <stdio.h>
 # include <unistd.h>
@@ -22,15 +24,6 @@
 # include <limits.h>
 
 struct s_hash;
-
-extern unsigned long ml;
-extern unsigned long fr;
-
-# define FCNT(x) x; fr++
-# define MFAIL(x) if (!(x)) err_exit(); else ml++
-
-# define PARSE_START 1
-# define PARSE_END 0
 
 typedef	struct		s_child
 {
