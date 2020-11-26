@@ -6,7 +6,7 @@
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 22:14:48 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/21 19:08:04 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/26 21:04:11 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ int		split_line(char *str, size_t *sp)
 	size_t i;
 
 	i = 0;
-	while (str[i] != ' ' && str[i])
+	while (str[i] != ' ' && str[i] && str[i] != '-')
 		i++;
-	if (!str[i])
+	if (!str[i] || str[i] == '-')
 		return (0);
 	str[i] = 0;
 	sp[0] = i;

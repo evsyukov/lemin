@@ -74,7 +74,7 @@ void			find_solution(t_graph *graph)
 	size_t	limits;
 
 	limits = get_limits(graph);
-	speed_current = (size_t)INT_MAX;
+	speed_current = graph->nodes_num + graph->ants_num;
 	speed_next = speed_current - 1;
 	while (speed_next > 0 && speed_next < speed_current && limits > 0)
 	{

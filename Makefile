@@ -20,8 +20,6 @@ OBJDIR = objs/
 
 CC = clang
 
-OPFLAGS = -O2
-
 LFTPATH = ./libft -lft
 
 SRC = $(wildcard *.c)

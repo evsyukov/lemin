@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/smanta/School21/GIT_LEMIN_9/lem_in.h
+/Users/smanta/LEM_IN/MY_GIT_10/lem_in.h
 stdio.h
 -
 unistd.h
 -
 libft/libft.h
-/home/smanta/School21/GIT_LEMIN_9/libft/libft.h
+/Users/smanta/LEM_IN/MY_GIT_10/libft/libft.h
 limits.h
 -
 
-/home/smanta/School21/GIT_LEMIN_9/libft/libft.h
+/Users/smanta/LEM_IN/MY_GIT_10/libft/libft.h
 stdlib.h
 -
 unistd.h
 -
 
-/home/smanta/School21/GIT_LEMIN_9/utils.c
+/Users/smanta/LEM_IN/MY_GIT_10/main.c
 lem_in.h
-/home/smanta/School21/GIT_LEMIN_9/lem_in.h
+/Users/smanta/LEM_IN/MY_GIT_10/lem_in.h
 
