@@ -13,5 +13,5 @@ echo "$VAR" | tail -n 1
 
 echo -e "OUR :\c"
 
-time echo "$VAR" | ../lem-in | wc -l
+time echo "$VAR" | ../lem-in -m | wc -l
 
