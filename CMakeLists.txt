@@ -12,4 +12,5 @@ add_executable(lem-in main.c bellman_ford.c calc_speed.c print_paths.c
         libft/ft_strcat.c libft/ft_strequ.c libft/ft_strdup.c
         libft/ft_putchar.c libft/ft_strcmp.c libft/ft_strlen.c
         libft/ft_strjoin.c libft/ft_putstr_fd.c libft/ft_putchar_fd.c
+        libft/ft_strnequ.c libft/ft_strncmp.c
         move_ants.c make_arr_nodes.c get_set_paths.c get_normal_paths.c split_node.c)

@@ -79,6 +79,12 @@ CMakeFiles/lem-in.dir/libft/ft_strjoin.c.o: ../libft/libft.h
 CMakeFiles/lem-in.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
 CMakeFiles/lem-in.dir/libft/ft_strlen.c.o: ../libft/libft.h
 
+CMakeFiles/lem-in.dir/libft/ft_strncmp.c.o: ../libft/ft_strncmp.c
+CMakeFiles/lem-in.dir/libft/ft_strncmp.c.o: ../libft/libft.h
+
+CMakeFiles/lem-in.dir/libft/ft_strnequ.c.o: ../libft/ft_strnequ.c
+CMakeFiles/lem-in.dir/libft/ft_strnequ.c.o: ../libft/libft.h
+
 CMakeFiles/lem-in.dir/links_functions.c.o: ../lem_in.h
 CMakeFiles/lem-in.dir/links_functions.c.o: ../libft/libft.h
 CMakeFiles/lem-in.dir/links_functions.c.o: ../links_functions.c

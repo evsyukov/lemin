@@ -62,9 +62,7 @@ int		is_family(char *str, char *str1)
 {
 	size_t	str_l;
 	size_t	str1_l;
-	int		result;
 
-	result = 0;
 	str_l = ft_strlen(str);
 	str1_l = ft_strlen(str1);
 	if (!((str[str_l - 1] == 't' && str1[str1_l - 1] == 'n')
@@ -78,11 +76,7 @@ int		is_family(char *str, char *str1)
 		str1_l -= 4;
 	if (str1[str1_l - 1] == 'n')
 		str1_l -= 3;
-	str[str_l] = '\0';
-	str1[str1_l] = '\0';
-	if (ft_strequ(str, str1))
-		result = 1;
-	str[str_l] = '_';
-	str1[str1_l] = '_';
-	return (result);
+	if (str_l == str1_l && ft_strnequ(str, str1, str_l))
+		return (1);
+	return (0);
 }

@@ -15,9 +15,7 @@
 static int	getend(char const *s)
 {
 	int	len;
-	int	i;
 
-	i = 0;
 	len = ft_strlen(s);
 	len--;
 	while ((s[len] == ' ') || (s[len] == '\n') || (s[len] == '\t'))
@@ -27,7 +25,6 @@ static int	getend(char const *s)
 
 char		*ft_strtrim(char const *s)
 {
-	size_t		i;
 	size_t		n;
 	char		*new;
 	size_t		stind;
@@ -35,7 +32,6 @@ char		*ft_strtrim(char const *s)
 
 	if (s == NULL)
 		return (NULL);
-	i = 0;
 	n = 0;
 	stind = 0;
 	endind = getend(s);
