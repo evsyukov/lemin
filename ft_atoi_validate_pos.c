@@ -38,7 +38,7 @@ int		ft_atoi_validate_pos(const char *str)
 		}
 		else
 			err_exit();
-	return (num * sign);
+	return (num);
 }
 
 void	parse_ants_number(t_graph *graph)

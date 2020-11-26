@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/smanta/LEM_IN/MY_GIT_10/ft_atoi_validate_pos.c
+lem_in.h
+/Users/smanta/LEM_IN/MY_GIT_10/lem_in.h
+
 /Users/smanta/LEM_IN/MY_GIT_10/lem_in.h
 stdio.h
 -
@@ -21,8 +25,4 @@ stdlib.h
 -
 unistd.h
 -
-
-/Users/smanta/LEM_IN/MY_GIT_10/main.c
-lem_in.h
-/Users/smanta/LEM_IN/MY_GIT_10/lem_in.h
 
