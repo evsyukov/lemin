@@ -1,0 +1,23 @@
+#comment
+##starasdt
+10
+##starasdt
+#comment
+1 0 2
+##double
+##start
+0 2147483647 2147483647
+##double
+##end
+4 -2147483648 -2147483648
+##double
+2 4 2
+3 4 4
+0-1
+##end___
+0-2
+##double
+2-3
+3-4
+4-1
+##double

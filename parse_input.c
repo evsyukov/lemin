@@ -64,8 +64,6 @@ void	parse_comments(char *line, t_graph *graph)
 			return ;
 		else if (parse_end_node(line, graph))
 			return ;
-		else
-			err_exit();
 	}
 }
 

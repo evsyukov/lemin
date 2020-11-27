@@ -83,7 +83,7 @@ int			main(int argc, char **argv)
 	graph->arr_nodes = make_arr_nodes(graph);
 	if (!is_one_path_exist(graph))
 	{
-		ft_putstr_fd("No way between Start and End rooms\n", 2);
+		ft_putstr_fd("ERROR : No way between Start and End rooms\n", 2);
 		exit(1);
 	}
 	find_solution(graph);

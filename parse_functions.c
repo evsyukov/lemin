@@ -87,7 +87,9 @@ void		parse_links(t_graph *graph, char *line)
 	{
 		if (str_ret[0] == '#')
 		{
-			if (str_ret[0] == '#' && str_ret[1] == '#')
+			if (str_ret[0] == '#' && str_ret[1] == '#'
+				&& (ft_strequ(str_ret, "##start")
+					|| ft_strequ(str_ret, "##end")))
 				err_exit();
 			continue ;
 		}
@@ -106,6 +108,9 @@ t_graph		*parse_input(void)
 	parse_rooms(graph);
 	if (!graph->start->child || !graph->end->child
 		|| !graph->end->child->c_node->child)
-		err_exit();
+	{
+		ft_putstr_fd("ERROR : No way between Start and End rooms\n", 2);
+		exit(1);
+	}
 	return (graph);
 }

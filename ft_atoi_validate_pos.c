@@ -47,14 +47,16 @@ void	parse_ants_number(t_graph *graph)
 	int		ants_num;
 
 	ants_num = 0;
-	if ((ret = gnl(graph->map_buf)) != NULL)
+	while ((ret = gnl(graph->map_buf)) != NULL && ret[0] == '#')
 	{
-		ants_num = ft_atoi_validate_pos(ret);
-		if (ants_num > 0)
-			graph->ants_num = ants_num;
-		else
+		if (ft_strequ(ret, "##start") || ft_strequ(ret, "##end"))
 			err_exit();
 	}
+	if (ret == NULL)
+		err_exit();
+	ants_num = ft_atoi_validate_pos(ret);
+	if (ants_num > 0)
+		graph->ants_num = ants_num;
 	else
 		err_exit();
 }
