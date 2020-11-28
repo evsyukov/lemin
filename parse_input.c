@@ -6,7 +6,7 @@
 /*   By: nmustach <nmustach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/18 22:14:48 by nmustach          #+#    #+#             */
-/*   Updated: 2020/11/26 21:04:11 by nmustach         ###   ########.fr       */
+/*   Updated: 2020/11/28 15:28:25 by nmustach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ t_hash	*parse_node_name(t_graph *graph, char *line, int flag)
 	size_t	sp_ind[2];
 
 	node_in = NULL;
-	if (!line || line[0] == ' ' || line[0] == 'L')
+	if (!line || line[0] == ' ' || line[0] == 'L' || line[0] == '#')
 		err_exit();
 	if (split_line(line, sp_ind))
 	{
